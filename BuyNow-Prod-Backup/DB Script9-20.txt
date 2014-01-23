@@ -1,0 +1,75 @@
+CREATE TABLE customerdetails
+(
+  id bigint NOT NULL,
+  adate character varying(28),
+  salesman character varying(128),
+  firstname character varying(64),
+  middlename character varying(64),
+  lastname character varying(128),
+  address character varying(255),
+  zipcode integer,
+  city character varying(64),
+  state character varying(64),
+  ssn character varying(32),
+  dob character varying(32),
+  homephone character varying(32),
+  workphone character varying(32),
+  cellphone character varying(32),
+  driverlicensenumber character varying(32),
+  driverlicenseissuedate character varying(32),
+  driverlicenseexpirationdate character varying(32),
+  email character varying(128),
+  employer character varying(128),
+  employeraddress character varying(255),
+  supervisor character varying(128),
+  timeonjob character varying(64),
+  previousjob character varying(64),
+  previoushomeaddress character varying(255),
+  emergencycontact character varying(32),
+  highschool character varying(128),
+  hearaboutus character varying(128),
+  sourceofdownpayment character varying(64),
+  transmittedon timestamp with time zone,
+  CONSTRAINT pk_customerdetails PRIMARY KEY (id )
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE customerdetails
+  OWNER TO postgres;
+
+
+
+
+
+CREATE TABLE referencesdetails
+(
+  id bigint NOT NULL,
+  customerdetailsid bigint NOT NULL,
+  ismotherfather character varying(1),
+  referencename character varying(64),
+  relationship character varying(64),
+  address character varying(255),
+  citysatezip character varying(128),
+  phonecell character varying(32),
+  phonehome character varying(32),
+  phonework character varying(32),
+  notes character varying(255),
+  CONSTRAINT pk_referencesdetails PRIMARY KEY (id )
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE referencesdetails
+  OWNER TO postgres;
+
+  
+CREATE TABLE security
+(
+  authenticatingcode text
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE security
+  OWNER TO postgres;

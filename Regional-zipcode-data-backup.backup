@@ -1,0 +1,9375 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.2.6
+-- Dumped by pg_dump version 9.2.4
+-- Started on 2014-01-22 22:51:59
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 170 (class 1259 OID 4027958)
+-- Name: Zipcodes; Type: TABLE; Schema: public; Owner: jxfxyuxhznqhhv; Tablespace: 
+--
+
+CREATE TABLE "Zipcodes" (
+    "ZipCode" character varying(10),
+    "State" character varying(128),
+    "City" character varying(128)
+);
+
+
+ALTER TABLE public."Zipcodes" OWNER TO jxfxyuxhznqhhv;
+
+--
+-- TOC entry 2841 (class 0 OID 4027958)
+-- Dependencies: 170
+-- Data for Name: Zipcodes; Type: TABLE DATA; Schema: public; Owner: jxfxyuxhznqhhv
+--
+
+COPY "Zipcodes" ("ZipCode", "State", "City") FROM stdin;
+30002	GA	Avondale Estates
+30003	GA	Norcross
+30004	GA	Alpharetta
+30005	GA	Alpharetta
+30006	GA	Marietta
+30007	GA	Marietta
+30008	GA	Marietta
+30009	GA	Alpharetta
+30010	GA	Norcross
+30011	GA	Auburn
+30012	GA	Conyers
+30013	GA	Conyers
+30014	GA	Covington
+30015	GA	Covington
+30016	GA	Covington
+30017	GA	Grayson
+30018	GA	Jersey
+30019	GA	Dacula
+30021	GA	Clarkston
+30022	GA	Alpharetta
+30023	GA	Alpharetta
+30024	GA	Suwanee
+30025	GA	Social Circle
+30026	GA	North Metro
+30028	GA	Cumming
+30029	GA	North Metro
+30030	GA	Decatur
+30031	GA	Decatur
+30032	GA	Decatur
+30033	GA	Decatur
+30034	GA	Decatur
+30035	GA	Decatur
+30036	GA	Decatur
+30037	GA	Decatur
+30038	GA	Lithonia
+30039	GA	Snellville
+30040	GA	Cumming
+30041	GA	Cumming
+30042	GA	Lawrenceville
+30043	GA	Lawrenceville
+30044	GA	Lawrenceville
+30045	GA	Lawrenceville
+30046	GA	Lawrenceville
+30047	GA	Lilburn
+30048	GA	Lilburn
+30049	GA	Lawrenceville
+30052	GA	Loganville
+30054	GA	Oxford
+30055	GA	Mansfield
+30056	GA	Newborn
+30058	GA	Lithonia
+30060	GA	Marietta
+30061	GA	Marietta
+30062	GA	Marietta
+30063	GA	Marietta
+30064	GA	Marietta
+30065	GA	Marietta
+30066	GA	Marietta
+30067	GA	Marietta
+30068	GA	Marietta
+30069	GA	Marietta
+30070	GA	Porterdale
+30071	GA	Norcross
+30072	GA	Pine Lake
+30074	GA	Redan
+30075	GA	Roswell
+30076	GA	Roswell
+30077	GA	Roswell
+30078	GA	Snellville
+30079	GA	Scottdale
+30080	GA	Smyrna
+30081	GA	Smyrna
+30082	GA	Smyrna
+30083	GA	Stone Mountain
+30084	GA	Tucker
+30085	GA	Tucker
+30086	GA	Stone Mountain
+30087	GA	Stone Mountain
+30088	GA	Stone Mountain
+30090	GA	Marietta
+30091	GA	Norcross
+30092	GA	Norcross
+30093	GA	Norcross
+30094	GA	Conyers
+30095	GA	Duluth
+30096	GA	Duluth
+30097	GA	Duluth
+30098	GA	Duluth
+30099	GA	Duluth
+30101	GA	Acworth
+30102	GA	Acworth
+30103	GA	Adairsville
+30104	GA	Aragon
+30105	GA	Armuchee
+30106	GA	Austell
+30107	GA	Ball Ground
+30108	GA	Bowdon
+30109	GA	Bowdon Junction
+30110	GA	Bremen
+30111	GA	Clarkdale
+30113	GA	Buchanan
+30114	GA	Canton
+30115	GA	Canton
+30116	GA	Carrollton
+30117	GA	Carrollton
+30118	GA	Carrollton
+30119	GA	Carrollton
+30120	GA	Cartersville
+30121	GA	Cartersville
+30122	GA	Lithia Springs
+30123	GA	Cassville
+30124	GA	Cave Spring
+30125	GA	Cedartown
+30126	GA	Mableton
+30127	GA	Powder Springs
+30129	GA	Coosa
+30132	GA	Dallas
+30133	GA	Douglasville
+30134	GA	Douglasville
+30135	GA	Douglasville
+30137	GA	Emerson
+30138	GA	Esom Hill
+30139	GA	Fairmount
+30140	GA	Felton
+30141	GA	Hiram
+30142	GA	Holly Springs
+30143	GA	Jasper
+30144	GA	Kennesaw
+30145	GA	Kingston
+30146	GA	Lebanon
+30147	GA	Lindale
+30148	GA	Marble Hill
+30149	GA	Mount Berry
+30150	GA	Mount Zion
+30151	GA	Nelson
+30152	GA	Kennesaw
+30153	GA	Rockmart
+30154	GA	Douglasville
+30156	GA	Kennesaw
+30157	GA	Dallas
+30160	GA	Kennesaw
+30161	GA	Rome
+30162	GA	Rome
+30163	GA	Rome
+30164	GA	Rome
+30165	GA	Rome
+30168	GA	Austell
+30170	GA	Roopville
+30171	GA	Rydal
+30172	GA	Shannon
+30173	GA	Silver Creek
+30175	GA	Talking Rock
+30176	GA	Tallapoosa
+30177	GA	Tate
+30178	GA	Taylorsville
+30179	GA	Temple
+30180	GA	Villa Rica
+30182	GA	Waco
+30183	GA	Waleska
+30184	GA	White
+30185	GA	Whitesburg
+30187	GA	Winston
+30188	GA	Woodstock
+30189	GA	Woodstock
+30204	GA	Barnesville
+30205	GA	Brooks
+30206	GA	Concord
+30212	GA	Experiment
+30213	GA	Fairburn
+30214	GA	Fayetteville
+30215	GA	Fayetteville
+30216	GA	Flovilla
+30217	GA	Franklin
+30218	GA	Gay
+30219	GA	Glenn
+30220	GA	Grantville
+30222	GA	Greenville
+30223	GA	Griffin
+30224	GA	Griffin
+30228	GA	Hampton
+30229	GA	Haralson
+30230	GA	Hogansville
+30232	GA	Inman
+30233	GA	Jackson
+30234	GA	Jenkinsburg
+30236	GA	Jonesboro
+30237	GA	Jonesboro
+30238	GA	Jonesboro
+30240	GA	Lagrange
+30241	GA	Lagrange
+30248	GA	Locust Grove
+30250	GA	Lovejoy
+30251	GA	Luthersville
+30252	GA	Mcdonough
+30253	GA	Mcdonough
+30256	GA	Meansville
+30257	GA	Milner
+30258	GA	Molena
+30259	GA	Moreland
+30260	GA	Morrow
+30261	GA	Lagrange
+30263	GA	Newnan
+30264	GA	Newnan
+30265	GA	Newnan
+30266	GA	Orchard Hill
+30268	GA	Palmetto
+30269	GA	Peachtree City
+30271	GA	Newnan
+30272	GA	Red Oak
+30273	GA	Rex
+30274	GA	Riverdale
+30275	GA	Sargent
+30276	GA	Senoia
+30277	GA	Sharpsburg
+30281	GA	Stockbridge
+30284	GA	Sunny Side
+30285	GA	The Rock
+30286	GA	Thomaston
+30287	GA	Morrow
+30288	GA	Conley
+30289	GA	Turin
+30290	GA	Tyrone
+30291	GA	Union City
+30292	GA	Williamson
+30293	GA	Woodbury
+30294	GA	Ellenwood
+30295	GA	Zebulon
+30296	GA	Riverdale
+30297	GA	Forest Park
+30298	GA	Forest Park
+30301	GA	Atlanta
+30302	GA	Atlanta
+30303	GA	Atlanta
+30304	GA	Atlanta
+30305	GA	Atlanta
+30306	GA	Atlanta
+30307	GA	Atlanta
+30308	GA	Atlanta
+30309	GA	Atlanta
+30310	GA	Atlanta
+30311	GA	Atlanta
+30312	GA	Atlanta
+30313	GA	Atlanta
+30314	GA	Atlanta
+30315	GA	Atlanta
+30316	GA	Atlanta
+30317	GA	Atlanta
+30318	GA	Atlanta
+30319	GA	Atlanta
+30320	GA	Atlanta
+30321	GA	Atlanta
+30322	GA	Atlanta
+30324	GA	Atlanta
+30325	GA	Atlanta
+30326	GA	Atlanta
+30327	GA	Atlanta
+30328	GA	Atlanta
+30329	GA	Atlanta
+30330	GA	Atlanta
+30331	GA	Atlanta
+30332	GA	Atlanta
+30333	GA	Atlanta
+30334	GA	Atlanta
+30336	GA	Atlanta
+30337	GA	Atlanta
+30338	GA	Atlanta
+30339	GA	Atlanta
+30340	GA	Atlanta
+30341	GA	Atlanta
+30342	GA	Atlanta
+30343	GA	Atlanta
+30344	GA	Atlanta
+30345	GA	Atlanta
+30346	GA	Atlanta
+30347	GA	Atlanta
+30348	GA	Atlanta
+30349	GA	Atlanta
+30350	GA	Atlanta
+30353	GA	Atlanta
+30354	GA	Atlanta
+30355	GA	Atlanta
+30356	GA	Atlanta
+30357	GA	Atlanta
+30358	GA	Atlanta
+30359	GA	Atlanta
+30360	GA	Atlanta
+30361	GA	Atlanta
+30362	GA	Atlanta
+30364	GA	Atlanta
+30366	GA	Atlanta
+30368	GA	Atlanta
+30369	GA	Atlanta
+30370	GA	Atlanta
+30371	GA	Atlanta
+30374	GA	Atlanta
+30375	GA	Atlanta
+30376	GA	Atlanta
+30377	GA	Atlanta
+30378	GA	Atlanta
+30379	GA	Atlanta
+30380	GA	Atlanta
+30384	GA	Atlanta
+30385	GA	Atlanta
+30386	GA	Atlanta
+30387	GA	Atlanta
+30388	GA	Atlanta
+30389	GA	Atlanta
+30390	GA	Atlanta
+30392	GA	Atlanta
+30394	GA	Atlanta
+30396	GA	Atlanta
+30398	GA	Atlanta
+30399	GA	Atlanta
+30401	GA	Swainsboro
+30410	GA	Ailey
+30411	GA	Alamo
+30412	GA	Alston
+30413	GA	Bartow
+30414	GA	Bellville
+30415	GA	Brooklet
+30417	GA	Claxton
+30420	GA	Cobbtown
+30421	GA	Collins
+30423	GA	Daisy
+30424	GA	Dover
+30425	GA	Garfield
+30426	GA	Girard
+30427	GA	Glennville
+30428	GA	Glenwood
+30429	GA	Hagan
+30434	GA	Louisville
+30436	GA	Lyons
+30438	GA	Manassas
+30439	GA	Metter
+30441	GA	Midville
+30442	GA	Millen
+30445	GA	Mount Vernon
+30446	GA	Newington
+30447	GA	Norristown
+30448	GA	Nunez
+30449	GA	Oliver
+30450	GA	Portal
+30451	GA	Pulaski
+30452	GA	Register
+30453	GA	Reidsville
+30454	GA	Rockledge
+30455	GA	Rocky Ford
+30456	GA	Sardis
+30457	GA	Soperton
+30458	GA	Statesboro
+30459	GA	Statesboro
+30460	GA	Statesboro
+30461	GA	Statesboro
+30464	GA	Stillmore
+30467	GA	Sylvania
+30470	GA	Tarrytown
+30471	GA	Twin City
+30473	GA	Uvalda
+30474	GA	Vidalia
+30475	GA	Vidalia
+30477	GA	Wadley
+30499	GA	Reidsville
+30501	GA	Gainesville
+30502	GA	Chestnut Mountain
+30503	GA	Gainesville
+30504	GA	Gainesville
+30506	GA	Gainesville
+30507	GA	Gainesville
+30510	GA	Alto
+30511	GA	Baldwin
+30512	GA	Blairsville
+30513	GA	Blue Ridge
+30514	GA	Blairsville
+30515	GA	Buford
+30516	GA	Bowersville
+30517	GA	Braselton
+30518	GA	Buford
+30519	GA	Buford
+30520	GA	Canon
+30521	GA	Carnesville
+30522	GA	Cherrylog
+30523	GA	Clarkesville
+30525	GA	Clayton
+30527	GA	Clermont
+30528	GA	Cleveland
+30529	GA	Commerce
+30530	GA	Commerce
+30531	GA	Cornelia
+30533	GA	Dahlonega
+30534	GA	Dawsonville
+30535	GA	Demorest
+30537	GA	Dillard
+30538	GA	Eastanollee
+30539	GA	East Ellijay
+30540	GA	Ellijay
+30541	GA	Epworth
+30542	GA	Flowery Branch
+30543	GA	Gillsville
+30544	GA	Demorest
+30545	GA	Helen
+30546	GA	Hiawassee
+30547	GA	Homer
+30548	GA	Hoschton
+30549	GA	Jefferson
+30552	GA	Lakemont
+30553	GA	Lavonia
+30554	GA	Lula
+30555	GA	Mc Caysville
+30557	GA	Martin
+30558	GA	Maysville
+30559	GA	Mineral Bluff
+30560	GA	Morganton
+30562	GA	Mountain City
+30563	GA	Mount Airy
+30564	GA	Murrayville
+30565	GA	Nicholson
+30566	GA	Oakwood
+30567	GA	Pendergrass
+30568	GA	Rabun Gap
+30571	GA	Sautee Nacoochee
+30572	GA	Suches
+30573	GA	Tallulah Falls
+30575	GA	Talmo
+30576	GA	Tiger
+30577	GA	Toccoa
+30580	GA	Turnerville
+30581	GA	Wiley
+30582	GA	Young Harris
+30596	GA	Alto
+30597	GA	Dahlonega
+30598	GA	Toccoa Falls
+30599	GA	Commerce
+30601	GA	Athens
+30602	GA	Athens
+30603	GA	Athens
+30604	GA	Athens
+30605	GA	Athens
+30606	GA	Athens
+30607	GA	Athens
+30608	GA	Athens
+30609	GA	Athens
+30612	GA	Athens
+30619	GA	Arnoldsville
+30620	GA	Bethlehem
+30621	GA	Bishop
+30622	GA	Bogart
+30623	GA	Bostwick
+30624	GA	Bowman
+30625	GA	Buckhead
+30627	GA	Carlton
+30628	GA	Colbert
+30629	GA	Comer
+30630	GA	Crawford
+30631	GA	Crawfordville
+30633	GA	Danielsville
+30634	GA	Dewy Rose
+30635	GA	Elberton
+30638	GA	Farmington
+30639	GA	Franklin Springs
+30641	GA	Good Hope
+30642	GA	Greensboro
+30643	GA	Hartwell
+30645	GA	High Shoals
+30646	GA	Hull
+30647	GA	Ila
+30648	GA	Lexington
+30650	GA	Madison
+30655	GA	Monroe
+30656	GA	Monroe
+30660	GA	Rayle
+30662	GA	Royston
+30663	GA	Rutledge
+30664	GA	Sharon
+30665	GA	Siloam
+30666	GA	Statham
+30667	GA	Stephens
+30668	GA	Tignall
+30669	GA	Union Point
+30671	GA	Maxeys
+30673	GA	Washington
+30677	GA	Watkinsville
+30678	GA	White Plains
+30680	GA	Winder
+30683	GA	Winterville
+30701	GA	Calhoun
+30703	GA	Calhoun
+30705	GA	Chatsworth
+30707	GA	Chickamauga
+30708	GA	Cisco
+30710	GA	Cohutta
+30711	GA	Crandall
+30719	GA	Dalton
+30720	GA	Dalton
+30721	GA	Dalton
+30722	GA	Dalton
+30724	GA	Eton
+30725	GA	Flintstone
+30726	GA	Graysville
+30728	GA	La Fayette
+30730	GA	Lyerly
+30731	GA	Menlo
+30732	GA	Oakman
+30733	GA	Plainville
+30734	GA	Ranger
+30735	GA	Resaca
+30736	GA	Ringgold
+30738	GA	Rising Fawn
+30739	GA	Rock Spring
+30740	GA	Rocky Face
+30741	GA	Rossville
+30742	GA	Fort Oglethorpe
+30746	GA	Sugar Valley
+30747	GA	Summerville
+30750	GA	Lookout Mountain
+30751	GA	Tennga
+30752	GA	Trenton
+30753	GA	Trion
+30755	GA	Tunnel Hill
+30756	GA	Varnell
+30757	GA	Wildwood
+30802	GA	Appling
+30803	GA	Avera
+30805	GA	Blythe
+30806	GA	Boneville
+30807	GA	Camak
+30808	GA	Dearing
+30809	GA	Evans
+30810	GA	Gibson
+30811	GA	Gough
+30812	GA	Gracewood
+30813	GA	Grovetown
+30814	GA	Harlem
+30815	GA	Hephzibah
+30816	GA	Keysville
+30817	GA	Lincolnton
+30818	GA	Matthews
+30819	GA	Mesena
+30820	GA	Mitchell
+30821	GA	Norwood
+30822	GA	Perkins
+30823	GA	Stapleton
+30824	GA	Thomson
+30828	GA	Warrenton
+30830	GA	Waynesboro
+30833	GA	Wrens
+30901	GA	Augusta
+30903	GA	Augusta
+30904	GA	Augusta
+30905	GA	Augusta
+30906	GA	Augusta
+30907	GA	Augusta
+30909	GA	Augusta
+30910	GA	Augusta
+30911	GA	Augusta
+30912	GA	Augusta
+30913	GA	Augusta
+30914	GA	Augusta
+30916	GA	Augusta
+30917	GA	Augusta
+30919	GA	Augusta
+30999	GA	Augusta
+31001	GA	Abbeville
+31002	GA	Adrian
+31003	GA	Allentown
+31004	GA	Bolingbroke
+31005	GA	Bonaire
+31006	GA	Butler
+31007	GA	Byromville
+31008	GA	Byron
+31009	GA	Cadwell
+31010	GA	Cordele
+31011	GA	Chauncey
+31012	GA	Chester
+31013	GA	Clinchfield
+31014	GA	Cochran
+31015	GA	Cordele
+31016	GA	Culloden
+31017	GA	Danville
+31018	GA	Davisboro
+31019	GA	Dexter
+31020	GA	Dry Branch
+31021	GA	Dublin
+31022	GA	Dudley
+31023	GA	Eastman
+31024	GA	Eatonton
+31025	GA	Elko
+31027	GA	Dublin
+31028	GA	Centerville
+31029	GA	Forsyth
+31030	GA	Fort Valley
+31031	GA	Gordon
+31032	GA	Gray
+31033	GA	Haddock
+31034	GA	Hardwick
+31035	GA	Harrison
+31036	GA	Hawkinsville
+31037	GA	Helena
+31038	GA	Hillsboro
+31039	GA	Howard
+31040	GA	Dublin
+31041	GA	Ideal
+31042	GA	Irwinton
+31044	GA	Jeffersonville
+31045	GA	Jewell
+31046	GA	Juliette
+31047	GA	Kathleen
+31049	GA	Kite
+31050	GA	Knoxville
+31051	GA	Lilly
+31052	GA	Lizella
+31054	GA	Mc Intyre
+31055	GA	Mc Rae
+31057	GA	Marshallville
+31058	GA	Mauk
+31059	GA	Milledgeville
+31060	GA	Milan
+31061	GA	Milledgeville
+31062	GA	Milledgeville
+31063	GA	Montezuma
+31064	GA	Monticello
+31065	GA	Montrose
+31066	GA	Musella
+31067	GA	Oconee
+31068	GA	Oglethorpe
+31069	GA	Perry
+31070	GA	Pinehurst
+31071	GA	Pineview
+31072	GA	Pitts
+31073	GA	Plainfield
+31075	GA	Rentz
+31076	GA	Reynolds
+31077	GA	Rhine
+31078	GA	Roberta
+31079	GA	Rochelle
+31081	GA	Rupert
+31082	GA	Sandersville
+31083	GA	Scotland
+31084	GA	Seville
+31085	GA	Shady Dale
+31086	GA	Smarr
+31087	GA	Sparta
+31088	GA	Warner Robins
+31089	GA	Tennille
+31090	GA	Toomsboro
+31091	GA	Unadilla
+31092	GA	Vienna
+31093	GA	Warner Robins
+31094	GA	Warthen
+31095	GA	Warner Robins
+31096	GA	Wrightsville
+31097	GA	Yatesville
+31098	GA	Warner Robins
+31099	GA	Warner Robins
+31106	GA	Atlanta
+31107	GA	Atlanta
+31119	GA	Atlanta
+31126	GA	Atlanta
+31131	GA	Atlanta
+31139	GA	Atlanta
+31141	GA	Atlanta
+31145	GA	Atlanta
+31146	GA	Atlanta
+31150	GA	Atlanta
+31156	GA	Atlanta
+31191	GA	Atlanta
+31192	GA	Atlanta
+31193	GA	Atlanta
+31195	GA	Atlanta
+31196	GA	Atlanta
+31197	GA	Atlanta
+31198	GA	Atlanta
+31199	GA	Atlanta
+31201	GA	Macon
+31202	GA	Macon
+31203	GA	Macon
+31204	GA	Macon
+31205	GA	Macon
+31206	GA	Macon
+31207	GA	Macon
+31208	GA	Macon
+31209	GA	Macon
+31210	GA	Macon
+31211	GA	Macon
+31212	GA	Macon
+31213	GA	Macon
+31216	GA	Macon
+31217	GA	Macon
+31220	GA	Macon
+31221	GA	Macon
+31294	GA	Macon
+31295	GA	Macon
+31296	GA	Macon
+31297	GA	Macon
+31298	GA	Macon
+31299	GA	Macon
+31301	GA	Allenhurst
+31302	GA	Bloomingdale
+31303	GA	Clyo
+31304	GA	Crescent
+31305	GA	Darien
+31307	GA	Eden
+31308	GA	Ellabell
+31309	GA	Fleming
+31310	GA	Hinesville
+31312	GA	Guyton
+31313	GA	Hinesville
+31314	GA	Fort Stewart
+31315	GA	Fort Stewart
+31316	GA	Ludowici
+31318	GA	Meldrim
+31319	GA	Meridian
+31320	GA	Midway
+31321	GA	Pembroke
+31322	GA	Pooler
+31323	GA	Riceboro
+31324	GA	Richmond Hill
+31326	GA	Rincon
+31327	GA	Sapelo Island
+31328	GA	Tybee Island
+31329	GA	Springfield
+31331	GA	Townsend
+31333	GA	Walthourville
+31401	GA	Savannah
+31402	GA	Savannah
+31403	GA	Savannah
+31404	GA	Savannah
+31405	GA	Savannah
+31406	GA	Savannah
+31407	GA	Savannah
+31408	GA	Savannah
+31409	GA	Savannah
+31410	GA	Savannah
+31411	GA	Savannah
+31412	GA	Savannah
+31414	GA	Savannah
+31415	GA	Savannah
+31416	GA	Savannah
+31418	GA	Savannah
+31419	GA	Savannah
+31420	GA	Savannah
+31421	GA	Savannah
+31422	GA	Savannah
+31498	GA	Savannah
+31499	GA	Savannah
+31501	GA	Waycross
+31502	GA	Waycross
+31503	GA	Waycross
+31510	GA	Alma
+31512	GA	Ambrose
+31513	GA	Baxley
+31515	GA	Baxley
+31516	GA	Blackshear
+31518	GA	Bristol
+31519	GA	Broxton
+31520	GA	Brunswick
+31521	GA	Brunswick
+31522	GA	Saint Simons Island
+31523	GA	Brunswick
+31524	GA	Brunswick
+31525	GA	Brunswick
+31527	GA	Jekyll Island
+31532	GA	Denton
+31533	GA	Douglas
+31534	GA	Douglas
+31535	GA	Douglas
+31537	GA	Folkston
+31539	GA	Hazlehurst
+31542	GA	Hoboken
+31543	GA	Hortense
+31544	GA	Jacksonville
+31545	GA	Jesup
+31546	GA	Jesup
+31547	GA	Kings Bay
+31548	GA	Kingsland
+31549	GA	Lumber City
+31550	GA	Manor
+31551	GA	Mershon
+31552	GA	Millwood
+31553	GA	Nahunta
+31554	GA	Nicholls
+31555	GA	Odum
+31556	GA	Offerman
+31557	GA	Patterson
+31558	GA	Saint Marys
+31560	GA	Screven
+31561	GA	Sea Island
+31563	GA	Surrency
+31564	GA	Waresboro
+31565	GA	Waverly
+31566	GA	Waynesville
+31567	GA	West Green
+31568	GA	White Oak
+31569	GA	Woodbine
+31598	GA	Jesup
+31599	GA	Jesup
+31601	GA	Valdosta
+31602	GA	Valdosta
+31603	GA	Valdosta
+31604	GA	Valdosta
+31605	GA	Valdosta
+31606	GA	Valdosta
+31620	GA	Adel
+31622	GA	Alapaha
+31623	GA	Argyle
+31624	GA	Axson
+31625	GA	Barney
+31626	GA	Boston
+31627	GA	Cecil
+31629	GA	Dixie
+31630	GA	Du Pont
+31631	GA	Fargo
+31632	GA	Hahira
+31634	GA	Homerville
+31635	GA	Lakeland
+31636	GA	Lake Park
+31637	GA	Lenox
+31638	GA	Morven
+31639	GA	Nashville
+31641	GA	Naylor
+31642	GA	Pearson
+31643	GA	Quitman
+31645	GA	Ray City
+31646	GA	Saint George
+31647	GA	Sparks
+31648	GA	Statenville
+31649	GA	Stockton
+31650	GA	Willacoochee
+31698	GA	Valdosta
+31699	GA	Valdosta
+31701	GA	Albany
+31702	GA	Albany
+31703	GA	Albany
+31704	GA	Albany
+31705	GA	Albany
+31706	GA	Albany
+31707	GA	Albany
+31708	GA	Albany
+31709	GA	Americus
+31710	GA	Americus
+31711	GA	Andersonville
+31712	GA	Arabi
+31713	GA	Arlington
+31714	GA	Ashburn
+31715	GA	Attapulgus
+31716	GA	Baconton
+31717	GA	Bainbridge
+31718	GA	Bainbridge
+31720	GA	Barwick
+31722	GA	Berlin
+31723	GA	Blakely
+31724	GA	Bluffton
+31725	GA	Brinson
+31726	GA	Bronwood
+31727	GA	Brookfield
+31728	GA	Cairo
+31729	GA	Calvary
+31730	GA	Camilla
+31732	GA	Cedar Springs
+31733	GA	Chula
+31734	GA	Climax
+31735	GA	Cobb
+31736	GA	Coleman
+31737	GA	Colquitt
+31738	GA	Coolidge
+31739	GA	Cotton
+31740	GA	Cuthbert
+31741	GA	Damascus
+31742	GA	Dawson
+31743	GA	De Soto
+31744	GA	Doerun
+31745	GA	Donalsonville
+31746	GA	Edison
+31747	GA	Ellenton
+31749	GA	Enigma
+31750	GA	Fitzgerald
+31751	GA	Fort Gaines
+31752	GA	Fowlstown
+31753	GA	Funston
+31754	GA	Georgetown
+31756	GA	Hartsfield
+31757	GA	Thomasville
+31758	GA	Thomasville
+31759	GA	Iron City
+31760	GA	Irwinville
+31761	GA	Jakin
+31762	GA	Leary
+31763	GA	Leesburg
+31764	GA	Leslie
+31765	GA	Meigs
+31766	GA	Morgan
+31767	GA	Morris
+31768	GA	Moultrie
+31769	GA	Mystic
+31770	GA	Newton
+31771	GA	Norman Park
+31772	GA	Oakfield
+31773	GA	Ochlocknee
+31774	GA	Ocilla
+31775	GA	Omega
+31776	GA	Moultrie
+31777	GA	Parrott
+31778	GA	Pavo
+31779	GA	Pelham
+31780	GA	Plains
+31781	GA	Poulan
+31782	GA	Putney
+31783	GA	Rebecca
+31784	GA	Sale City
+31785	GA	Sasser
+31786	GA	Shellman
+31787	GA	Smithville
+31789	GA	Sumner
+31790	GA	Sycamore
+31791	GA	Sylvester
+31792	GA	Thomasville
+31793	GA	Tifton
+31794	GA	Tifton
+31795	GA	Ty Ty
+31796	GA	Warwick
+31797	GA	Whigham
+31798	GA	Wray
+31799	GA	Thomasville
+31801	GA	Box Springs
+31803	GA	Buena Vista
+31804	GA	Cataula
+31805	GA	Cusseta
+31806	GA	Ellaville
+31807	GA	Ellerslie
+31808	GA	Fortson
+31810	GA	Geneva
+31811	GA	Hamilton
+31812	GA	Junction City
+31814	GA	Louvale
+31815	GA	Lumpkin
+31816	GA	Manchester
+31820	GA	Midland
+31821	GA	Omaha
+31822	GA	Pine Mountain
+31823	GA	Pine Mountain Valley
+31824	GA	Preston
+31825	GA	Richland
+31826	GA	Shiloh
+31827	GA	Talbotton
+31829	GA	Upatoi
+31830	GA	Warm Springs
+31831	GA	Waverly Hall
+31832	GA	Weston
+31833	GA	West Point
+31836	GA	Woodland
+31901	GA	Columbus
+31902	GA	Columbus
+31903	GA	Columbus
+31904	GA	Columbus
+31905	GA	Fort Benning
+31906	GA	Columbus
+31907	GA	Columbus
+31908	GA	Columbus
+31909	GA	Columbus
+31914	GA	Columbus
+31917	GA	Columbus
+31993	GA	Columbus
+31994	GA	Columbus
+31995	GA	Fort Benning
+31997	GA	Columbus
+31998	GA	Columbus
+31999	GA	Columbus
+32003	FL	Orange Park
+32004	FL	Ponte Vedra Beach
+32007	FL	Bostwick
+32008	FL	Branford
+32009	FL	Bryceville
+32011	FL	Callahan
+32013	FL	Day
+32024	FL	Lake City
+32025	FL	Lake City
+32030	FL	Doctors Inlet
+32033	FL	Elkton
+32034	FL	Fernandina Beach
+32035	FL	Fernandina Beach
+32038	FL	Fort White
+32040	FL	Glen Saint Mary
+32041	FL	Yulee
+32042	FL	Graham
+32043	FL	Green Cove Springs
+32044	FL	Hampton
+32046	FL	Hilliard
+32050	FL	Middleburg
+32052	FL	Jasper
+32053	FL	Jennings
+32054	FL	Lake Butler
+32055	FL	Lake City
+32056	FL	Lake City
+32058	FL	Lawtey
+32059	FL	Lee
+32060	FL	Live Oak
+32061	FL	Lulu
+32062	FL	Mc Alpin
+32063	FL	Macclenny
+32064	FL	Live Oak
+32065	FL	Orange Park
+32066	FL	Mayo
+32067	FL	Orange Park
+32068	FL	Middleburg
+32071	FL	O Brien
+32072	FL	Olustee
+32073	FL	Orange Park
+32079	FL	Penney Farms
+32080	FL	Saint Augustine
+32082	FL	Ponte Vedra Beach
+32083	FL	Raiford
+32084	FL	Saint Augustine
+32085	FL	Saint Augustine
+32086	FL	Saint Augustine
+32087	FL	Sanderson
+32091	FL	Starke
+32092	FL	Saint Augustine
+32094	FL	Wellborn
+32095	FL	Saint Augustine
+32096	FL	White Springs
+32097	FL	Yulee
+32099	FL	Jacksonville
+32102	FL	Astor
+32105	FL	Barberville
+32110	FL	Bunnell
+32111	FL	Candler
+32112	FL	Crescent City
+32113	FL	Citra
+32114	FL	Daytona Beach
+32115	FL	Daytona Beach
+32116	FL	Daytona Beach
+32117	FL	Daytona Beach
+32118	FL	Daytona Beach
+32119	FL	Daytona Beach
+32120	FL	Daytona Beach
+32121	FL	Daytona Beach
+32122	FL	Daytona Beach
+32123	FL	Daytona Beach
+32124	FL	Daytona Beach
+32125	FL	Daytona Beach
+32126	FL	Daytona Beach
+32127	FL	Daytona Beach
+32128	FL	Daytona Beach
+32129	FL	Port Orange
+32130	FL	De Leon Springs
+32131	FL	East Palatka
+32132	FL	Edgewater
+32133	FL	Eastlake Weir
+32134	FL	Fort Mc Coy
+32135	FL	Palm Coast
+32136	FL	Flagler Beach
+32137	FL	Palm Coast
+32138	FL	Grandin
+32139	FL	Georgetown
+32140	FL	Florahome
+32141	FL	Edgewater
+32142	FL	Palm Coast
+32145	FL	Hastings
+32147	FL	Hollister
+32148	FL	Interlachen
+32149	FL	Interlachen
+32151	FL	Flagler Beach
+32157	FL	Lake Como
+32158	FL	Lady Lake
+32159	FL	Lady Lake
+32160	FL	Lake Geneva
+32162	FL	Lady Lake
+32164	FL	Palm Coast
+32168	FL	New Smyrna Beach
+32169	FL	New Smyrna Beach
+32170	FL	New Smyrna Beach
+32173	FL	Ormond Beach
+32174	FL	Ormond Beach
+32175	FL	Ormond Beach
+32176	FL	Ormond Beach
+32177	FL	Palatka
+32178	FL	Palatka
+32179	FL	Ocklawaha
+32180	FL	Pierson
+32181	FL	Pomona Park
+32182	FL	Orange Springs
+32183	FL	Ocklawaha
+32185	FL	Putnam Hall
+32187	FL	San Mateo
+32189	FL	Satsuma
+32190	FL	Seville
+32192	FL	Sparr
+32193	FL	Welaka
+32195	FL	Weirsdale
+32198	FL	Daytona Beach
+32201	FL	Jacksonville
+32202	FL	Jacksonville
+32203	FL	Jacksonville
+32204	FL	Jacksonville
+32205	FL	Jacksonville
+32206	FL	Jacksonville
+32207	FL	Jacksonville
+32208	FL	Jacksonville
+32209	FL	Jacksonville
+32210	FL	Jacksonville
+32211	FL	Jacksonville
+32212	FL	Jacksonville
+32214	FL	Jacksonville
+32215	FL	Jacksonville
+32216	FL	Jacksonville
+32217	FL	Jacksonville
+32218	FL	Jacksonville
+32219	FL	Jacksonville
+32220	FL	Jacksonville
+32221	FL	Jacksonville
+32222	FL	Jacksonville
+32223	FL	Jacksonville
+32224	FL	Jacksonville
+32225	FL	Jacksonville
+32226	FL	Jacksonville
+32227	FL	Jacksonville
+32228	FL	Jacksonville
+32229	FL	Jacksonville
+32230	FL	Jacksonville
+32231	FL	Jacksonville
+32232	FL	Jacksonville
+32233	FL	Atlantic Beach
+32234	FL	Jacksonville
+32235	FL	Jacksonville
+32236	FL	Jacksonville
+32237	FL	Jacksonville
+32238	FL	Jacksonville
+32239	FL	Jacksonville
+32240	FL	Jacksonville Beach
+32241	FL	Jacksonville
+32244	FL	Jacksonville
+32245	FL	Jacksonville
+32246	FL	Jacksonville
+32247	FL	Jacksonville
+32250	FL	Jacksonville Beach
+32254	FL	Jacksonville
+32255	FL	Jacksonville
+32256	FL	Jacksonville
+32257	FL	Jacksonville
+32258	FL	Jacksonville
+32259	FL	Jacksonville
+32260	FL	Jacksonville
+32266	FL	Neptune Beach
+32267	FL	Jacksonville
+32276	FL	Jacksonville
+32277	FL	Jacksonville
+32290	FL	Jacksonville
+32301	FL	Tallahassee
+32302	FL	Tallahassee
+32303	FL	Tallahassee
+32304	FL	Tallahassee
+32305	FL	Tallahassee
+32306	FL	Tallahassee
+32307	FL	Tallahassee
+32308	FL	Tallahassee
+32309	FL	Tallahassee
+32310	FL	Tallahassee
+32311	FL	Tallahassee
+32312	FL	Tallahassee
+32313	FL	Tallahassee
+32314	FL	Tallahassee
+32315	FL	Tallahassee
+32316	FL	Tallahassee
+32317	FL	Tallahassee
+32318	FL	Tallahassee
+32320	FL	Apalachicola
+32321	FL	Bristol
+32322	FL	Carrabelle
+32323	FL	Lanark Village
+32324	FL	Chattahoochee
+32326	FL	Crawfordville
+32327	FL	Crawfordville
+32328	FL	Eastpoint
+32329	FL	Apalachicola
+32330	FL	Greensboro
+32331	FL	Greenville
+32332	FL	Gretna
+32333	FL	Havana
+32334	FL	Hosford
+32335	FL	Sumatra
+32336	FL	Lamont
+32337	FL	Lloyd
+32340	FL	Madison
+32341	FL	Madison
+32343	FL	Midway
+32344	FL	Monticello
+32345	FL	Monticello
+32346	FL	Panacea
+32347	FL	Perry
+32348	FL	Perry
+32350	FL	Pinetta
+32351	FL	Quincy
+32352	FL	Quincy
+32353	FL	Quincy
+32355	FL	Saint Marks
+32356	FL	Salem
+32357	FL	Shady Grove
+32358	FL	Sopchoppy
+32359	FL	Steinhatchee
+32360	FL	Telogia
+32361	FL	Wacissa
+32362	FL	Woodville
+32395	FL	Tallahassee
+32399	FL	Tallahassee
+32401	FL	Panama City
+32402	FL	Panama City
+32403	FL	Panama City
+32404	FL	Panama City
+32405	FL	Panama City
+32406	FL	Panama City
+32407	FL	Panama City Beach
+32408	FL	Panama City
+32409	FL	Panama City
+32410	FL	Mexico Beach
+32411	FL	Panama City
+32412	FL	Panama City
+32413	FL	Panama City Beach
+32417	FL	Panama City
+32420	FL	Alford
+32421	FL	Altha
+32422	FL	Argyle
+32423	FL	Bascom
+32424	FL	Blountstown
+32425	FL	Bonifay
+32426	FL	Campbellton
+32427	FL	Caryville
+32428	FL	Chipley
+32430	FL	Clarksville
+32431	FL	Cottondale
+32432	FL	Cypress
+32433	FL	Defuniak Springs
+32434	FL	Mossy Head
+32435	FL	Defuniak Springs
+32437	FL	Ebro
+32438	FL	Fountain
+32439	FL	Freeport
+32440	FL	Graceville
+32442	FL	Grand Ridge
+32443	FL	Greenwood
+32444	FL	Lynn Haven
+32445	FL	Malone
+32446	FL	Marianna
+32447	FL	Marianna
+32448	FL	Marianna
+32449	FL	Kinard
+32452	FL	Noma
+32454	FL	Point Washington
+32455	FL	Ponce De Leon
+32456	FL	Port Saint Joe
+32457	FL	Port Saint Joe
+32459	FL	Santa Rosa Beach
+32460	FL	Sneads
+32461	FL	Rosemary Bch
+32462	FL	Vernon
+32463	FL	Wausau
+32464	FL	Westville
+32465	FL	Wewahitchka
+32466	FL	Youngstown
+32501	FL	Pensacola
+32502	FL	Pensacola
+32503	FL	Pensacola
+32504	FL	Pensacola
+32505	FL	Pensacola
+32506	FL	Pensacola
+32507	FL	Pensacola
+32508	FL	Pensacola
+32509	FL	Pensacola
+32511	FL	Pensacola
+32512	FL	Pensacola
+32513	FL	Pensacola
+32514	FL	Pensacola
+32516	FL	Pensacola
+32520	FL	Pensacola
+32521	FL	Pensacola
+32522	FL	Pensacola
+32523	FL	Pensacola
+32524	FL	Pensacola
+32526	FL	Pensacola
+32530	FL	Bagdad
+32531	FL	Baker
+32533	FL	Cantonment
+32534	FL	Pensacola
+32535	FL	Century
+32536	FL	Crestview
+32537	FL	Milligan
+32538	FL	Paxton
+32539	FL	Crestview
+32540	FL	Destin
+32541	FL	Destin
+32542	FL	Eglin Afb
+32544	FL	Hurlburt Field
+32547	FL	Fort Walton Beach
+32548	FL	Fort Walton Beach
+32549	FL	Fort Walton Beach
+32550	FL	Destin
+32559	FL	Pensacola
+32560	FL	Gonzalez
+32561	FL	Gulf Breeze
+32562	FL	Gulf Breeze
+32563	FL	Gulf Breeze
+32564	FL	Holt
+32565	FL	Jay
+32566	FL	Navarre
+32567	FL	Laurel Hill
+32568	FL	Mc David
+32569	FL	Mary Esther
+32570	FL	Milton
+32571	FL	Milton
+32572	FL	Milton
+32573	FL	Pensacola
+32574	FL	Pensacola
+32575	FL	Pensacola
+32576	FL	Pensacola
+32577	FL	Molino
+32578	FL	Niceville
+32579	FL	Shalimar
+32580	FL	Valparaiso
+32581	FL	Pensacola
+32582	FL	Pensacola
+32583	FL	Milton
+32588	FL	Niceville
+32589	FL	Pensacola
+32590	FL	Pensacola
+32591	FL	Pensacola
+32592	FL	Pensacola
+32593	FL	Pensacola
+32594	FL	Pensacola
+32595	FL	Pensacola
+32596	FL	Pensacola
+32597	FL	Pensacola
+32598	FL	Pensacola
+32601	FL	Gainesville
+32602	FL	Gainesville
+32603	FL	Gainesville
+32604	FL	Gainesville
+32605	FL	Gainesville
+32606	FL	Gainesville
+32607	FL	Gainesville
+32608	FL	Gainesville
+32609	FL	Gainesville
+32610	FL	Gainesville
+32611	FL	Gainesville
+32612	FL	Gainesville
+32613	FL	Gainesville
+32614	FL	Gainesville
+32615	FL	Alachua
+32616	FL	Alachua
+32617	FL	Anthony
+32618	FL	Archer
+32619	FL	Bell
+32621	FL	Bronson
+32622	FL	Brooker
+32625	FL	Cedar Key
+32626	FL	Chiefland
+32627	FL	Gainesville
+32628	FL	Cross City
+32631	FL	Earleton
+32633	FL	Evinston
+32634	FL	Fairfield
+32635	FL	Gainesville
+32639	FL	Gulf Hammock
+32640	FL	Hawthorne
+32641	FL	Gainesville
+32643	FL	High Springs
+32644	FL	Chiefland
+32648	FL	Horseshoe Beach
+32653	FL	Gainesville
+32654	FL	Island Grove
+32655	FL	High Springs
+32656	FL	Keystone Heights
+32658	FL	La Crosse
+32662	FL	Lochloosa
+32663	FL	Lowell
+32664	FL	Mc Intosh
+32666	FL	Melrose
+32667	FL	Micanopy
+32668	FL	Morriston
+32669	FL	Newberry
+32680	FL	Old Town
+32681	FL	Orange Lake
+32683	FL	Otter Creek
+32686	FL	Reddick
+32692	FL	Suwannee
+32693	FL	Trenton
+32694	FL	Waldo
+32696	FL	Williston
+32697	FL	Worthington Springs
+32701	FL	Altamonte Springs
+32702	FL	Altoona
+32703	FL	Apopka
+32704	FL	Apopka
+32706	FL	Cassadaga
+32707	FL	Casselberry
+32708	FL	Winter Springs
+32709	FL	Christmas
+32710	FL	Clarcona
+32712	FL	Apopka
+32713	FL	Debary
+32714	FL	Altamonte Springs
+32715	FL	Altamonte Springs
+32716	FL	Altamonte Springs
+32718	FL	Casselberry
+32719	FL	Winter Springs
+32720	FL	Deland
+32721	FL	Deland
+32722	FL	Glenwood
+32724	FL	Deland
+32725	FL	Deltona
+32726	FL	Eustis
+32727	FL	Eustis
+32728	FL	Deltona
+32730	FL	Casselberry
+32732	FL	Geneva
+32733	FL	Goldenrod
+32735	FL	Grand Island
+32736	FL	Eustis
+32738	FL	Deltona
+32739	FL	Deltona
+32744	FL	Lake Helen
+32746	FL	Lake Mary
+32747	FL	Lake Monroe
+32750	FL	Longwood
+32751	FL	Maitland
+32752	FL	Longwood
+32753	FL	Debary
+32754	FL	Mims
+32756	FL	Mount Dora
+32757	FL	Mount Dora
+32759	FL	Oak Hill
+32762	FL	Oviedo
+32763	FL	Orange City
+32764	FL	Osteen
+32765	FL	Oviedo
+32766	FL	Oviedo
+32767	FL	Paisley
+32768	FL	Plymouth
+32771	FL	Sanford
+32772	FL	Sanford
+32773	FL	Sanford
+32774	FL	Orange City
+32775	FL	Scottsmoor
+32776	FL	Sorrento
+32777	FL	Tangerine
+32778	FL	Tavares
+32779	FL	Longwood
+32780	FL	Titusville
+32781	FL	Titusville
+32782	FL	Titusville
+32783	FL	Titusville
+32784	FL	Umatilla
+32789	FL	Winter Park
+32790	FL	Winter Park
+32791	FL	Longwood
+32792	FL	Winter Park
+32793	FL	Winter Park
+32794	FL	Maitland
+32795	FL	Lake Mary
+32796	FL	Titusville
+32798	FL	Zellwood
+32799	FL	Mid Florida
+32801	FL	Orlando
+32802	FL	Orlando
+32803	FL	Orlando
+32804	FL	Orlando
+32805	FL	Orlando
+32806	FL	Orlando
+32807	FL	Orlando
+32808	FL	Orlando
+32809	FL	Orlando
+32810	FL	Orlando
+32811	FL	Orlando
+32812	FL	Orlando
+32814	FL	Orlando
+32815	FL	Orlando
+32816	FL	Orlando
+32817	FL	Orlando
+32818	FL	Orlando
+32819	FL	Orlando
+32820	FL	Orlando
+32821	FL	Orlando
+32822	FL	Orlando
+32824	FL	Orlando
+32825	FL	Orlando
+32826	FL	Orlando
+32827	FL	Orlando
+32828	FL	Orlando
+32829	FL	Orlando
+32830	FL	Orlando
+32831	FL	Orlando
+32832	FL	Orlando
+32833	FL	Orlando
+32834	FL	Orlando
+32835	FL	Orlando
+32836	FL	Orlando
+32837	FL	Orlando
+32839	FL	Orlando
+32853	FL	Orlando
+32854	FL	Orlando
+32855	FL	Orlando
+32856	FL	Orlando
+32857	FL	Orlando
+32858	FL	Orlando
+32859	FL	Orlando
+32860	FL	Orlando
+32861	FL	Orlando
+32862	FL	Orlando
+32867	FL	Orlando
+32868	FL	Orlando
+32869	FL	Orlando
+32872	FL	Orlando
+32877	FL	Orlando
+32878	FL	Orlando
+32886	FL	Orlando
+32887	FL	Orlando
+32890	FL	Orlando
+32891	FL	Orlando
+32893	FL	Orlando
+32897	FL	Orlando
+32898	FL	Orlando
+32899	FL	Orlando
+32901	FL	Melbourne
+32902	FL	Melbourne
+32903	FL	Indialantic
+32904	FL	Melbourne
+32905	FL	Palm Bay
+32906	FL	Palm Bay
+32907	FL	Palm Bay
+32908	FL	Palm Bay
+32909	FL	Palm Bay
+32910	FL	Palm Bay
+32911	FL	Palm Bay
+32912	FL	Melbourne
+32919	FL	Melbourne
+32920	FL	Cape Canaveral
+32922	FL	Cocoa
+32923	FL	Cocoa
+32924	FL	Cocoa
+32925	FL	Patrick Afb
+32926	FL	Cocoa
+32927	FL	Cocoa
+32931	FL	Cocoa Beach
+32932	FL	Cocoa Beach
+32934	FL	Melbourne
+32935	FL	Melbourne
+32936	FL	Melbourne
+32937	FL	Satellite Beach
+32940	FL	Melbourne
+32941	FL	Melbourne
+32948	FL	Fellsmere
+32949	FL	Grant
+32950	FL	Malabar
+32951	FL	Melbourne Beach
+32952	FL	Merritt Island
+32953	FL	Merritt Island
+32954	FL	Merritt Island
+32955	FL	Rockledge
+32956	FL	Rockledge
+32957	FL	Roseland
+32958	FL	Sebastian
+32959	FL	Sharpes
+32960	FL	Vero Beach
+32961	FL	Vero Beach
+32962	FL	Vero Beach
+32963	FL	Vero Beach
+32964	FL	Vero Beach
+32965	FL	Vero Beach
+32966	FL	Vero Beach
+32967	FL	Vero Beach
+32968	FL	Vero Beach
+32969	FL	Vero Beach
+32970	FL	Wabasso
+32971	FL	Winter Beach
+32976	FL	Sebastian
+32978	FL	Sebastian
+33001	FL	Long Key
+33002	FL	Hialeah
+33004	FL	Dania
+33008	FL	Hallandale
+33009	FL	Hallandale
+33010	FL	Hialeah
+33011	FL	Hialeah
+33012	FL	Hialeah
+33013	FL	Hialeah
+33014	FL	Hialeah
+33015	FL	Hialeah
+33016	FL	Hialeah
+33017	FL	Hialeah
+33018	FL	Hialeah
+33019	FL	Hollywood
+33020	FL	Hollywood
+33021	FL	Hollywood
+33022	FL	Hollywood
+33023	FL	Hollywood
+33024	FL	Hollywood
+33025	FL	Hollywood
+33026	FL	Hollywood
+33027	FL	Hollywood
+33028	FL	Hollywood
+33029	FL	Hollywood
+33030	FL	Homestead
+33031	FL	Homestead
+33032	FL	Homestead
+33033	FL	Homestead
+33034	FL	Homestead
+33035	FL	Homestead
+33036	FL	Islamorada
+33037	FL	Key Largo
+33039	FL	Homestead
+33040	FL	Key West
+33041	FL	Key West
+33042	FL	Summerland Key
+33043	FL	Big Pine Key
+33044	FL	Sugarloaf Shores
+33045	FL	Key West
+33050	FL	Marathon
+33051	FL	Key Colony Beach
+33052	FL	Marathon Shores
+33054	FL	Opa Locka
+33055	FL	Opa Locka
+33056	FL	Opa Locka
+33060	FL	Pompano Beach
+33061	FL	Pompano Beach
+33062	FL	Pompano Beach
+33063	FL	Pompano Beach
+33064	FL	Pompano Beach
+33065	FL	Pompano Beach
+33066	FL	Pompano Beach
+33067	FL	Pompano Beach
+33068	FL	Pompano Beach
+33069	FL	Pompano Beach
+33070	FL	Tavernier
+33071	FL	Pompano Beach
+33072	FL	Pompano Beach
+33073	FL	Pompano Beach
+33074	FL	Pompano Beach
+33075	FL	Pompano Beach
+33076	FL	Pompano Beach
+33077	FL	Pompano Beach
+33081	FL	Hollywood
+33082	FL	Pembroke Pines
+33083	FL	Hollywood
+33084	FL	Hollywood
+33090	FL	Homestead
+33092	FL	Homestead
+33093	FL	Pompano Beach
+33097	FL	Pompano Beach
+33101	FL	Miami
+33102	FL	Miami
+33107	FL	Miami
+33109	FL	Miami Beach
+33110	FL	Miami
+33111	FL	Miami
+33112	FL	Miami
+33114	FL	Miami
+33116	FL	Miami
+33119	FL	Miami Beach
+33121	FL	Miami
+33122	FL	Miami
+33124	FL	Miami
+33125	FL	Miami
+33126	FL	Miami
+33127	FL	Miami
+33128	FL	Miami
+33129	FL	Miami
+33130	FL	Miami
+33131	FL	Miami
+33132	FL	Miami
+33133	FL	Miami
+33134	FL	Miami
+33135	FL	Miami
+33136	FL	Miami
+33137	FL	Miami
+33138	FL	Miami
+33139	FL	Miami Beach
+33140	FL	Miami Beach
+33141	FL	Miami Beach
+33142	FL	Miami
+33143	FL	Miami
+33144	FL	Miami
+33145	FL	Miami
+33146	FL	Miami
+33147	FL	Miami
+33148	FL	Miami
+33149	FL	Key Biscayne
+33150	FL	Miami
+33151	FL	Miami
+33152	FL	Miami
+33153	FL	Miami
+33154	FL	Miami
+33155	FL	Miami
+33156	FL	Miami
+33157	FL	Miami
+33158	FL	Miami
+33159	FL	Miami
+33160	FL	North Miami Beach
+33161	FL	Miami
+33162	FL	Miami
+33163	FL	Miami
+33164	FL	Miami
+33165	FL	Miami
+33166	FL	Miami
+33167	FL	Miami
+33168	FL	Miami
+33169	FL	Miami
+33170	FL	Miami
+33172	FL	Miami
+33173	FL	Miami
+33174	FL	Miami
+33175	FL	Miami
+33176	FL	Miami
+33177	FL	Miami
+33178	FL	Miami
+33179	FL	Miami
+33180	FL	Miami
+33181	FL	Miami
+33182	FL	Miami
+33183	FL	Miami
+33184	FL	Miami
+33185	FL	Miami
+33186	FL	Miami
+33187	FL	Miami
+33188	FL	Miami
+33189	FL	Miami
+33190	FL	Miami
+33192	FL	Miami
+33193	FL	Miami
+33194	FL	Miami
+33195	FL	Miami
+33196	FL	Miami
+33197	FL	Miami
+33199	FL	Miami
+33231	FL	Miami
+33233	FL	Miami
+33234	FL	Miami
+33238	FL	Miami
+33239	FL	Miami Beach
+33242	FL	Miami
+33243	FL	Miami
+33245	FL	Miami
+33247	FL	Miami
+33255	FL	Miami
+33256	FL	Miami
+33257	FL	Miami
+33261	FL	Miami
+33265	FL	Miami
+33266	FL	Miami
+33269	FL	Miami
+33280	FL	Miami
+33283	FL	Miami
+33296	FL	Miami
+33299	FL	Miami
+33301	FL	Fort Lauderdale
+33302	FL	Fort Lauderdale
+33303	FL	Fort Lauderdale
+33304	FL	Fort Lauderdale
+33305	FL	Fort Lauderdale
+33306	FL	Fort Lauderdale
+33307	FL	Fort Lauderdale
+33308	FL	Fort Lauderdale
+33309	FL	Fort Lauderdale
+33310	FL	Fort Lauderdale
+33311	FL	Fort Lauderdale
+33312	FL	Fort Lauderdale
+33313	FL	Fort Lauderdale
+33314	FL	Fort Lauderdale
+33315	FL	Fort Lauderdale
+33316	FL	Fort Lauderdale
+33317	FL	Fort Lauderdale
+33318	FL	Fort Lauderdale
+33319	FL	Fort Lauderdale
+33320	FL	Fort Lauderdale
+33321	FL	Fort Lauderdale
+33322	FL	Fort Lauderdale
+33323	FL	Fort Lauderdale
+33324	FL	Fort Lauderdale
+33325	FL	Fort Lauderdale
+33326	FL	Fort Lauderdale
+33327	FL	Fort Lauderdale
+33328	FL	Fort Lauderdale
+33329	FL	Fort Lauderdale
+33330	FL	Fort Lauderdale
+33331	FL	Fort Lauderdale
+33332	FL	Fort Lauderdale
+33334	FL	Fort Lauderdale
+33335	FL	Fort Lauderdale
+33337	FL	Fort Lauderdale
+33338	FL	Fort Lauderdale
+33339	FL	Fort Lauderdale
+33340	FL	Fort Lauderdale
+33345	FL	Fort Lauderdale
+33346	FL	Fort Lauderdale
+33348	FL	Fort Lauderdale
+33349	FL	Fort Lauderdale
+33351	FL	Fort Lauderdale
+33355	FL	Fort Lauderdale
+33359	FL	Fort Lauderdale
+33388	FL	Fort Lauderdale
+33394	FL	Fort Lauderdale
+33401	FL	West Palm Beach
+33402	FL	West Palm Beach
+33403	FL	West Palm Beach
+33404	FL	West Palm Beach
+33405	FL	West Palm Beach
+33406	FL	West Palm Beach
+33407	FL	West Palm Beach
+33408	FL	North Palm Beach
+33409	FL	West Palm Beach
+33410	FL	West Palm Beach
+33411	FL	West Palm Beach
+33412	FL	West Palm Beach
+33413	FL	West Palm Beach
+33414	FL	West Palm Beach
+33415	FL	West Palm Beach
+33416	FL	West Palm Beach
+33417	FL	West Palm Beach
+33418	FL	West Palm Beach
+33419	FL	West Palm Beach
+33420	FL	West Palm Beach
+33421	FL	West Palm Beach
+33422	FL	West Palm Beach
+33424	FL	Boynton Beach
+33425	FL	Boynton Beach
+33426	FL	Boynton Beach
+33427	FL	Boca Raton
+33428	FL	Boca Raton
+33429	FL	Boca Raton
+33430	FL	Belle Glade
+33431	FL	Boca Raton
+33432	FL	Boca Raton
+33433	FL	Boca Raton
+33434	FL	Boca Raton
+33435	FL	Boynton Beach
+33436	FL	Boynton Beach
+33437	FL	Boynton Beach
+33438	FL	Canal Point
+33439	FL	Bryant
+33440	FL	Clewiston
+33441	FL	Deerfield Beach
+33442	FL	Deerfield Beach
+33443	FL	Deerfield Beach
+33444	FL	Delray Beach
+33445	FL	Delray Beach
+33446	FL	Delray Beach
+33447	FL	Delray Beach
+33448	FL	Delray Beach
+33454	FL	Lake Worth
+33455	FL	Hobe Sound
+33458	FL	Jupiter
+33459	FL	Lake Harbor
+33460	FL	Lake Worth
+33461	FL	Lake Worth
+33462	FL	Lake Worth
+33463	FL	Lake Worth
+33464	FL	Boca Raton
+33465	FL	Lake Worth
+33466	FL	Lake Worth
+33467	FL	Lake Worth
+33468	FL	Jupiter
+33469	FL	Jupiter
+33470	FL	Loxahatchee
+33471	FL	Moore Haven
+33474	FL	Boynton Beach
+33475	FL	Hobe Sound
+33476	FL	Pahokee
+33477	FL	Jupiter
+33478	FL	Jupiter
+33480	FL	Palm Beach
+33481	FL	Boca Raton
+33482	FL	Delray Beach
+33483	FL	Delray Beach
+33484	FL	Delray Beach
+33486	FL	Boca Raton
+33487	FL	Boca Raton
+33488	FL	Boca Raton
+33493	FL	South Bay
+33496	FL	Boca Raton
+33497	FL	Boca Raton
+33498	FL	Boca Raton
+33499	FL	Boca Raton
+33503	FL	Balm
+33508	FL	Brandon
+33509	FL	Brandon
+33510	FL	Brandon
+33511	FL	Brandon
+33513	FL	Bushnell
+33514	FL	Center Hill
+33521	FL	Coleman
+33523	FL	Dade City
+33524	FL	Crystal Springs
+33525	FL	Dade City
+33526	FL	Dade City
+33527	FL	Dover
+33530	FL	Durant
+33534	FL	Gibsonton
+33537	FL	Lacoochee
+33538	FL	Lake Panasoffkee
+33539	FL	Zephyrhills
+33540	FL	Zephyrhills
+33541	FL	Zephyrhills
+33543	FL	Zephyrhills
+33544	FL	Zephyrhills
+33547	FL	Lithia
+33548	FL	Lutz
+33549	FL	Lutz
+33550	FL	Mango
+33556	FL	Odessa
+33558	FL	Lutz
+33559	FL	Lutz
+33564	FL	Plant City
+33565	FL	Plant City
+33566	FL	Plant City
+33567	FL	Plant City
+33568	FL	Riverview
+33569	FL	Riverview
+33570	FL	Ruskin
+33571	FL	Sun City Center
+33572	FL	Apollo Beach
+33573	FL	Sun City Center
+33574	FL	Saint Leo
+33576	FL	San Antonio
+33583	FL	Seffner
+33584	FL	Seffner
+33585	FL	Sumterville
+33586	FL	Sun City
+33587	FL	Sydney
+33592	FL	Thonotosassa
+33593	FL	Trilby
+33594	FL	Valrico
+33595	FL	Valrico
+33597	FL	Webster
+33598	FL	Wimauma
+33601	FL	Tampa
+33602	FL	Tampa
+33603	FL	Tampa
+33604	FL	Tampa
+33605	FL	Tampa
+33606	FL	Tampa
+33607	FL	Tampa
+33608	FL	Tampa
+33609	FL	Tampa
+33610	FL	Tampa
+33611	FL	Tampa
+33612	FL	Tampa
+33613	FL	Tampa
+33614	FL	Tampa
+33615	FL	Tampa
+33616	FL	Tampa
+33617	FL	Tampa
+33618	FL	Tampa
+33619	FL	Tampa
+33620	FL	Tampa
+33621	FL	Tampa
+33622	FL	Tampa
+33623	FL	Tampa
+33624	FL	Tampa
+33625	FL	Tampa
+33626	FL	Tampa
+33629	FL	Tampa
+33630	FL	Tampa
+33631	FL	Tampa
+33633	FL	Tampa
+33634	FL	Tampa
+33635	FL	Tampa
+33637	FL	Tampa
+33647	FL	Tampa
+33650	FL	Tampa
+33651	FL	Tampa
+33655	FL	Tampa
+33660	FL	Tampa
+33661	FL	Tampa
+33662	FL	Tampa
+33663	FL	Tampa
+33664	FL	Tampa
+33672	FL	Tampa
+33673	FL	Tampa
+33674	FL	Tampa
+33675	FL	Tampa
+33677	FL	Tampa
+33679	FL	Tampa
+33680	FL	Tampa
+33681	FL	Tampa
+33682	FL	Tampa
+33684	FL	Tampa
+33685	FL	Tampa
+33686	FL	Tampa
+33687	FL	Tampa
+33688	FL	Tampa
+33689	FL	Tampa
+33690	FL	Tampa
+33694	FL	Tampa
+33697	FL	Tampa
+33701	FL	Saint Petersburg
+33702	FL	Saint Petersburg
+33703	FL	Saint Petersburg
+33704	FL	Saint Petersburg
+33705	FL	Saint Petersburg
+33706	FL	Saint Petersburg
+33707	FL	Saint Petersburg
+33708	FL	Saint Petersburg
+33709	FL	Saint Petersburg
+33710	FL	Saint Petersburg
+33711	FL	Saint Petersburg
+33712	FL	Saint Petersburg
+33713	FL	Saint Petersburg
+33714	FL	Saint Petersburg
+33715	FL	Saint Petersburg
+33716	FL	Saint Petersburg
+33728	FL	Saint Petersburg
+33729	FL	Saint Petersburg
+33730	FL	Saint Petersburg
+33731	FL	Saint Petersburg
+33732	FL	Saint Petersburg
+33733	FL	Saint Petersburg
+33734	FL	Saint Petersburg
+33736	FL	Saint Petersburg
+33737	FL	Saint Petersburg
+33738	FL	Saint Petersburg
+33740	FL	Saint Petersburg
+33741	FL	Saint Petersburg
+33742	FL	Saint Petersburg
+33743	FL	Saint Petersburg
+33744	FL	Bay Pines
+33747	FL	Saint Petersburg
+33755	FL	Clearwater
+33756	FL	Clearwater
+33757	FL	Clearwater
+33758	FL	Clearwater
+33759	FL	Clearwater
+33760	FL	Clearwater
+33761	FL	Clearwater
+33762	FL	Clearwater
+33763	FL	Clearwater
+33764	FL	Clearwater
+33765	FL	Clearwater
+33766	FL	Clearwater
+33767	FL	Clearwater Beach
+33769	FL	Clearwater
+33770	FL	Largo
+33771	FL	Largo
+33772	FL	Seminole
+33773	FL	Largo
+33774	FL	Largo
+33775	FL	Seminole
+33776	FL	Seminole
+33777	FL	Seminole
+33778	FL	Largo
+33779	FL	Largo
+33780	FL	Pinellas Park
+33781	FL	Pinellas Park
+33782	FL	Pinellas Park
+33784	FL	Saint Petersburg
+33785	FL	Indian Rocks Beach
+33786	FL	Belleair Beach
+33801	FL	Lakeland
+33802	FL	Lakeland
+33803	FL	Lakeland
+33804	FL	Lakeland
+33805	FL	Lakeland
+33806	FL	Lakeland
+33807	FL	Lakeland
+33809	FL	Lakeland
+33810	FL	Lakeland
+33811	FL	Lakeland
+33813	FL	Lakeland
+33815	FL	Lakeland
+33820	FL	Alturas
+33823	FL	Auburndale
+33825	FL	Avon Park
+33826	FL	Avon Park
+33827	FL	Babson Park
+33830	FL	Bartow
+33831	FL	Bartow
+33834	FL	Bowling Green
+33835	FL	Bradley
+33836	FL	Davenport
+33837	FL	Davenport
+33838	FL	Dundee
+33839	FL	Eagle Lake
+33840	FL	Eaton Park
+33841	FL	Fort Meade
+33843	FL	Frostproof
+33844	FL	Haines City
+33845	FL	Haines City
+33846	FL	Highland City
+33847	FL	Homeland
+33848	FL	Intercession City
+33849	FL	Kathleen
+33850	FL	Lake Alfred
+33851	FL	Lake Hamilton
+33852	FL	Lake Placid
+33853	FL	Lake Wales
+33854	FL	Fedhaven
+33855	FL	Indian Lake Estates
+33856	FL	Nalcrest
+33857	FL	Lorida
+33858	FL	Loughman
+33859	FL	Lake Wales
+33860	FL	Mulberry
+33862	FL	Lake Placid
+33863	FL	Nichols
+33865	FL	Ona
+33867	FL	River Ranch
+33868	FL	Polk City
+33870	FL	Sebring
+33871	FL	Sebring
+33872	FL	Sebring
+33873	FL	Wauchula
+33875	FL	Sebring
+33876	FL	Sebring
+33877	FL	Waverly
+33880	FL	Winter Haven
+33881	FL	Winter Haven
+33882	FL	Winter Haven
+33883	FL	Winter Haven
+33884	FL	Winter Haven
+33885	FL	Winter Haven
+33888	FL	Winter Haven
+33890	FL	Zolfo Springs
+33896	FL	Davenport
+33897	FL	Davenport
+33898	FL	Lake Wales
+33901	FL	Fort Myers
+33902	FL	Fort Myers
+33903	FL	North Fort Myers
+33904	FL	Cape Coral
+33905	FL	Fort Myers
+33906	FL	Fort Myers
+33907	FL	Fort Myers
+33908	FL	Fort Myers
+33909	FL	Cape Coral
+33910	FL	Cape Coral
+33911	FL	Fort Myers
+33912	FL	Fort Myers
+33913	FL	Fort Myers
+33914	FL	Cape Coral
+33915	FL	Cape Coral
+33916	FL	Fort Myers
+33917	FL	North Fort Myers
+33918	FL	North Fort Myers
+33919	FL	Fort Myers
+33920	FL	Alva
+33921	FL	Boca Grande
+33922	FL	Bokeelia
+33924	FL	Captiva
+33927	FL	El Jobean
+33928	FL	Estero
+33930	FL	Felda
+33931	FL	Fort Myers Beach
+33932	FL	Fort Myers Beach
+33935	FL	Labelle
+33936	FL	Lehigh Acres
+33938	FL	Murdock
+33944	FL	Palmdale
+33945	FL	Pineland
+33946	FL	Placida
+33947	FL	Rotonda West
+33948	FL	Port Charlotte
+33949	FL	Port Charlotte
+33950	FL	Punta Gorda
+33951	FL	Punta Gorda
+33952	FL	Port Charlotte
+33953	FL	Port Charlotte
+33954	FL	Port Charlotte
+33955	FL	Punta Gorda
+33956	FL	Saint James City
+33957	FL	Sanibel
+33960	FL	Venus
+33965	FL	Fort Myers
+33970	FL	Lehigh Acres
+33971	FL	Lehigh Acres
+33972	FL	Lehigh Acres
+33975	FL	Labelle
+33980	FL	Port Charlotte
+33981	FL	Port Charlotte
+33982	FL	Punta Gorda
+33983	FL	Punta Gorda
+33990	FL	Cape Coral
+33991	FL	Cape Coral
+33993	FL	Cape Coral
+33994	FL	Fort Myers
+34101	FL	Naples
+34102	FL	Naples
+34103	FL	Naples
+34104	FL	Naples
+34105	FL	Naples
+34106	FL	Naples
+34107	FL	Vanderbilt Beach
+34108	FL	Naples
+34109	FL	Naples
+34110	FL	Naples
+34112	FL	Naples
+34113	FL	Naples
+34114	FL	Naples
+34116	FL	Naples
+34117	FL	Naples
+34119	FL	Naples
+34120	FL	Naples
+34133	FL	Bonita Springs
+34134	FL	Bonita Springs
+34135	FL	Bonita Springs
+34136	FL	Bonita Springs
+34137	FL	Copeland
+34138	FL	Chokoloskee
+34139	FL	Everglades City
+34140	FL	Goodland
+34141	FL	Ochopee
+34142	FL	Immokalee
+34143	FL	Immokalee
+34145	FL	Marco Island
+34146	FL	Marco Island
+34201	FL	Bradenton
+34202	FL	Bradenton
+34203	FL	Bradenton
+34204	FL	Bradenton
+34205	FL	Bradenton
+34206	FL	Bradenton
+34207	FL	Bradenton
+34208	FL	Bradenton
+34209	FL	Bradenton
+34210	FL	Bradenton
+34211	FL	Bradenton
+34212	FL	Bradenton
+34215	FL	Cortez
+34216	FL	Anna Maria
+34217	FL	Bradenton Beach
+34218	FL	Holmes Beach
+34219	FL	Parrish
+34220	FL	Palmetto
+34221	FL	Palmetto
+34222	FL	Ellenton
+34223	FL	Englewood
+34224	FL	Englewood
+34228	FL	Longboat Key
+34229	FL	Osprey
+34230	FL	Sarasota
+34231	FL	Sarasota
+34232	FL	Sarasota
+34233	FL	Sarasota
+34234	FL	Sarasota
+34235	FL	Sarasota
+34236	FL	Sarasota
+34237	FL	Sarasota
+34238	FL	Sarasota
+34239	FL	Sarasota
+34240	FL	Sarasota
+34241	FL	Sarasota
+34242	FL	Sarasota
+34243	FL	Sarasota
+34250	FL	Terra Ceia
+34251	FL	Myakka City
+34260	FL	Manasota
+34264	FL	Oneco
+34265	FL	Arcadia
+34266	FL	Arcadia
+34267	FL	Fort Ogden
+34268	FL	Nocatee
+34269	FL	Arcadia
+34270	FL	Tallevast
+34272	FL	Laurel
+34274	FL	Nokomis
+34275	FL	Nokomis
+34276	FL	Sarasota
+34277	FL	Sarasota
+34278	FL	Sarasota
+34280	FL	Bradenton
+34281	FL	Bradenton
+34282	FL	Bradenton
+34284	FL	Venice
+34285	FL	Venice
+34286	FL	North Port
+34287	FL	North Port
+34288	FL	North Port
+34289	FL	North Port
+34292	FL	Venice
+34293	FL	Venice
+34295	FL	Englewood
+34420	FL	Belleview
+34421	FL	Belleview
+34423	FL	Crystal River
+34428	FL	Crystal River
+34429	FL	Crystal River
+34430	FL	Dunnellon
+34431	FL	Dunnellon
+34432	FL	Dunnellon
+34433	FL	Dunnellon
+34434	FL	Dunnellon
+34436	FL	Floral City
+34442	FL	Hernando
+34445	FL	Holder
+34446	FL	Homosassa
+34447	FL	Homosassa Springs
+34448	FL	Homosassa
+34449	FL	Inglis
+34450	FL	Inverness
+34451	FL	Inverness
+34452	FL	Inverness
+34453	FL	Inverness
+34460	FL	Lecanto
+34461	FL	Lecanto
+34464	FL	Beverly Hills
+34465	FL	Beverly Hills
+34470	FL	Ocala
+34471	FL	Ocala
+34472	FL	Ocala
+34473	FL	Ocala
+34474	FL	Ocala
+34475	FL	Ocala
+34476	FL	Ocala
+34477	FL	Ocala
+34478	FL	Ocala
+34479	FL	Ocala
+34480	FL	Ocala
+34481	FL	Ocala
+34482	FL	Ocala
+34483	FL	Ocala
+34484	FL	Oxford
+34487	FL	Homosassa
+34488	FL	Silver Springs
+34489	FL	Silver Springs
+34491	FL	Summerfield
+34492	FL	Summerfield
+34498	FL	Yankeetown
+34601	FL	Brooksville
+34602	FL	Brooksville
+34603	FL	Brooksville
+34604	FL	Brooksville
+34605	FL	Brooksville
+34606	FL	Spring Hill
+34607	FL	Spring Hill
+34608	FL	Spring Hill
+34609	FL	Spring Hill
+34610	FL	Spring Hill
+34611	FL	Spring Hill
+34613	FL	Brooksville
+34614	FL	Brooksville
+34636	FL	Istachatta
+34639	FL	Land O Lakes
+34652	FL	New Port Richey
+34653	FL	New Port Richey
+34654	FL	New Port Richey
+34655	FL	New Port Richey
+34656	FL	New Port Richey
+34660	FL	Ozona
+34661	FL	Nobleton
+34667	FL	Hudson
+34668	FL	Port Richey
+34669	FL	Hudson
+34673	FL	Port Richey
+34674	FL	Hudson
+34677	FL	Oldsmar
+34679	FL	Aripeka
+34680	FL	Elfers
+34681	FL	Crystal Beach
+34682	FL	Palm Harbor
+34683	FL	Palm Harbor
+34684	FL	Palm Harbor
+34685	FL	Palm Harbor
+34688	FL	Tarpon Springs
+34689	FL	Tarpon Springs
+34690	FL	Holiday
+34691	FL	Holiday
+34695	FL	Safety Harbor
+34697	FL	Dunedin
+34698	FL	Dunedin
+34705	FL	Astatula
+34711	FL	Clermont
+34712	FL	Clermont
+34713	FL	Clermont
+34729	FL	Ferndale
+34731	FL	Fruitland Park
+34734	FL	Gotha
+34736	FL	Groveland
+34737	FL	Howey In The Hills
+34739	FL	Kenansville
+34740	FL	Killarney
+34741	FL	Kissimmee
+34742	FL	Kissimmee
+34743	FL	Kissimmee
+34744	FL	Kissimmee
+34745	FL	Kissimmee
+34746	FL	Kissimmee
+34747	FL	Kissimmee
+34748	FL	Leesburg
+34749	FL	Leesburg
+34753	FL	Mascotte
+34755	FL	Minneola
+34756	FL	Montverde
+34758	FL	Kissimmee
+34759	FL	Kissimmee
+34760	FL	Oakland
+34761	FL	Ocoee
+34762	FL	Okahumpka
+34769	FL	Saint Cloud
+34770	FL	Saint Cloud
+34771	FL	Saint Cloud
+34772	FL	Saint Cloud
+34773	FL	Saint Cloud
+34777	FL	Winter Garden
+34778	FL	Winter Garden
+34785	FL	Wildwood
+34786	FL	Windermere
+34787	FL	Winter Garden
+34788	FL	Leesburg
+34789	FL	Leesburg
+34797	FL	Yalaha
+34945	FL	Fort Pierce
+34946	FL	Fort Pierce
+34947	FL	Fort Pierce
+34948	FL	Fort Pierce
+34949	FL	Fort Pierce
+34950	FL	Fort Pierce
+34951	FL	Fort Pierce
+34952	FL	Port Saint Lucie
+34953	FL	Port Saint Lucie
+34954	FL	Fort Pierce
+34956	FL	Indiantown
+34957	FL	Jensen Beach
+34958	FL	Jensen Beach
+34972	FL	Okeechobee
+34973	FL	Okeechobee
+34974	FL	Okeechobee
+34979	FL	Fort Pierce
+34981	FL	Fort Pierce
+34982	FL	Fort Pierce
+34983	FL	Port Saint Lucie
+34984	FL	Port Saint Lucie
+34985	FL	Port Saint Lucie
+34986	FL	Port Saint Lucie
+34987	FL	Port Saint Lucie
+34988	FL	Port Saint Lucie
+34990	FL	Palm City
+34991	FL	Palm City
+34992	FL	Port Salerno
+34994	FL	Stuart
+34995	FL	Stuart
+34996	FL	Stuart
+34997	FL	Stuart
+35004	AL	Moody
+35005	AL	Adamsville
+35006	AL	Adger
+35007	AL	Alabaster
+35010	AL	Alexander City
+35011	AL	Alexander City
+35013	AL	Allgood
+35014	AL	Alpine
+35015	AL	Alton
+35016	AL	Arab
+35019	AL	Baileyton
+35020	AL	Bessemer
+35021	AL	Bessemer
+35022	AL	Bessemer
+35023	AL	Bessemer
+35031	AL	Blountsville
+35032	AL	Bon Air
+35033	AL	Bremen
+35034	AL	Brent
+35035	AL	Brierfield
+35036	AL	Brookside
+35038	AL	Burnwell
+35040	AL	Calera
+35041	AL	Cardiff
+35042	AL	Centreville
+35043	AL	Chelsea
+35044	AL	Childersburg
+35045	AL	Clanton
+35046	AL	Clanton
+35048	AL	Clay
+35049	AL	Cleveland
+35051	AL	Columbiana
+35052	AL	Cook Springs
+35053	AL	Crane Hill
+35054	AL	Cropwell
+35055	AL	Cullman
+35056	AL	Cullman
+35057	AL	Cullman
+35058	AL	Cullman
+35060	AL	Docena
+35061	AL	Dolomite
+35062	AL	Dora
+35063	AL	Empire
+35064	AL	Fairfield
+35068	AL	Fultondale
+35070	AL	Garden City
+35071	AL	Gardendale
+35072	AL	Goodwater
+35073	AL	Graysville
+35074	AL	Green Pond
+35077	AL	Hanceville
+35078	AL	Harpersville
+35079	AL	Hayden
+35080	AL	Helena
+35082	AL	Hollins
+35083	AL	Holly Pond
+35085	AL	Jemison
+35087	AL	Joppa
+35089	AL	Kellyton
+35091	AL	Kimberly
+35094	AL	Leeds
+35096	AL	Lincoln
+35097	AL	Locust Fork
+35098	AL	Logan
+35111	AL	Mc Calla
+35112	AL	Margaret
+35114	AL	Maylene
+35115	AL	Montevallo
+35116	AL	Morris
+35117	AL	Mount Olive
+35118	AL	Mulga
+35119	AL	New Castle
+35120	AL	Odenville
+35121	AL	Oneonta
+35123	AL	Palmerdale
+35124	AL	Pelham
+35125	AL	Pell City
+35126	AL	Pinson
+35127	AL	Pleasant Grove
+35128	AL	Pell City
+35130	AL	Quinton
+35131	AL	Ragland
+35133	AL	Remlap
+35135	AL	Riverside
+35136	AL	Rockford
+35137	AL	Saginaw
+35139	AL	Sayre
+35142	AL	Shannon
+35143	AL	Shelby
+35144	AL	Siluria
+35146	AL	Springville
+35147	AL	Sterrett
+35148	AL	Sumiton
+35149	AL	Sycamore
+35150	AL	Sylacauga
+35151	AL	Sylacauga
+35160	AL	Talladega
+35161	AL	Talladega
+35171	AL	Thorsby
+35172	AL	Trafford
+35173	AL	Trussville
+35175	AL	Union Grove
+35176	AL	Vandiver
+35178	AL	Vincent
+35179	AL	Vinemont
+35180	AL	Warrior
+35181	AL	Watson
+35182	AL	Wattsville
+35183	AL	Weogufka
+35184	AL	West Blocton
+35185	AL	Westover
+35186	AL	Wilsonville
+35187	AL	Wilton
+35188	AL	Woodstock
+35201	AL	Birmingham
+35202	AL	Birmingham
+35203	AL	Birmingham
+35204	AL	Birmingham
+35205	AL	Birmingham
+35206	AL	Birmingham
+35207	AL	Birmingham
+35208	AL	Birmingham
+35209	AL	Birmingham
+35210	AL	Birmingham
+35211	AL	Birmingham
+35212	AL	Birmingham
+35213	AL	Birmingham
+35214	AL	Birmingham
+35215	AL	Birmingham
+35216	AL	Birmingham
+35217	AL	Birmingham
+35218	AL	Birmingham
+35219	AL	Birmingham
+35220	AL	Birmingham
+35221	AL	Birmingham
+35222	AL	Birmingham
+35223	AL	Birmingham
+35224	AL	Birmingham
+35225	AL	Birmingham
+35226	AL	Birmingham
+35228	AL	Birmingham
+35229	AL	Birmingham
+35230	AL	Birmingham
+35231	AL	Birmingham
+35232	AL	Birmingham
+35233	AL	Birmingham
+35234	AL	Birmingham
+35235	AL	Birmingham
+35236	AL	Birmingham
+35237	AL	Birmingham
+35238	AL	Birmingham
+35240	AL	Birmingham
+35242	AL	Birmingham
+35243	AL	Birmingham
+35244	AL	Birmingham
+35245	AL	Birmingham
+35246	AL	Birmingham
+35249	AL	Birmingham
+35253	AL	Birmingham
+35254	AL	Birmingham
+35255	AL	Birmingham
+35259	AL	Birmingham
+35260	AL	Birmingham
+35261	AL	Birmingham
+35263	AL	Birmingham
+35266	AL	Birmingham
+35277	AL	Birmingham
+35278	AL	Birmingham
+35279	AL	Birmingham
+35280	AL	Birmingham
+35281	AL	Birmingham
+35282	AL	Birmingham
+35283	AL	Birmingham
+35285	AL	Birmingham
+35286	AL	Birmingham
+35287	AL	Birmingham
+35288	AL	Birmingham
+35289	AL	Birmingham
+35290	AL	Birmingham
+35291	AL	Birmingham
+35292	AL	Birmingham
+35293	AL	Birmingham
+35294	AL	Birmingham
+35295	AL	Birmingham
+35296	AL	Birmingham
+35297	AL	Birmingham
+35298	AL	Birmingham
+35299	AL	Birmingham
+35401	AL	Tuscaloosa
+35402	AL	Tuscaloosa
+35403	AL	Tuscaloosa
+35404	AL	Tuscaloosa
+35405	AL	Tuscaloosa
+35406	AL	Tuscaloosa
+35407	AL	Tuscaloosa
+35440	AL	Abernant
+35441	AL	Akron
+35442	AL	Aliceville
+35443	AL	Boligee
+35444	AL	Brookwood
+35446	AL	Buhl
+35447	AL	Carrollton
+35448	AL	Clinton
+35449	AL	Coaling
+35452	AL	Coker
+35453	AL	Cottondale
+35456	AL	Duncanville
+35457	AL	Echola
+35458	AL	Elrod
+35459	AL	Emelle
+35460	AL	Epes
+35461	AL	Ethelsville
+35462	AL	Eutaw
+35463	AL	Fosters
+35464	AL	Gainesville
+35466	AL	Gordo
+35468	AL	Kellerman
+35469	AL	Knoxville
+35470	AL	Livingston
+35471	AL	Mc Shan
+35473	AL	Northport
+35474	AL	Moundville
+35475	AL	Northport
+35476	AL	Northport
+35477	AL	Panola
+35478	AL	Peterson
+35480	AL	Ralph
+35481	AL	Reform
+35482	AL	Samantha
+35485	AL	Tuscaloosa
+35486	AL	Tuscaloosa
+35487	AL	Tuscaloosa
+35490	AL	Vance
+35491	AL	West Greene
+35501	AL	Jasper
+35502	AL	Jasper
+35503	AL	Jasper
+35504	AL	Jasper
+35540	AL	Addison
+35541	AL	Arley
+35542	AL	Bankston
+35543	AL	Bear Creek
+35544	AL	Beaverton
+35545	AL	Belk
+35546	AL	Berry
+35548	AL	Brilliant
+35549	AL	Carbon Hill
+35550	AL	Cordova
+35551	AL	Delmar
+35552	AL	Detroit
+35553	AL	Double Springs
+35554	AL	Eldridge
+35555	AL	Fayette
+35559	AL	Glen Allen
+35560	AL	Goodsprings
+35563	AL	Guin
+35564	AL	Hackleburg
+35565	AL	Haleyville
+35570	AL	Hamilton
+35571	AL	Hodges
+35572	AL	Houston
+35573	AL	Kansas
+35574	AL	Kennedy
+35575	AL	Lynn
+35576	AL	Millport
+35577	AL	Natural Bridge
+35578	AL	Nauvoo
+35579	AL	Oakman
+35580	AL	Parrish
+35581	AL	Phil Campbell
+35582	AL	Red Bay
+35584	AL	Sipsey
+35585	AL	Spruce Pine
+35586	AL	Sulligent
+35587	AL	Townley
+35592	AL	Vernon
+35593	AL	Vina
+35594	AL	Winfield
+35601	AL	Decatur
+35602	AL	Decatur
+35603	AL	Decatur
+35609	AL	Decatur
+35610	AL	Anderson
+35611	AL	Athens
+35612	AL	Athens
+35613	AL	Athens
+35614	AL	Athens
+35615	AL	Belle Mina
+35616	AL	Cherokee
+35617	AL	Cloverdale
+35618	AL	Courtland
+35619	AL	Danville
+35620	AL	Elkmont
+35621	AL	Eva
+35622	AL	Falkville
+35630	AL	Florence
+35631	AL	Florence
+35632	AL	Florence
+35633	AL	Florence
+35634	AL	Florence
+35640	AL	Hartselle
+35643	AL	Hillsboro
+35645	AL	Killen
+35646	AL	Leighton
+35647	AL	Lester
+35648	AL	Lexington
+35649	AL	Mooresville
+35650	AL	Moulton
+35651	AL	Mount Hope
+35652	AL	Rogersville
+35653	AL	Russellville
+35654	AL	Russellville
+35660	AL	Sheffield
+35661	AL	Muscle Shoals
+35662	AL	Muscle Shoals
+35670	AL	Somerville
+35671	AL	Tanner
+35672	AL	Town Creek
+35673	AL	Trinity
+35674	AL	Tuscumbia
+35677	AL	Waterloo
+35699	AL	Decatur
+35739	AL	Ardmore
+35740	AL	Bridgeport
+35741	AL	Brownsboro
+35742	AL	Capshaw
+35744	AL	Dutton
+35745	AL	Estillfork
+35746	AL	Fackler
+35747	AL	Grant
+35748	AL	Gurley
+35749	AL	Harvest
+35750	AL	Hazel Green
+35751	AL	Hollytree
+35752	AL	Hollywood
+35754	AL	Laceys Spring
+35755	AL	Langston
+35756	AL	Madison
+35757	AL	Madison
+35758	AL	Madison
+35759	AL	Meridianville
+35760	AL	New Hope
+35761	AL	New Market
+35762	AL	Normal
+35763	AL	Owens Cross Roads
+35764	AL	Paint Rock
+35765	AL	Pisgah
+35766	AL	Princeton
+35767	AL	Ryland
+35768	AL	Scottsboro
+35769	AL	Scottsboro
+35771	AL	Section
+35772	AL	Stevenson
+35773	AL	Toney
+35774	AL	Trenton
+35775	AL	Valhermoso Springs
+35776	AL	Woodville
+35801	AL	Huntsville
+35802	AL	Huntsville
+35803	AL	Huntsville
+35804	AL	Huntsville
+35805	AL	Huntsville
+35806	AL	Huntsville
+35807	AL	Huntsville
+35808	AL	Huntsville
+35809	AL	Huntsville
+35810	AL	Huntsville
+35811	AL	Huntsville
+35812	AL	Huntsville
+35813	AL	Huntsville
+35814	AL	Huntsville
+35815	AL	Huntsville
+35816	AL	Huntsville
+35824	AL	Huntsville
+35893	AL	Huntsville
+35894	AL	Huntsville
+35895	AL	Huntsville
+35896	AL	Huntsville
+35897	AL	Huntsville
+35898	AL	Huntsville
+35899	AL	Huntsville
+35901	AL	Gadsden
+35902	AL	Gadsden
+35903	AL	Gadsden
+35904	AL	Gadsden
+35905	AL	Gadsden
+35906	AL	Rainbow City
+35907	AL	Gadsden
+35950	AL	Albertville
+35951	AL	Albertville
+35952	AL	Altoona
+35953	AL	Ashville
+35954	AL	Attalla
+35956	AL	Boaz
+35957	AL	Boaz
+35958	AL	Bryant
+35959	AL	Cedar Bluff
+35960	AL	Centre
+35961	AL	Collinsville
+35962	AL	Crossville
+35963	AL	Dawson
+35964	AL	Douglas
+35966	AL	Flat Rock
+35967	AL	Fort Payne
+35968	AL	Fort Payne
+35971	AL	Fyffe
+35972	AL	Gallant
+35973	AL	Gaylesville
+35974	AL	Geraldine
+35975	AL	Groveoak
+35976	AL	Guntersville
+35978	AL	Henagar
+35979	AL	Higdon
+35980	AL	Horton
+35981	AL	Ider
+35983	AL	Leesburg
+35984	AL	Mentone
+35986	AL	Rainsville
+35987	AL	Steele
+35988	AL	Sylvania
+35989	AL	Valley Head
+35990	AL	Walnut Grove
+36003	AL	Autaugaville
+36005	AL	Banks
+36006	AL	Billingsley
+36008	AL	Booth
+36009	AL	Brantley
+36010	AL	Brundidge
+36013	AL	Cecil
+36015	AL	Chapman
+36016	AL	Clayton
+36017	AL	Clio
+36020	AL	Coosada
+36022	AL	Deatsville
+36023	AL	East Tallassee
+36024	AL	Eclectic
+36025	AL	Elmore
+36026	AL	Equality
+36027	AL	Eufaula
+36028	AL	Dozier
+36029	AL	Fitzpatrick
+36030	AL	Forest Home
+36031	AL	Fort Davis
+36032	AL	Fort Deposit
+36033	AL	Georgiana
+36034	AL	Glenwood
+36035	AL	Goshen
+36036	AL	Grady
+36037	AL	Greenville
+36038	AL	Gantt
+36039	AL	Hardaway
+36040	AL	Hayneville
+36041	AL	Highland Home
+36042	AL	Honoraville
+36043	AL	Hope Hull
+36045	AL	Kent
+36046	AL	Lapine
+36047	AL	Letohatchee
+36048	AL	Louisville
+36049	AL	Luverne
+36051	AL	Marbury
+36052	AL	Mathews
+36053	AL	Midway
+36054	AL	Millbrook
+36057	AL	Mount Meigs
+36061	AL	Perote
+36062	AL	Petrey
+36064	AL	Pike Road
+36065	AL	Pine Level
+36066	AL	Prattville
+36067	AL	Prattville
+36068	AL	Prattville
+36069	AL	Ramer
+36071	AL	Rutledge
+36072	AL	Eufaula
+36075	AL	Shorter
+36078	AL	Tallassee
+36079	AL	Troy
+36080	AL	Titus
+36081	AL	Troy
+36082	AL	Troy
+36083	AL	Tuskegee
+36087	AL	Tuskegee Institute
+36088	AL	Tuskegee Institute
+36089	AL	Union Springs
+36091	AL	Verbena
+36092	AL	Wetumpka
+36093	AL	Wetumpka
+36101	AL	Montgomery
+36102	AL	Montgomery
+36103	AL	Montgomery
+36104	AL	Montgomery
+36105	AL	Montgomery
+36106	AL	Montgomery
+36107	AL	Montgomery
+36108	AL	Montgomery
+36109	AL	Montgomery
+36110	AL	Montgomery
+36111	AL	Montgomery
+36112	AL	Montgomery
+36113	AL	Montgomery
+36114	AL	Montgomery
+36115	AL	Montgomery
+36116	AL	Montgomery
+36117	AL	Montgomery
+36118	AL	Montgomery
+36119	AL	Montgomery
+36120	AL	Montgomery
+36121	AL	Montgomery
+36123	AL	Montgomery
+36124	AL	Montgomery
+36125	AL	Montgomery
+36130	AL	Montgomery
+36131	AL	Montgomery
+36132	AL	Montgomery
+36133	AL	Montgomery
+36134	AL	Montgomery
+36135	AL	Montgomery
+36140	AL	Montgomery
+36141	AL	Montgomery
+36142	AL	Montgomery
+36177	AL	Montgomery
+36191	AL	Montgomery
+36201	AL	Anniston
+36202	AL	Anniston
+36203	AL	Oxford
+36204	AL	Anniston
+36205	AL	Anniston
+36206	AL	Anniston
+36207	AL	Anniston
+36250	AL	Alexandria
+36251	AL	Ashland
+36253	AL	Bynum
+36254	AL	Choccolocco
+36255	AL	Cragford
+36256	AL	Daviston
+36257	AL	De Armanville
+36258	AL	Delta
+36260	AL	Eastaboga
+36261	AL	Edwardsville
+36262	AL	Fruithurst
+36263	AL	Graham
+36264	AL	Heflin
+36265	AL	Jacksonville
+36266	AL	Lineville
+36267	AL	Millerville
+36268	AL	Munford
+36269	AL	Muscadine
+36270	AL	Newell
+36271	AL	Ohatchee
+36272	AL	Piedmont
+36273	AL	Ranburne
+36274	AL	Roanoke
+36275	AL	Spring Garden
+36276	AL	Wadley
+36277	AL	Weaver
+36278	AL	Wedowee
+36279	AL	Wellington
+36280	AL	Woodland
+36301	AL	Dothan
+36302	AL	Dothan
+36303	AL	Dothan
+36304	AL	Dothan
+36305	AL	Dothan
+36310	AL	Abbeville
+36311	AL	Ariton
+36312	AL	Ashford
+36313	AL	Bellwood
+36314	AL	Black
+36316	AL	Chancellor
+36317	AL	Clopton
+36318	AL	Coffee Springs
+36319	AL	Columbia
+36320	AL	Cottonwood
+36321	AL	Cowarts
+36322	AL	Daleville
+36323	AL	Elba
+36330	AL	Enterprise
+36331	AL	Enterprise
+36340	AL	Geneva
+36343	AL	Gordon
+36344	AL	Hartford
+36345	AL	Headland
+36346	AL	Jack
+36349	AL	Malvern
+36350	AL	Midland City
+36351	AL	New Brockton
+36352	AL	Newton
+36353	AL	Newville
+36360	AL	Ozark
+36361	AL	Ozark
+36362	AL	Fort Rucker
+36370	AL	Pansey
+36371	AL	Pinckard
+36373	AL	Shorterville
+36374	AL	Skipperville
+36375	AL	Slocomb
+36376	AL	Webb
+36401	AL	Evergreen
+36420	AL	Andalusia
+36425	AL	Beatrice
+36426	AL	Brewton
+36427	AL	Brewton
+36429	AL	Brooklyn
+36431	AL	Burnt Corn
+36432	AL	Castleberry
+36435	AL	Coy
+36436	AL	Dickinson
+36439	AL	Excel
+36441	AL	Flomaton
+36442	AL	Florala
+36444	AL	Franklin
+36445	AL	Frisco City
+36446	AL	Fulton
+36449	AL	Goodway
+36451	AL	Grove Hill
+36453	AL	Kinston
+36454	AL	Lenox
+36455	AL	Lockhart
+36456	AL	Mc Kenzie
+36457	AL	Megargel
+36458	AL	Mexia
+36460	AL	Monroeville
+36461	AL	Monroeville
+36462	AL	Monroeville
+36467	AL	Opp
+36470	AL	Perdue Hill
+36471	AL	Peterman
+36473	AL	Range
+36474	AL	Red Level
+36475	AL	Repton
+36476	AL	River Falls
+36477	AL	Samson
+36480	AL	Uriah
+36481	AL	Vredenburgh
+36482	AL	Whatley
+36483	AL	Wing
+36501	AL	Alma
+36502	AL	Atmore
+36503	AL	Atmore
+36504	AL	Atmore
+36505	AL	Axis
+36507	AL	Bay Minette
+36509	AL	Bayou La Batre
+36511	AL	Bon Secour
+36512	AL	Bucks
+36513	AL	Calvert
+36515	AL	Carlton
+36518	AL	Chatom
+36521	AL	Chunchula
+36522	AL	Citronelle
+36523	AL	Coden
+36524	AL	Coffeeville
+36525	AL	Creola
+36526	AL	Daphne
+36527	AL	Spanish Fort
+36528	AL	Dauphin Island
+36529	AL	Deer Park
+36530	AL	Elberta
+36532	AL	Fairhope
+36533	AL	Fairhope
+36535	AL	Foley
+36536	AL	Foley
+36538	AL	Frankville
+36539	AL	Fruitdale
+36540	AL	Gainestown
+36541	AL	Grand Bay
+36542	AL	Gulf Shores
+36543	AL	Huxford
+36544	AL	Irvington
+36545	AL	Jackson
+36547	AL	Gulf Shores
+36548	AL	Leroy
+36549	AL	Lillian
+36550	AL	Little River
+36551	AL	Loxley
+36553	AL	Mc Intosh
+36555	AL	Magnolia Springs
+36556	AL	Malcolm
+36558	AL	Millry
+36559	AL	Montrose
+36560	AL	Mount Vernon
+36561	AL	Orange Beach
+36562	AL	Perdido
+36564	AL	Point Clear
+36567	AL	Robertsdale
+36568	AL	Saint Elmo
+36569	AL	Saint Stephens
+36570	AL	Salitpa
+36571	AL	Saraland
+36572	AL	Satsuma
+36574	AL	Seminole
+36575	AL	Semmes
+36576	AL	Silverhill
+36577	AL	Spanish Fort
+36578	AL	Stapleton
+36579	AL	Stockton
+36580	AL	Summerdale
+36581	AL	Sunflower
+36582	AL	Theodore
+36583	AL	Tibbie
+36584	AL	Vinegar Bend
+36585	AL	Wagarville
+36586	AL	Walker Springs
+36587	AL	Wilmer
+36590	AL	Theodore
+36601	AL	Mobile
+36602	AL	Mobile
+36603	AL	Mobile
+36604	AL	Mobile
+36605	AL	Mobile
+36606	AL	Mobile
+36607	AL	Mobile
+36608	AL	Mobile
+36609	AL	Mobile
+36610	AL	Mobile
+36611	AL	Mobile
+36612	AL	Mobile
+36613	AL	Eight Mile
+36614	AL	Mobile
+36615	AL	Mobile
+36616	AL	Mobile
+36617	AL	Mobile
+36618	AL	Mobile
+36619	AL	Mobile
+36621	AL	Mobile
+36622	AL	Mobile
+36623	AL	Mobile
+36625	AL	Mobile
+36626	AL	Mobile
+36628	AL	Mobile
+36630	AL	Mobile
+36631	AL	Mobile
+36633	AL	Mobile
+36640	AL	Mobile
+36641	AL	Mobile
+36644	AL	Mobile
+36652	AL	Mobile
+36660	AL	Mobile
+36663	AL	Mobile
+36670	AL	Mobile
+36671	AL	Mobile
+36675	AL	Mobile
+36685	AL	Mobile
+36688	AL	Mobile
+36689	AL	Mobile
+36690	AL	Mobile
+36691	AL	Mobile
+36693	AL	Mobile
+36695	AL	Mobile
+36701	AL	Selma
+36702	AL	Selma
+36703	AL	Selma
+36720	AL	Alberta
+36721	AL	Annemanie
+36722	AL	Arlington
+36723	AL	Boykin
+36726	AL	Camden
+36727	AL	Campbell
+36728	AL	Catherine
+36732	AL	Demopolis
+36736	AL	Dixons Mills
+36738	AL	Faunsdale
+36740	AL	Forkland
+36741	AL	Furman
+36742	AL	Gallion
+36744	AL	Greensboro
+36745	AL	Jefferson
+36748	AL	Linden
+36749	AL	Jones
+36750	AL	Maplesville
+36751	AL	Lower Peach Tree
+36752	AL	Lowndesboro
+36753	AL	Mc Williams
+36754	AL	Magnolia
+36756	AL	Marion
+36758	AL	Plantersville
+36759	AL	Marion Junction
+36761	AL	Minter
+36762	AL	Morvin
+36763	AL	Myrtlewood
+36764	AL	Nanafalia
+36765	AL	Newbern
+36766	AL	Oak Hill
+36767	AL	Orrville
+36768	AL	Pine Apple
+36769	AL	Pine Hill
+36773	AL	Safford
+36775	AL	Sardis
+36776	AL	Sawyerville
+36778	AL	Snow Hill
+36779	AL	Sprott
+36782	AL	Sweet Water
+36783	AL	Thomaston
+36784	AL	Thomasville
+36785	AL	Tyler
+36786	AL	Uniontown
+36790	AL	Stanton
+36792	AL	Randolph
+36793	AL	Lawley
+36801	AL	Opelika
+36802	AL	Opelika
+36803	AL	Opelika
+36804	AL	Opelika
+36830	AL	Auburn
+36831	AL	Auburn
+36832	AL	Auburn
+36849	AL	Auburn University
+36850	AL	Camp Hill
+36851	AL	Cottonton
+36852	AL	Cusseta
+36853	AL	Dadeville
+36854	AL	Valley
+36855	AL	Five Points
+36856	AL	Fort Mitchell
+36858	AL	Hatchechubbee
+36859	AL	Holy Trinity
+36860	AL	Hurtsboro
+36861	AL	Jacksons Gap
+36862	AL	Lafayette
+36863	AL	Lanett
+36865	AL	Loachapoka
+36866	AL	Notasulga
+36867	AL	Phenix City
+36868	AL	Phenix City
+36869	AL	Phenix City
+36870	AL	Phenix City
+36871	AL	Pittsview
+36872	AL	Valley
+36874	AL	Salem
+36875	AL	Seale
+36877	AL	Smiths
+36879	AL	Waverly
+36901	AL	Bellamy
+36904	AL	Butler
+36906	AL	Cromwell
+36907	AL	Cuba
+36908	AL	Gilbertown
+36910	AL	Jachin
+36912	AL	Lisman
+36913	AL	Melvin
+36915	AL	Needham
+36916	AL	Pennington
+36919	AL	Silas
+36921	AL	Toxey
+36922	AL	Ward
+36925	AL	York
+37010	TN	Adams
+37011	TN	Antioch
+37012	TN	Alexandria
+37013	TN	Antioch
+37014	TN	Arrington
+37015	TN	Ashland City
+37016	TN	Auburntown
+37018	TN	Beechgrove
+37019	TN	Belfast
+37020	TN	Bell Buckle
+37022	TN	Bethpage
+37023	TN	Big Rock
+37024	TN	Brentwood
+37025	TN	Bon Aqua
+37026	TN	Bradyville
+37027	TN	Brentwood
+37028	TN	Bumpus Mills
+37029	TN	Burns
+37030	TN	Carthage
+37031	TN	Castalian Springs
+37032	TN	Cedar Hill
+37033	TN	Centerville
+37034	TN	Chapel Hill
+37035	TN	Chapmansboro
+37036	TN	Charlotte
+37037	TN	Christiana
+37040	TN	Clarksville
+37041	TN	Clarksville
+37042	TN	Clarksville
+37043	TN	Clarksville
+37044	TN	Clarksville
+37046	TN	College Grove
+37047	TN	Cornersville
+37048	TN	Cottontown
+37049	TN	Cross Plains
+37050	TN	Cumberland City
+37051	TN	Cumberland Furnace
+37052	TN	Cunningham
+37055	TN	Dickson
+37056	TN	Dickson
+37057	TN	Dixon Springs
+37058	TN	Dover
+37059	TN	Dowelltown
+37060	TN	Eagleville
+37061	TN	Erin
+37062	TN	Fairview
+37063	TN	Fosterville
+37064	TN	Franklin
+37065	TN	Franklin
+37066	TN	Gallatin
+37067	TN	Franklin
+37068	TN	Franklin
+37069	TN	Franklin
+37070	TN	Goodlettsville
+37071	TN	Gladeville
+37072	TN	Goodlettsville
+37073	TN	Greenbrier
+37074	TN	Hartsville
+37075	TN	Hendersonville
+37076	TN	Hermitage
+37077	TN	Hendersonville
+37078	TN	Hurricane Mills
+37079	TN	Indian Mound
+37080	TN	Joelton
+37082	TN	Kingston Springs
+37083	TN	Lafayette
+37085	TN	Lascassas
+37086	TN	La Vergne
+37087	TN	Lebanon
+37088	TN	Lebanon
+37089	TN	La Vergne
+37090	TN	Lebanon
+37091	TN	Lewisburg
+37095	TN	Liberty
+37096	TN	Linden
+37097	TN	Lobelville
+37098	TN	Lyles
+37101	TN	Mc Ewen
+37110	TN	Mc Minnville
+37111	TN	Mc Minnville
+37115	TN	Madison
+37116	TN	Madison
+37118	TN	Milton
+37119	TN	Mitchellville
+37121	TN	Mount Juliet
+37122	TN	Mount Juliet
+37127	TN	Murfreesboro
+37128	TN	Murfreesboro
+37129	TN	Murfreesboro
+37130	TN	Murfreesboro
+37131	TN	Murfreesboro
+37132	TN	Murfreesboro
+37133	TN	Murfreesboro
+37134	TN	New Johnsonville
+37135	TN	Nolensville
+37136	TN	Norene
+37137	TN	Nunnelly
+37138	TN	Old Hickory
+37140	TN	Only
+37141	TN	Orlinda
+37142	TN	Palmyra
+37143	TN	Pegram
+37144	TN	Petersburg
+37145	TN	Pleasant Shade
+37146	TN	Pleasant View
+37147	TN	Pleasantville
+37148	TN	Portland
+37149	TN	Readyville
+37150	TN	Red Boiling Springs
+37151	TN	Riddleton
+37152	TN	Ridgetop
+37153	TN	Rockvale
+37155	TN	Saint Bethlehem
+37160	TN	Shelbyville
+37161	TN	Shelbyville
+37162	TN	Shelbyville
+37165	TN	Slayden
+37166	TN	Smithville
+37167	TN	Smyrna
+37171	TN	Southside
+37172	TN	Springfield
+37174	TN	Spring Hill
+37175	TN	Stewart
+37178	TN	Tennessee Ridge
+37179	TN	Thompsons Station
+37180	TN	Unionville
+37181	TN	Vanleer
+37183	TN	Wartrace
+37184	TN	Watertown
+37185	TN	Waverly
+37186	TN	Westmoreland
+37187	TN	White Bluff
+37188	TN	White House
+37189	TN	Whites Creek
+37190	TN	Woodbury
+37191	TN	Woodlawn
+37201	TN	Nashville
+37202	TN	Nashville
+37203	TN	Nashville
+37204	TN	Nashville
+37205	TN	Nashville
+37206	TN	Nashville
+37207	TN	Nashville
+37208	TN	Nashville
+37209	TN	Nashville
+37210	TN	Nashville
+37211	TN	Nashville
+37212	TN	Nashville
+37213	TN	Nashville
+37214	TN	Nashville
+37215	TN	Nashville
+37216	TN	Nashville
+37217	TN	Nashville
+37218	TN	Nashville
+37219	TN	Nashville
+37220	TN	Nashville
+37221	TN	Nashville
+37222	TN	Nashville
+37224	TN	Nashville
+37227	TN	Nashville
+37228	TN	Nashville
+37229	TN	Nashville
+37230	TN	Nashville
+37232	TN	Nashville
+37234	TN	Nashville
+37235	TN	Nashville
+37236	TN	Nashville
+37237	TN	Nashville
+37238	TN	Nashville
+37239	TN	Nashville
+37240	TN	Nashville
+37241	TN	Nashville
+37242	TN	Nashville
+37243	TN	Nashville
+37244	TN	Nashville
+37245	TN	Nashville
+37246	TN	Nashville
+37247	TN	Nashville
+37248	TN	Nashville
+37249	TN	Nashville
+37250	TN	Nashville
+37301	TN	Altamont
+37302	TN	Apison
+37303	TN	Athens
+37304	TN	Bakewell
+37305	TN	Beersheba Springs
+37306	TN	Belvidere
+37307	TN	Benton
+37308	TN	Birchwood
+37309	TN	Calhoun
+37310	TN	Charleston
+37311	TN	Cleveland
+37312	TN	Cleveland
+37313	TN	Coalmont
+37314	TN	Cokercreek
+37315	TN	Collegedale
+37316	TN	Conasauga
+37317	TN	Copperhill
+37318	TN	Cowan
+37320	TN	Cleveland
+37321	TN	Dayton
+37322	TN	Decatur
+37323	TN	Cleveland
+37324	TN	Decherd
+37325	TN	Delano
+37326	TN	Ducktown
+37327	TN	Dunlap
+37328	TN	Elora
+37329	TN	Englewood
+37330	TN	Estill Springs
+37331	TN	Etowah
+37332	TN	Evensville
+37333	TN	Farner
+37334	TN	Fayetteville
+37335	TN	Flintville
+37336	TN	Georgetown
+37337	TN	Grandview
+37338	TN	Graysville
+37339	TN	Gruetli Laager
+37340	TN	Guild
+37341	TN	Harrison
+37342	TN	Hillsboro
+37343	TN	Hixson
+37345	TN	Huntland
+37347	TN	Jasper
+37348	TN	Kelso
+37349	TN	Manchester
+37350	TN	Lookout Mountain
+37351	TN	Lupton City
+37352	TN	Lynchburg
+37353	TN	Mc Donald
+37354	TN	Madisonville
+37355	TN	Manchester
+37356	TN	Monteagle
+37357	TN	Morrison
+37359	TN	Mulberry
+37360	TN	Normandy
+37361	TN	Ocoee
+37362	TN	Oldfort
+37363	TN	Ooltewah
+37364	TN	Cleveland
+37365	TN	Palmer
+37366	TN	Pelham
+37367	TN	Pikeville
+37369	TN	Reliance
+37370	TN	Riceville
+37371	TN	Athens
+37372	TN	Saint Andrews
+37373	TN	Sale Creek
+37374	TN	Sequatchie
+37375	TN	Sewanee
+37376	TN	Sherwood
+37377	TN	Signal Mountain
+37378	TN	Smartt
+37379	TN	Soddy Daisy
+37380	TN	South Pittsburg
+37381	TN	Spring City
+37382	TN	Summitville
+37383	TN	Sewanee
+37384	TN	Soddy Daisy
+37385	TN	Tellico Plains
+37387	TN	Tracy City
+37388	TN	Tullahoma
+37389	TN	Arnold Afb
+37391	TN	Turtletown
+37394	TN	Viola
+37395	TN	Watts Bar Dam
+37396	TN	Whiteside
+37397	TN	Whitwell
+37398	TN	Winchester
+37401	TN	Chattanooga
+37402	TN	Chattanooga
+37403	TN	Chattanooga
+37404	TN	Chattanooga
+37405	TN	Chattanooga
+37406	TN	Chattanooga
+37407	TN	Chattanooga
+37408	TN	Chattanooga
+37409	TN	Chattanooga
+37410	TN	Chattanooga
+37411	TN	Chattanooga
+37412	TN	Chattanooga
+37414	TN	Chattanooga
+37415	TN	Chattanooga
+37416	TN	Chattanooga
+37419	TN	Chattanooga
+37421	TN	Chattanooga
+37422	TN	Chattanooga
+37424	TN	Chattanooga
+37450	TN	Chattanooga
+37501	TN	Memphis
+37601	TN	Johnson City
+37602	TN	Johnson City
+37604	TN	Johnson City
+37605	TN	Johnson City
+37614	TN	Johnson City
+37615	TN	Johnson City
+37616	TN	Afton
+37617	TN	Blountville
+37618	TN	Bluff City
+37620	TN	Bristol
+37621	TN	Bristol
+37625	TN	Bristol
+37640	TN	Butler
+37641	TN	Chuckey
+37642	TN	Church Hill
+37643	TN	Elizabethton
+37644	TN	Elizabethton
+37645	TN	Mount Carmel
+37650	TN	Erwin
+37656	TN	Fall Branch
+37657	TN	Flag Pond
+37658	TN	Hampton
+37659	TN	Jonesborough
+37660	TN	Kingsport
+37662	TN	Kingsport
+37663	TN	Kingsport
+37664	TN	Kingsport
+37665	TN	Kingsport
+37669	TN	Kingsport
+37680	TN	Laurel Bloomery
+37681	TN	Limestone
+37682	TN	Milligan College
+37683	TN	Mountain City
+37684	TN	Mountain Home
+37686	TN	Piney Flats
+37687	TN	Roan Mountain
+37688	TN	Shady Valley
+37690	TN	Telford
+37691	TN	Trade
+37692	TN	Unicoi
+37694	TN	Watauga
+37699	TN	Piney Flats
+37701	TN	Alcoa
+37705	TN	Andersonville
+37707	TN	Arthur
+37708	TN	Bean Station
+37709	TN	Blaine
+37710	TN	Briceville
+37711	TN	Bulls Gap
+37713	TN	Bybee
+37714	TN	Caryville
+37715	TN	Clairfield
+37716	TN	Clinton
+37717	TN	Clinton
+37719	TN	Coalfield
+37721	TN	Corryton
+37722	TN	Cosby
+37723	TN	Crab Orchard
+37724	TN	Cumberland Gap
+37725	TN	Dandridge
+37726	TN	Deer Lodge
+37727	TN	Del Rio
+37729	TN	Duff
+37730	TN	Eagan
+37731	TN	Eidson
+37732	TN	Elgin
+37733	TN	Rugby
+37737	TN	Friendsville
+37738	TN	Gatlinburg
+37742	TN	Greenback
+37743	TN	Greeneville
+37744	TN	Greeneville
+37745	TN	Greeneville
+37748	TN	Harriman
+37752	TN	Harrogate
+37753	TN	Hartford
+37754	TN	Heiskell
+37755	TN	Helenwood
+37756	TN	Huntsville
+37757	TN	Jacksboro
+37760	TN	Jefferson City
+37762	TN	Jellico
+37763	TN	Kingston
+37764	TN	Kodak
+37765	TN	Kyles Ford
+37766	TN	La Follette
+37769	TN	Lake City
+37770	TN	Lancing
+37771	TN	Lenoir City
+37772	TN	Lenoir City
+37773	TN	Lone Mountain
+37774	TN	Loudon
+37777	TN	Louisville
+37778	TN	Lowland
+37779	TN	Luttrell
+37801	TN	Maryville
+37802	TN	Maryville
+37803	TN	Maryville
+37804	TN	Maryville
+37806	TN	Mascot
+37807	TN	Maynardville
+37809	TN	Midway
+37810	TN	Mohawk
+37811	TN	Mooresburg
+37813	TN	Morristown
+37814	TN	Morristown
+37815	TN	Morristown
+37816	TN	Morristown
+37818	TN	Mosheim
+37819	TN	Newcomb
+37820	TN	New Market
+37821	TN	Newport
+37822	TN	Newport
+37824	TN	New Tazewell
+37825	TN	New Tazewell
+37826	TN	Niota
+37828	TN	Norris
+37829	TN	Oakdale
+37830	TN	Oak Ridge
+37831	TN	Oak Ridge
+37840	TN	Oliver Springs
+37841	TN	Oneida
+37842	TN	Ozone
+37843	TN	Parrottsville
+37845	TN	Petros
+37846	TN	Philadelphia
+37847	TN	Pioneer
+37848	TN	Powder Springs
+37849	TN	Powell
+37851	TN	Pruden
+37852	TN	Robbins
+37853	TN	Rockford
+37854	TN	Rockwood
+37857	TN	Rogersville
+37860	TN	Russellville
+37861	TN	Rutledge
+37862	TN	Sevierville
+37863	TN	Pigeon Forge
+37864	TN	Sevierville
+37865	TN	Seymour
+37866	TN	Sharps Chapel
+37867	TN	Shawanee
+37868	TN	Pigeon Forge
+37869	TN	Sneedville
+37870	TN	Speedwell
+37871	TN	Strawberry Plains
+37872	TN	Sunbright
+37873	TN	Surgoinsville
+37874	TN	Sweetwater
+37876	TN	Sevierville
+37877	TN	Talbott
+37878	TN	Tallassee
+37879	TN	Tazewell
+37880	TN	Ten Mile
+37881	TN	Thorn Hill
+37882	TN	Townsend
+37885	TN	Vonore
+37886	TN	Walland
+37887	TN	Wartburg
+37888	TN	Washburn
+37890	TN	White Pine
+37891	TN	Whitesburg
+37892	TN	Winfield
+37901	TN	Knoxville
+37902	TN	Knoxville
+37909	TN	Knoxville
+37912	TN	Knoxville
+37914	TN	Knoxville
+37915	TN	Knoxville
+37916	TN	Knoxville
+37917	TN	Knoxville
+37918	TN	Knoxville
+37919	TN	Knoxville
+37920	TN	Knoxville
+37921	TN	Knoxville
+37922	TN	Knoxville
+37923	TN	Knoxville
+37924	TN	Knoxville
+37927	TN	Knoxville
+37928	TN	Knoxville
+37929	TN	Knoxville
+37930	TN	Knoxville
+37931	TN	Knoxville
+37932	TN	Knoxville
+37933	TN	Knoxville
+37938	TN	Knoxville
+37939	TN	Knoxville
+37940	TN	Knoxville
+37950	TN	Knoxville
+37990	TN	Knoxville
+37995	TN	Knoxville
+37996	TN	Knoxville
+37997	TN	Knoxville
+37998	TN	Knoxville
+38001	TN	Alamo
+38002	TN	Arlington
+38004	TN	Atoka
+38006	TN	Bells
+38007	TN	Bogota
+38008	TN	Bolivar
+38010	TN	Braden
+38011	TN	Brighton
+38012	TN	Brownsville
+38014	TN	Brunswick
+38015	TN	Burlison
+38016	TN	Cordova
+38017	TN	Collierville
+38018	TN	Cordova
+38019	TN	Covington
+38021	TN	Crockett Mills
+38023	TN	Drummonds
+38024	TN	Dyersburg
+38025	TN	Dyersburg
+38027	TN	Collierville
+38028	TN	Eads
+38029	TN	Ellendale
+38030	TN	Finley
+38034	TN	Friendship
+38036	TN	Gallaway
+38037	TN	Gates
+38039	TN	Grand Junction
+38040	TN	Halls
+38041	TN	Henning
+38042	TN	Hickory Valley
+38044	TN	Hornsby
+38045	TN	Laconia
+38046	TN	La Grange
+38047	TN	Lenox
+38048	TN	Macon
+38049	TN	Mason
+38050	TN	Maury City
+38052	TN	Middleton
+38053	TN	Millington
+38054	TN	Millington
+38055	TN	Millington
+38056	TN	Miston
+38057	TN	Moscow
+38058	TN	Munford
+38059	TN	Newbern
+38060	TN	Oakland
+38061	TN	Pocahontas
+38063	TN	Ripley
+38066	TN	Rossville
+38067	TN	Saulsbury
+38068	TN	Somerville
+38069	TN	Stanton
+38070	TN	Tigrett
+38071	TN	Tipton
+38074	TN	Bolivar
+38075	TN	Whiteville
+38076	TN	Williston
+38077	TN	Wynnburg
+38079	TN	Tiptonville
+38080	TN	Ridgely
+38083	TN	Millington
+38088	TN	Cordova
+38101	TN	Memphis
+38103	TN	Memphis
+38104	TN	Memphis
+38105	TN	Memphis
+38106	TN	Memphis
+38107	TN	Memphis
+38108	TN	Memphis
+38109	TN	Memphis
+38110	TN	Memphis
+38111	TN	Memphis
+38112	TN	Memphis
+38113	TN	Memphis
+38114	TN	Memphis
+38115	TN	Memphis
+38116	TN	Memphis
+38117	TN	Memphis
+38118	TN	Memphis
+38119	TN	Memphis
+38120	TN	Memphis
+38122	TN	Memphis
+38124	TN	Memphis
+38125	TN	Memphis
+38126	TN	Memphis
+38127	TN	Memphis
+38128	TN	Memphis
+38130	TN	Memphis
+38131	TN	Memphis
+38132	TN	Memphis
+38133	TN	Memphis
+38134	TN	Memphis
+38135	TN	Memphis
+38136	TN	Memphis
+38137	TN	Memphis
+38138	TN	Germantown
+38139	TN	Germantown
+38140	TN	Memphis
+38141	TN	Memphis
+38142	TN	Memphis
+38143	TN	Memphis
+38145	TN	Memphis
+38146	TN	Memphis
+38147	TN	Memphis
+38148	TN	Memphis
+38150	TN	Memphis
+38151	TN	Memphis
+38152	TN	Memphis
+38157	TN	Memphis
+38159	TN	Memphis
+38161	TN	Memphis
+38163	TN	Memphis
+38165	TN	Memphis
+38166	TN	Memphis
+38167	TN	Memphis
+38168	TN	Memphis
+38173	TN	Memphis
+38174	TN	Memphis
+38175	TN	Memphis
+38177	TN	Memphis
+38181	TN	Memphis
+38182	TN	Memphis
+38183	TN	Germantown
+38184	TN	Memphis
+38186	TN	Memphis
+38187	TN	Memphis
+38188	TN	Memphis
+38190	TN	Memphis
+38193	TN	Memphis
+38194	TN	Memphis
+38195	TN	Memphis
+38197	TN	Memphis
+38201	TN	Mc Kenzie
+38220	TN	Atwood
+38221	TN	Big Sandy
+38222	TN	Buchanan
+38223	TN	Como
+38224	TN	Cottage Grove
+38225	TN	Dresden
+38226	TN	Dukedom
+38229	TN	Gleason
+38230	TN	Greenfield
+38231	TN	Henry
+38232	TN	Hornbeak
+38233	TN	Kenton
+38235	TN	Mc Lemoresville
+38236	TN	Mansfield
+38237	TN	Martin
+38238	TN	Martin
+38240	TN	Obion
+38241	TN	Palmersville
+38242	TN	Paris
+38251	TN	Puryear
+38253	TN	Rives
+38254	TN	Samburg
+38255	TN	Sharon
+38256	TN	Springville
+38257	TN	South Fulton
+38258	TN	Trezevant
+38259	TN	Trimble
+38260	TN	Troy
+38261	TN	Union City
+38271	TN	Woodland Mills
+38281	TN	Union City
+38301	TN	Jackson
+38302	TN	Jackson
+38303	TN	Jackson
+38305	TN	Jackson
+38308	TN	Jackson
+38310	TN	Adamsville
+38311	TN	Bath Springs
+38313	TN	Beech Bluff
+38314	TN	Jackson
+38315	TN	Bethel Springs
+38316	TN	Bradford
+38317	TN	Bruceton
+38318	TN	Buena Vista
+38320	TN	Camden
+38321	TN	Cedar Grove
+38324	TN	Clarksburg
+38326	TN	Counce
+38327	TN	Crump
+38328	TN	Darden
+38329	TN	Decaturville
+38330	TN	Dyer
+38331	TN	Eaton
+38332	TN	Enville
+38333	TN	Eva
+38334	TN	Finger
+38336	TN	Fruitvale
+38337	TN	Gadsden
+38338	TN	Gibson
+38339	TN	Guys
+38340	TN	Henderson
+38341	TN	Holladay
+38342	TN	Hollow Rock
+38343	TN	Humboldt
+38344	TN	Huntingdon
+38345	TN	Huron
+38346	TN	Idlewild
+38347	TN	Jacks Creek
+38348	TN	Lavinia
+38351	TN	Lexington
+38352	TN	Luray
+38355	TN	Medina
+38356	TN	Medon
+38357	TN	Michie
+38358	TN	Milan
+38359	TN	Milledgeville
+38361	TN	Morris Chapel
+38362	TN	Oakfield
+38363	TN	Parsons
+38365	TN	Pickwick Dam
+38366	TN	Pinson
+38367	TN	Ramer
+38368	TN	Reagan
+38369	TN	Rutherford
+38370	TN	Saltillo
+38371	TN	Sardis
+38372	TN	Savannah
+38374	TN	Scotts Hill
+38375	TN	Selmer
+38376	TN	Shiloh
+38377	TN	Silerton
+38378	TN	Spring Creek
+38379	TN	Stantonville
+38380	TN	Sugar Tree
+38381	TN	Toone
+38382	TN	Trenton
+38387	TN	Westport
+38388	TN	Wildersville
+38389	TN	Yorkville
+38390	TN	Yuma
+38391	TN	Denmark
+38392	TN	Mercer
+38393	TN	Chewalla
+38401	TN	Columbia
+38402	TN	Columbia
+38425	TN	Clifton
+38449	TN	Ardmore
+38450	TN	Collinwood
+38451	TN	Culleoka
+38452	TN	Cypress Inn
+38453	TN	Dellrose
+38454	TN	Duck River
+38455	TN	Elkton
+38456	TN	Ethridge
+38457	TN	Five Points
+38459	TN	Frankewing
+38460	TN	Goodspring
+38461	TN	Hampshire
+38462	TN	Hohenwald
+38463	TN	Iron City
+38464	TN	Lawrenceburg
+38468	TN	Leoma
+38469	TN	Loretto
+38471	TN	Lutts
+38472	TN	Lynnville
+38473	TN	Minor Hill
+38474	TN	Mount Pleasant
+38475	TN	Olivehill
+38476	TN	Primm Springs
+38477	TN	Prospect
+38478	TN	Pulaski
+38481	TN	Saint Joseph
+38482	TN	Santa Fe
+38483	TN	Summertown
+38485	TN	Waynesboro
+38486	TN	Westpoint
+38487	TN	Williamsport
+38488	TN	Taft
+38501	TN	Cookeville
+38502	TN	Cookeville
+38503	TN	Cookeville
+38504	TN	Allardt
+38505	TN	Cookeville
+38506	TN	Cookeville
+38541	TN	Allons
+38542	TN	Allred
+38543	TN	Alpine
+38544	TN	Baxter
+38545	TN	Bloomington Springs
+38547	TN	Brush Creek
+38548	TN	Buffalo Valley
+38549	TN	Byrdstown
+38550	TN	Campaign
+38551	TN	Celina
+38552	TN	Chestnut Mound
+38553	TN	Clarkrange
+38554	TN	Crawford
+38555	TN	Crossville
+38556	TN	Jamestown
+38557	TN	Crossville
+38558	TN	Crossville
+38559	TN	Doyle
+38560	TN	Elmwood
+38562	TN	Gainesboro
+38563	TN	Gordonsville
+38564	TN	Granville
+38565	TN	Grimsley
+38567	TN	Hickman
+38568	TN	Hilham
+38569	TN	Lancaster
+38570	TN	Livingston
+38571	TN	Crossville
+38572	TN	Crossville
+38573	TN	Monroe
+38574	TN	Monterey
+38575	TN	Moss
+38577	TN	Pall Mall
+38578	TN	Pleasant Hill
+38579	TN	Quebeck
+38580	TN	Rickman
+38581	TN	Rock Island
+38582	TN	Silver Point
+38583	TN	Sparta
+38585	TN	Spencer
+38587	TN	Walling
+38588	TN	Whitleyville
+38589	TN	Wilder
+38601	MS	Abbeville
+38602	MS	Arkabutla
+38603	MS	Ashland
+38606	MS	Batesville
+38609	MS	Belen
+38610	MS	Blue Mountain
+38611	MS	Byhalia
+38614	MS	Clarksdale
+38617	MS	Coahoma
+38618	MS	Coldwater
+38619	MS	Como
+38620	MS	Courtland
+38621	MS	Crenshaw
+38622	MS	Crowder
+38623	MS	Darling
+38625	MS	Dumas
+38626	MS	Dundee
+38627	MS	Etta
+38628	MS	Falcon
+38629	MS	Falkner
+38630	MS	Farrell
+38631	MS	Friars Point
+38632	MS	Hernando
+38633	MS	Hickory Flat
+38634	MS	Holly Springs
+38635	MS	Holly Springs
+38637	MS	Horn Lake
+38638	MS	Independence
+38639	MS	Jonestown
+38641	MS	Lake Cormorant
+38642	MS	Lamar
+38643	MS	Lambert
+38644	MS	Lula
+38645	MS	Lyon
+38646	MS	Marks
+38647	MS	Michigan City
+38649	MS	Mount Pleasant
+38650	MS	Myrtle
+38651	MS	Nesbit
+38652	MS	New Albany
+38654	MS	Olive Branch
+38655	MS	Oxford
+38658	MS	Pope
+38659	MS	Potts Camp
+38661	MS	Red Banks
+38663	MS	Ripley
+38664	MS	Robinsonville
+38665	MS	Sarah
+38666	MS	Sardis
+38668	MS	Senatobia
+38669	MS	Sherard
+38670	MS	Sledge
+38671	MS	Southaven
+38672	MS	Southaven
+38673	MS	Taylor
+38674	MS	Tiplersville
+38675	MS	Tula
+38676	MS	Tunica
+38677	MS	University
+38679	MS	Victoria
+38680	MS	Walls
+38683	MS	Walnut
+38685	MS	Waterford
+38686	MS	Walls
+38701	MS	Greenville
+38702	MS	Greenville
+38703	MS	Greenville
+38704	MS	Greenville
+38720	MS	Alligator
+38721	MS	Anguilla
+38722	MS	Arcola
+38723	MS	Avon
+38725	MS	Benoit
+38726	MS	Beulah
+38730	MS	Boyle
+38731	MS	Chatham
+38732	MS	Cleveland
+38733	MS	Cleveland
+38736	MS	Doddsville
+38737	MS	Drew
+38738	MS	Parchman
+38739	MS	Dublin
+38740	MS	Duncan
+38744	MS	Glen Allan
+38745	MS	Grace
+38746	MS	Gunnison
+38748	MS	Hollandale
+38749	MS	Holly Ridge
+38751	MS	Indianola
+38753	MS	Inverness
+38754	MS	Isola
+38756	MS	Leland
+38758	MS	Mattson
+38759	MS	Merigold
+38760	MS	Metcalfe
+38761	MS	Moorhead
+38762	MS	Mound Bayou
+38763	MS	Nitta Yuma
+38764	MS	Pace
+38765	MS	Panther Burn
+38767	MS	Rena Lara
+38768	MS	Rome
+38769	MS	Rosedale
+38771	MS	Ruleville
+38772	MS	Scott
+38773	MS	Shaw
+38774	MS	Shelby
+38776	MS	Stoneville
+38778	MS	Sunflower
+38780	MS	Wayside
+38781	MS	Winstonville
+38782	MS	Winterville
+38801	MS	Tupelo
+38802	MS	Tupelo
+38803	MS	Tupelo
+38804	MS	Tupelo
+38820	MS	Algoma
+38821	MS	Amory
+38824	MS	Baldwyn
+38825	MS	Becker
+38826	MS	Belden
+38827	MS	Belmont
+38828	MS	Blue Springs
+38829	MS	Booneville
+38833	MS	Burnsville
+38834	MS	Corinth
+38835	MS	Corinth
+38838	MS	Dennis
+38839	MS	Derma
+38841	MS	Ecru
+38843	MS	Fulton
+38844	MS	Gattman
+38846	MS	Glen
+38847	MS	Golden
+38848	MS	Greenwood Springs
+38849	MS	Guntown
+38850	MS	Houlka
+38851	MS	Houston
+38852	MS	Iuka
+38854	MS	Mc Condy
+38855	MS	Mantachie
+38856	MS	Marietta
+38857	MS	Mooreville
+38858	MS	Nettleton
+38859	MS	New Site
+38860	MS	Okolona
+38862	MS	Plantersville
+38863	MS	Pontotoc
+38864	MS	Randolph
+38865	MS	Rienzi
+38866	MS	Saltillo
+38868	MS	Shannon
+38869	MS	Sherman
+38870	MS	Smithville
+38871	MS	Thaxton
+38873	MS	Tishomingo
+38874	MS	Toccopola
+38875	MS	Trebloc
+38876	MS	Tremont
+38877	MS	Van Vleet
+38878	MS	Vardaman
+38879	MS	Verona
+38880	MS	Wheeler
+38901	MS	Grenada
+38902	MS	Grenada
+38912	MS	Avalon
+38913	MS	Banner
+38914	MS	Big Creek
+38915	MS	Bruce
+38916	MS	Calhoun City
+38917	MS	Carrollton
+38920	MS	Cascilla
+38921	MS	Charleston
+38922	MS	Coffeeville
+38923	MS	Coila
+38924	MS	Cruger
+38925	MS	Duck Hill
+38926	MS	Elliott
+38927	MS	Enid
+38928	MS	Glendora
+38929	MS	Gore Springs
+38930	MS	Greenwood
+38935	MS	Greenwood
+38940	MS	Holcomb
+38941	MS	Itta Bena
+38943	MS	Mc Carley
+38944	MS	Minter City
+38945	MS	Money
+38946	MS	Morgan City
+38947	MS	North Carrollton
+38948	MS	Oakland
+38949	MS	Paris
+38950	MS	Philipp
+38951	MS	Pittsboro
+38952	MS	Schlater
+38953	MS	Scobey
+38954	MS	Sidon
+38955	MS	Slate Spring
+38957	MS	Sumner
+38958	MS	Swan Lake
+38959	MS	Swiftown
+38960	MS	Tie Plant
+38961	MS	Tillatoba
+38962	MS	Tippo
+38963	MS	Tutwiler
+38964	MS	Vance
+38965	MS	Water Valley
+38966	MS	Webb
+38967	MS	Winona
+39038	MS	Belzoni
+39039	MS	Benton
+39040	MS	Bentonia
+39041	MS	Bolton
+39042	MS	Brandon
+39043	MS	Brandon
+39044	MS	Braxton
+39045	MS	Camden
+39046	MS	Canton
+39047	MS	Brandon
+39051	MS	Carthage
+39054	MS	Cary
+39056	MS	Clinton
+39057	MS	Conehatta
+39058	MS	Clinton
+39059	MS	Crystal Springs
+39060	MS	Clinton
+39061	MS	Delta City
+39062	MS	D Lo
+39063	MS	Durant
+39066	MS	Edwards
+39067	MS	Ethel
+39069	MS	Fayette
+39071	MS	Flora
+39072	MS	Pocahontas
+39073	MS	Florence
+39074	MS	Forest
+39077	MS	Gallman
+39078	MS	Georgetown
+39079	MS	Goodman
+39080	MS	Harperville
+39081	MS	Harriston
+39082	MS	Harrisville
+39083	MS	Hazlehurst
+39086	MS	Hermanville
+39087	MS	Hillsboro
+39088	MS	Holly Bluff
+39090	MS	Kosciusko
+39092	MS	Lake
+39094	MS	Lena
+39095	MS	Lexington
+39096	MS	Lorman
+39097	MS	Louise
+39098	MS	Ludlow
+39107	MS	Mc Adams
+39108	MS	Mc Cool
+39109	MS	Madden
+39110	MS	Madison
+39111	MS	Magee
+39112	MS	Sanatorium
+39113	MS	Mayersville
+39114	MS	Mendenhall
+39115	MS	Midnight
+39116	MS	Mize
+39117	MS	Morton
+39119	MS	Mount Olive
+39120	MS	Natchez
+39121	MS	Natchez
+39122	MS	Natchez
+39130	MS	Madison
+39140	MS	Newhebron
+39144	MS	Pattison
+39145	MS	Pelahatchie
+39146	MS	Pickens
+39148	MS	Piney Woods
+39149	MS	Pinola
+39150	MS	Port Gibson
+39151	MS	Puckett
+39152	MS	Pulaski
+39153	MS	Raleigh
+39154	MS	Raymond
+39156	MS	Redwood
+39157	MS	Ridgeland
+39158	MS	Ridgeland
+39159	MS	Rolling Fork
+39160	MS	Sallis
+39161	MS	Sandhill
+39162	MS	Satartia
+39163	MS	Sharon
+39165	MS	Sibley
+39166	MS	Silver City
+39167	MS	Star
+39168	MS	Taylorsville
+39169	MS	Tchula
+39170	MS	Terry
+39171	MS	Thomastown
+39173	MS	Tinsley
+39174	MS	Tougaloo
+39175	MS	Utica
+39176	MS	Vaiden
+39177	MS	Valley Park
+39179	MS	Vaughan
+39180	MS	Vicksburg
+39181	MS	Vicksburg
+39182	MS	Vicksburg
+39183	MS	Vicksburg
+39189	MS	Walnut Grove
+39190	MS	Washington
+39191	MS	Wesson
+39192	MS	West
+39193	MS	Whitfield
+39194	MS	Yazoo City
+39201	MS	Jackson
+39202	MS	Jackson
+39203	MS	Jackson
+39204	MS	Jackson
+39205	MS	Jackson
+39206	MS	Jackson
+39207	MS	Jackson
+39208	MS	Pearl
+39209	MS	Jackson
+39210	MS	Jackson
+39211	MS	Jackson
+39212	MS	Jackson
+39213	MS	Jackson
+39215	MS	Jackson
+39216	MS	Jackson
+39217	MS	Jackson
+39218	MS	Richland
+39225	MS	Jackson
+39232	MS	Flowood
+39235	MS	Jackson
+39236	MS	Jackson
+39250	MS	Jackson
+39269	MS	Jackson
+39271	MS	Jackson
+39272	MS	Byram
+39282	MS	Jackson
+39283	MS	Jackson
+39284	MS	Jackson
+39286	MS	Jackson
+39288	MS	Pearl
+39289	MS	Jackson
+39296	MS	Jackson
+39298	MS	Jackson
+39301	MS	Meridian
+39302	MS	Meridian
+39303	MS	Meridian
+39304	MS	Meridian
+39305	MS	Meridian
+39307	MS	Meridian
+39309	MS	Meridian
+39320	MS	Bailey
+39322	MS	Buckatunna
+39323	MS	Chunky
+39324	MS	Clara
+39325	MS	Collinsville
+39326	MS	Daleville
+39327	MS	Decatur
+39328	MS	De Kalb
+39330	MS	Enterprise
+39332	MS	Hickory
+39335	MS	Lauderdale
+39336	MS	Lawrence
+39337	MS	Little Rock
+39338	MS	Louin
+39339	MS	Louisville
+39341	MS	Macon
+39342	MS	Marion
+39345	MS	Newton
+39346	MS	Noxapater
+39347	MS	Pachuta
+39348	MS	Paulding
+39350	MS	Philadelphia
+39352	MS	Porterville
+39354	MS	Preston
+39355	MS	Quitman
+39356	MS	Rose Hill
+39358	MS	Scooba
+39359	MS	Sebastopol
+39360	MS	Shubuta
+39361	MS	Shuqualak
+39362	MS	State Line
+39363	MS	Stonewall
+39364	MS	Toomsuba
+39365	MS	Union
+39366	MS	Vossburg
+39367	MS	Waynesboro
+39401	MS	Hattiesburg
+39402	MS	Hattiesburg
+39403	MS	Hattiesburg
+39404	MS	Hattiesburg
+39406	MS	Hattiesburg
+39407	MS	Hattiesburg
+39421	MS	Bassfield
+39422	MS	Bay Springs
+39423	MS	Beaumont
+39425	MS	Brooklyn
+39426	MS	Carriere
+39427	MS	Carson
+39428	MS	Collins
+39429	MS	Columbia
+39436	MS	Eastabuchie
+39437	MS	Ellisville
+39439	MS	Heidelberg
+39440	MS	Laurel
+39441	MS	Laurel
+39442	MS	Laurel
+39443	MS	Laurel
+39451	MS	Leakesville
+39452	MS	Lucedale
+39455	MS	Lumberton
+39456	MS	Mc Lain
+39457	MS	Mc Neill
+39459	MS	Moselle
+39460	MS	Moss
+39461	MS	Neely
+39462	MS	New Augusta
+39463	MS	Nicholson
+39464	MS	Ovett
+39465	MS	Petal
+39466	MS	Picayune
+39470	MS	Poplarville
+39474	MS	Prentiss
+39475	MS	Purvis
+39476	MS	Richton
+39477	MS	Sandersville
+39478	MS	Sandy Hook
+39479	MS	Seminary
+39480	MS	Soso
+39481	MS	Stringer
+39482	MS	Sumrall
+39483	MS	Foxworth
+39501	MS	Gulfport
+39502	MS	Gulfport
+39503	MS	Gulfport
+39505	MS	Gulfport
+39506	MS	Gulfport
+39507	MS	Gulfport
+39520	MS	Bay Saint Louis
+39521	MS	Bay Saint Louis
+39522	MS	Stennis Space Center
+39525	MS	Diamondhead
+39529	MS	Stennis Space Center
+39530	MS	Biloxi
+39531	MS	Biloxi
+39532	MS	Biloxi
+39533	MS	Biloxi
+39534	MS	Biloxi
+39535	MS	Biloxi
+39540	MS	Diberville
+39552	MS	Escatawpa
+39553	MS	Gautier
+39555	MS	Hurley
+39556	MS	Kiln
+39558	MS	Lakeshore
+39560	MS	Long Beach
+39561	MS	Mc Henry
+39562	MS	Moss Point
+39563	MS	Moss Point
+39564	MS	Ocean Springs
+39565	MS	Ocean Springs
+39566	MS	Ocean Springs
+39567	MS	Pascagoula
+39568	MS	Pascagoula
+39569	MS	Pascagoula
+39571	MS	Pass Christian
+39572	MS	Pearlington
+39573	MS	Perkinston
+39574	MS	Saucier
+39576	MS	Waveland
+39577	MS	Wiggins
+39581	MS	Pascagoula
+39595	MS	Pascagoula
+39601	MS	Brookhaven
+39602	MS	Brookhaven
+39603	MS	Brookhaven
+39629	MS	Bogue Chitto
+39630	MS	Bude
+39631	MS	Centreville
+39632	MS	Chatawa
+39633	MS	Crosby
+39635	MS	Fernwood
+39638	MS	Gloster
+39641	MS	Jayess
+39643	MS	Kokomo
+39645	MS	Liberty
+39647	MS	Mc Call Creek
+39648	MS	Mccomb
+39649	MS	Mccomb
+39652	MS	Magnolia
+39653	MS	Meadville
+39654	MS	Monticello
+39656	MS	Oak Vale
+39657	MS	Osyka
+39661	MS	Roxie
+39662	MS	Ruth
+39663	MS	Silver Creek
+39664	MS	Smithdale
+39665	MS	Sontag
+39666	MS	Summit
+39667	MS	Tylertown
+39668	MS	Union Church
+39669	MS	Woodville
+39701	MS	Columbus
+39702	MS	Columbus
+39703	MS	Columbus
+39704	MS	Columbus
+39705	MS	Columbus
+39710	MS	Columbus
+39730	MS	Aberdeen
+39735	MS	Ackerman
+39736	MS	Artesia
+39737	MS	Bellefontaine
+39739	MS	Brooksville
+39740	MS	Caledonia
+39741	MS	Cedarbluff
+39743	MS	Crawford
+39744	MS	Eupora
+39745	MS	French Camp
+39746	MS	Hamilton
+39747	MS	Kilmichael
+39750	MS	Maben
+39751	MS	Mantee
+39752	MS	Mathiston
+39753	MS	Mayhew
+39754	MS	Montpelier
+39755	MS	Pheba
+39756	MS	Prairie
+39759	MS	Starkville
+39760	MS	Starkville
+39762	MS	Mississippi State
+39766	MS	Steens
+39767	MS	Stewart
+39769	MS	Sturgis
+39771	MS	Walthall
+39772	MS	Weir
+39773	MS	West Point
+39776	MS	Woodland
+39901	GA	Atlanta
+40003	KY	Bagdad
+40004	KY	Bardstown
+40006	KY	Bedford
+40007	KY	Bethlehem
+40008	KY	Bloomfield
+40009	KY	Bradfordsville
+40010	KY	Buckner
+40011	KY	Campbellsburg
+40012	KY	Chaplin
+40013	KY	Coxs Creek
+40014	KY	Crestwood
+40018	KY	Eastwood
+40019	KY	Eminence
+40020	KY	Fairfield
+40022	KY	Finchville
+40023	KY	Fisherville
+40025	KY	Glenview
+40026	KY	Goshen
+40027	KY	Harrods Creek
+40031	KY	La Grange
+40032	KY	La Grange
+40033	KY	Lebanon
+40036	KY	Lockport
+40037	KY	Loretto
+40040	KY	Mackville
+40041	KY	Masonic Home
+40045	KY	Milton
+40046	KY	Mount Eden
+40047	KY	Mount Washington
+40048	KY	Nazareth
+40049	KY	Nerinx
+40050	KY	New Castle
+40051	KY	New Haven
+40052	KY	New Hope
+40055	KY	Pendleton
+40056	KY	Pewee Valley
+40057	KY	Pleasureville
+40058	KY	Port Royal
+40059	KY	Prospect
+40060	KY	Raywick
+40061	KY	Saint Catharine
+40062	KY	Saint Francis
+40063	KY	Saint Mary
+40065	KY	Shelbyville
+40066	KY	Shelbyville
+40067	KY	Simpsonville
+40068	KY	Smithfield
+40069	KY	Springfield
+40070	KY	Sulphur
+40071	KY	Taylorsville
+40075	KY	Turners Station
+40076	KY	Waddy
+40077	KY	Westport
+40078	KY	Willisburg
+40104	KY	Battletown
+40107	KY	Boston
+40108	KY	Brandenburg
+40109	KY	Brooks
+40110	KY	Clermont
+40111	KY	Cloverport
+40115	KY	Custer
+40117	KY	Ekron
+40118	KY	Fairdale
+40119	KY	Falls Of Rough
+40121	KY	Fort Knox
+40129	KY	Hillview
+40140	KY	Garfield
+40142	KY	Guston
+40143	KY	Hardinsburg
+40144	KY	Harned
+40145	KY	Hudson
+40146	KY	Irvington
+40150	KY	Lebanon Junction
+40152	KY	Mc Daniels
+40153	KY	Mc Quady
+40155	KY	Muldraugh
+40157	KY	Payneville
+40159	KY	Radcliff
+40160	KY	Radcliff
+40161	KY	Rhodelia
+40162	KY	Rineyville
+40164	KY	Se Ree
+40165	KY	Shepherdsville
+40170	KY	Stephensport
+40171	KY	Union Star
+40175	KY	Vine Grove
+40176	KY	Webster
+40177	KY	West Point
+40178	KY	Westview
+40201	KY	Louisville
+40202	KY	Louisville
+40203	KY	Louisville
+40204	KY	Louisville
+40205	KY	Louisville
+40206	KY	Louisville
+40207	KY	Louisville
+40208	KY	Louisville
+40209	KY	Louisville
+40210	KY	Louisville
+40211	KY	Louisville
+40212	KY	Louisville
+40213	KY	Louisville
+40214	KY	Louisville
+40215	KY	Louisville
+40216	KY	Louisville
+40217	KY	Louisville
+40218	KY	Louisville
+40219	KY	Louisville
+40220	KY	Louisville
+40221	KY	Louisville
+40222	KY	Louisville
+40223	KY	Louisville
+40224	KY	Louisville
+40225	KY	Louisville
+40228	KY	Louisville
+40229	KY	Louisville
+40231	KY	Louisville
+40232	KY	Louisville
+40233	KY	Louisville
+40241	KY	Louisville
+40242	KY	Louisville
+40243	KY	Louisville
+40245	KY	Louisville
+40250	KY	Louisville
+40251	KY	Louisville
+40252	KY	Louisville
+40253	KY	Louisville
+40255	KY	Louisville
+40256	KY	Louisville
+40257	KY	Louisville
+40258	KY	Louisville
+40259	KY	Louisville
+40261	KY	Louisville
+40266	KY	Louisville
+40268	KY	Louisville
+40269	KY	Louisville
+40270	KY	Louisville
+40272	KY	Louisville
+40280	KY	Louisville
+40281	KY	Louisville
+40282	KY	Louisville
+40283	KY	Louisville
+40285	KY	Louisville
+40287	KY	Louisville
+40289	KY	Louisville
+40290	KY	Louisville
+40291	KY	Louisville
+40292	KY	Louisville
+40293	KY	Louisville
+40294	KY	Louisville
+40295	KY	Louisville
+40296	KY	Louisville
+40297	KY	Louisville
+40298	KY	Louisville
+40299	KY	Louisville
+40310	KY	Burgin
+40311	KY	Carlisle
+40312	KY	Clay City
+40313	KY	Clearfield
+40316	KY	Denniston
+40317	KY	Elliottville
+40319	KY	Farmers
+40320	KY	Ford
+40322	KY	Frenchburg
+40324	KY	Georgetown
+40328	KY	Gravel Switch
+40329	KY	Haldeman
+40330	KY	Harrodsburg
+40334	KY	Hope
+40336	KY	Irvine
+40337	KY	Jeffersonville
+40339	KY	Keene
+40340	KY	Nicholasville
+40342	KY	Lawrenceburg
+40346	KY	Means
+40347	KY	Midway
+40348	KY	Millersburg
+40350	KY	Moorefield
+40351	KY	Morehead
+40353	KY	Mount Sterling
+40355	KY	New Liberty
+40356	KY	Nicholasville
+40357	KY	North Middletown
+40358	KY	Olympia
+40359	KY	Owenton
+40360	KY	Owingsville
+40361	KY	Paris
+40362	KY	Paris
+40363	KY	Perry Park
+40366	KY	Preston
+40370	KY	Sadieville
+40371	KY	Salt Lick
+40372	KY	Salvisa
+40374	KY	Sharpsburg
+40376	KY	Slade
+40379	KY	Stamping Ground
+40380	KY	Stanton
+40383	KY	Versailles
+40384	KY	Versailles
+40385	KY	Waco
+40386	KY	Versailles
+40387	KY	Wellington
+40390	KY	Wilmore
+40391	KY	Winchester
+40392	KY	Winchester
+40402	KY	Annville
+40403	KY	Berea
+40404	KY	Berea
+40405	KY	Bighill
+40409	KY	Brodhead
+40410	KY	Bryantsville
+40419	KY	Crab Orchard
+40421	KY	Dabolt
+40422	KY	Danville
+40423	KY	Danville
+40434	KY	Gray Hawk
+40437	KY	Hustonville
+40440	KY	Junction City
+40442	KY	Kings Mountain
+40444	KY	Lancaster
+40445	KY	Livingston
+40446	KY	Lancaster
+40447	KY	Mc Kee
+40448	KY	Mc Kinney
+40452	KY	Mitchellsburg
+40456	KY	Mount Vernon
+40460	KY	Orlando
+40461	KY	Paint Lick
+40464	KY	Parksville
+40467	KY	Peoples
+40468	KY	Perryville
+40472	KY	Ravenna
+40473	KY	Renfro Valley
+40475	KY	Richmond
+40476	KY	Richmond
+40481	KY	Sandgap
+40484	KY	Stanford
+40486	KY	Tyner
+40488	KY	Waneta
+40489	KY	Waynesburg
+40492	KY	Wildie
+40495	KY	Winston
+40502	KY	Lexington
+40503	KY	Lexington
+40504	KY	Lexington
+40505	KY	Lexington
+40506	KY	Lexington
+40507	KY	Lexington
+40508	KY	Lexington
+40509	KY	Lexington
+40510	KY	Lexington
+40511	KY	Lexington
+40512	KY	Lexington
+40513	KY	Lexington
+40514	KY	Lexington
+40515	KY	Lexington
+40516	KY	Lexington
+40517	KY	Lexington
+40522	KY	Lexington
+40523	KY	Lexington
+40524	KY	Lexington
+40526	KY	Lexington
+40533	KY	Lexington
+40536	KY	Lexington
+40544	KY	Lexington
+40546	KY	Lexington
+40550	KY	Lexington
+40555	KY	Lexington
+40574	KY	Lexington
+40575	KY	Lexington
+40576	KY	Lexington
+40577	KY	Lexington
+40578	KY	Lexington
+40579	KY	Lexington
+40580	KY	Lexington
+40581	KY	Lexington
+40582	KY	Lexington
+40583	KY	Lexington
+40584	KY	Lexington
+40585	KY	Lexington
+40586	KY	Lexington
+40587	KY	Lexington
+40588	KY	Lexington
+40589	KY	Lexington
+40590	KY	Lexington
+40591	KY	Lexington
+40592	KY	Lexington
+40593	KY	Lexington
+40594	KY	Lexington
+40595	KY	Lexington
+40596	KY	Lexington
+40601	KY	Frankfort
+40602	KY	Frankfort
+40603	KY	Frankfort
+40604	KY	Frankfort
+40618	KY	Frankfort
+40619	KY	Frankfort
+40620	KY	Frankfort
+40621	KY	Frankfort
+40622	KY	Frankfort
+40701	KY	Corbin
+40702	KY	Corbin
+40724	KY	Bush
+40729	KY	East Bernstadt
+40730	KY	Emlyn
+40734	KY	Gray
+40737	KY	Keavy
+40740	KY	Lily
+40741	KY	London
+40742	KY	London
+40743	KY	London
+40744	KY	London
+40745	KY	London
+40751	KY	Marydell
+40754	KY	Nevisdale
+40755	KY	Pittsburg
+40759	KY	Rockholds
+40763	KY	Siler
+40769	KY	Williamsburg
+40771	KY	Woodbine
+40801	KY	Ages Brookside
+40803	KY	Asher
+40806	KY	Baxter
+40807	KY	Benham
+40808	KY	Big Laurel
+40810	KY	Bledsoe
+40813	KY	Calvin
+40815	KY	Cawood
+40816	KY	Chappell
+40818	KY	Coalgood
+40819	KY	Coldiron
+40820	KY	Cranks
+40823	KY	Cumberland
+40824	KY	Dayhoit
+40826	KY	Eolia
+40827	KY	Essie
+40828	KY	Evarts
+40829	KY	Grays Knob
+40830	KY	Gulston
+40831	KY	Harlan
+40840	KY	Helton
+40843	KY	Holmes Mill
+40844	KY	Hoskinston
+40845	KY	Hulen
+40847	KY	Kenvir
+40849	KY	Lejunior
+40854	KY	Loyall
+40855	KY	Lynch
+40856	KY	Miracle
+40858	KY	Mozelle
+40862	KY	Partridge
+40863	KY	Pathfork
+40865	KY	Putney
+40868	KY	Stinnett
+40870	KY	Totz
+40873	KY	Wallins Creek
+40874	KY	Warbranch
+40902	KY	Arjay
+40903	KY	Artemus
+40906	KY	Barbourville
+40913	KY	Beverly
+40914	KY	Big Creek
+40915	KY	Bimble
+40921	KY	Bryants Store
+40923	KY	Cannon
+40927	KY	Closplint
+40930	KY	Dewitt
+40931	KY	Eriline
+40932	KY	Fall Rock
+40935	KY	Flat Lick
+40939	KY	Fourmile
+40940	KY	Frakes
+40941	KY	Garrard
+40943	KY	Girdler
+40944	KY	Goose Rock
+40946	KY	Green Road
+40949	KY	Heidrick
+40951	KY	Hima
+40953	KY	Hinkle
+40955	KY	Ingram
+40958	KY	Kettle Island
+40962	KY	Manchester
+40964	KY	Mary Alice
+40965	KY	Middlesboro
+40972	KY	Oneida
+40977	KY	Pineville
+40979	KY	Roark
+40981	KY	Saul
+40982	KY	Scalf
+40983	KY	Sextons Creek
+40988	KY	Stoney Fork
+40995	KY	Trosper
+40997	KY	Walker
+40999	KY	Woollum
+41001	KY	Alexandria
+41002	KY	Augusta
+41003	KY	Berry
+41004	KY	Brooksville
+41005	KY	Burlington
+41006	KY	Butler
+41007	KY	California
+41008	KY	Carrollton
+41010	KY	Corinth
+41011	KY	Covington
+41012	KY	Covington
+41014	KY	Covington
+41015	KY	Latonia
+41016	KY	Covington
+41017	KY	Ft Mitchell
+41018	KY	Erlanger
+41019	KY	Covington
+41022	KY	Florence
+41030	KY	Crittenden
+41031	KY	Cynthiana
+41033	KY	De Mossville
+41034	KY	Dover
+41035	KY	Dry Ridge
+41037	KY	Elizaville
+41039	KY	Ewing
+41040	KY	Falmouth
+41041	KY	Flemingsburg
+41042	KY	Florence
+41043	KY	Foster
+41044	KY	Germantown
+41045	KY	Ghent
+41046	KY	Glencoe
+41048	KY	Hebron
+41049	KY	Hillsboro
+41051	KY	Independence
+41052	KY	Jonesville
+41053	KY	Kenton
+41054	KY	Mason
+41055	KY	Mayslick
+41056	KY	Maysville
+41059	KY	Melbourne
+41061	KY	Milford
+41062	KY	Minerva
+41063	KY	Morning View
+41064	KY	Mount Olivet
+41065	KY	Muses Mills
+41071	KY	Newport
+41072	KY	Newport
+41073	KY	Bellevue
+41074	KY	Dayton
+41075	KY	Fort Thomas
+41076	KY	Newport
+41080	KY	Petersburg
+41081	KY	Plummers Landing
+41083	KY	Sanders
+41085	KY	Silver Grove
+41086	KY	Sparta
+41091	KY	Union
+41092	KY	Verona
+41093	KY	Wallingford
+41094	KY	Walton
+41095	KY	Warsaw
+41096	KY	Washington
+41097	KY	Williamstown
+41098	KY	Worthville
+41099	KY	Newport
+41101	KY	Ashland
+41102	KY	Ashland
+41105	KY	Ashland
+41114	KY	Ashland
+41121	KY	Argillite
+41124	KY	Blaine
+41127	KY	Camp Dix
+41128	KY	Carter
+41129	KY	Catlettsburg
+41132	KY	Denton
+41135	KY	Emerson
+41137	KY	Firebrick
+41139	KY	Flatwoods
+41141	KY	Garrison
+41142	KY	Grahn
+41143	KY	Grayson
+41144	KY	Greenup
+41146	KY	Hitchins
+41149	KY	Isonville
+41150	KY	Jacobs
+41156	KY	Lloyd
+41159	KY	Martha
+41160	KY	Mazie
+41164	KY	Olive Hill
+41166	KY	Quincy
+41168	KY	Rush
+41169	KY	Russell
+41170	KY	Saint Paul
+41171	KY	Sandy Hook
+41173	KY	Soldier
+41174	KY	South Portsmouth
+41175	KY	South Shore
+41179	KY	Vanceburg
+41180	KY	Webbville
+41181	KY	Willard
+41183	KY	Worthington
+41189	KY	Tollesboro
+41201	KY	Adams
+41203	KY	Beauty
+41204	KY	Boons Camp
+41214	KY	Debord
+41215	KY	Denver
+41216	KY	East Point
+41219	KY	Flatgap
+41222	KY	Hagerhill
+41224	KY	Inez
+41226	KY	Keaton
+41228	KY	Leander
+41230	KY	Louisa
+41231	KY	Lovely
+41232	KY	Lowmansville
+41234	KY	Meally
+41238	KY	Oil Springs
+41240	KY	Paintsville
+41250	KY	Pilgrim
+41254	KY	River
+41255	KY	Sitka
+41256	KY	Staffordsville
+41257	KY	Stambaugh
+41260	KY	Thelma
+41262	KY	Tomahawk
+41263	KY	Tutor Key
+41264	KY	Ulysses
+41265	KY	Van Lear
+41267	KY	Warfield
+41268	KY	West Van Lear
+41271	KY	Williamsport
+41274	KY	Wittensville
+41301	KY	Campton
+41307	KY	Athol
+41310	KY	Bays
+41311	KY	Beattyville
+41313	KY	Bethany
+41314	KY	Booneville
+41317	KY	Clayhole
+41332	KY	Hazel Green
+41333	KY	Heidelberg
+41338	KY	Island City
+41339	KY	Jackson
+41342	KY	Lee City
+41344	KY	Lerose
+41347	KY	Lone
+41348	KY	Lost Creek
+41351	KY	Mistletoe
+41352	KY	Mize
+41360	KY	Pine Ridge
+41362	KY	Primrose
+41364	KY	Ricetown
+41365	KY	Rogers
+41366	KY	Rousseau
+41367	KY	Rowdy
+41368	KY	Saint Helens
+41377	KY	Talbert
+41385	KY	Vancleve
+41386	KY	Vincent
+41390	KY	Whick
+41397	KY	Zoe
+41408	KY	Cannel City
+41410	KY	Cisco
+41413	KY	Crockett
+41419	KY	Edna
+41421	KY	Elkfork
+41422	KY	Elsie
+41425	KY	Ezel
+41426	KY	Falcon
+41433	KY	Gapville
+41444	KY	Ivyton
+41451	KY	Malone
+41459	KY	Ophir
+41464	KY	Royalton
+41465	KY	Salyersville
+41472	KY	West Liberty
+41477	KY	Wrigley
+41501	KY	Pikeville
+41502	KY	Pikeville
+41503	KY	South Williamson
+41512	KY	Ashcamp
+41513	KY	Belcher
+41514	KY	Belfry
+41517	KY	Burdine
+41519	KY	Canada
+41520	KY	Dorton
+41522	KY	Elkhorn City
+41524	KY	Fedscreek
+41526	KY	Fords Branch
+41527	KY	Forest Hills
+41528	KY	Freeburn
+41531	KY	Hardy
+41534	KY	Hellier
+41535	KY	Huddy
+41537	KY	Jenkins
+41538	KY	Jonancy
+41539	KY	Kimper
+41540	KY	Lick Creek
+41542	KY	Lookout
+41543	KY	Mc Andrews
+41544	KY	Mc Carr
+41546	KY	Mc Veigh
+41547	KY	Majestic
+41548	KY	Mouthcard
+41549	KY	Myra
+41553	KY	Phelps
+41554	KY	Phyllis
+41555	KY	Pinsonfork
+41557	KY	Raccoon
+41558	KY	Ransom
+41559	KY	Regina
+41560	KY	Robinson Creek
+41561	KY	Rockhouse
+41562	KY	Shelbiana
+41563	KY	Shelby Gap
+41564	KY	Sidney
+41566	KY	Steele
+41567	KY	Stone
+41568	KY	Stopover
+41569	KY	Toler
+41571	KY	Varney
+41572	KY	Virgie
+41601	KY	Allen
+41602	KY	Auxier
+41603	KY	Banner
+41604	KY	Beaver
+41605	KY	Betsy Layne
+41606	KY	Bevinsville
+41607	KY	Blue River
+41612	KY	Bypro
+41615	KY	Dana
+41616	KY	David
+41619	KY	Drift
+41621	KY	Dwale
+41622	KY	Eastern
+41630	KY	Garrett
+41631	KY	Grethel
+41632	KY	Gunlock
+41635	KY	Harold
+41636	KY	Hi Hat
+41640	KY	Hueysville
+41642	KY	Ivel
+41643	KY	Lackey
+41645	KY	Langley
+41647	KY	Mc Dowell
+41649	KY	Martin
+41650	KY	Melvin
+41651	KY	Minnie
+41653	KY	Prestonsburg
+41655	KY	Printer
+41659	KY	Stanville
+41660	KY	Teaberry
+41663	KY	Tram
+41666	KY	Wayland
+41667	KY	Weeksbury
+41669	KY	Wheelwright
+41701	KY	Hazard
+41702	KY	Hazard
+41712	KY	Ary
+41713	KY	Avawam
+41714	KY	Bear Branch
+41719	KY	Bonnyman
+41721	KY	Buckhorn
+41722	KY	Bulan
+41723	KY	Busy
+41725	KY	Carrie
+41727	KY	Chavies
+41729	KY	Combs
+41730	KY	Confluence
+41731	KY	Cornettsville
+41735	KY	Delphia
+41736	KY	Dice
+41739	KY	Dwarf
+41740	KY	Emmalena
+41743	KY	Fisty
+41745	KY	Gays Creek
+41746	KY	Happy
+41747	KY	Hardburly
+41749	KY	Hyden
+41751	KY	Jeff
+41754	KY	Krypton
+41759	KY	Sassafras
+41760	KY	Scuddy
+41762	KY	Sizerock
+41763	KY	Slemp
+41764	KY	Smilax
+41766	KY	Thousandsticks
+41772	KY	Vest
+41773	KY	Vicco
+41774	KY	Viper
+41775	KY	Wendover
+41776	KY	Wooton
+41777	KY	Yeaddiss
+41778	KY	Yerkes
+41804	KY	Blackey
+41810	KY	Cromona
+41812	KY	Deane
+41815	KY	Ermine
+41817	KY	Garner
+41819	KY	Gordon
+41821	KY	Hallie
+41822	KY	Hindman
+41824	KY	Isom
+41825	KY	Jackhorn
+41826	KY	Jeremiah
+41828	KY	Kite
+41831	KY	Leburn
+41832	KY	Letcher
+41833	KY	Linefork
+41834	KY	Littcarr
+41835	KY	Mc Roberts
+41836	KY	Mallie
+41837	KY	Mayking
+41838	KY	Millstone
+41839	KY	Mousie
+41840	KY	Neon
+41843	KY	Pine Top
+41844	KY	Pippa Passes
+41845	KY	Premium
+41847	KY	Redfox
+41848	KY	Roxana
+41849	KY	Seco
+41855	KY	Thornton
+41858	KY	Whitesburg
+41859	KY	Dema
+41861	KY	Raven
+41862	KY	Topmost
+41901	KY	Migrate
+41902	KY	Migrate
+41903	KY	Migrate
+41904	KY	Migrate
+41905	KY	Migrate
+41906	KY	Migrate
+42001	KY	Paducah
+42002	KY	Paducah
+42003	KY	Paducah
+42020	KY	Almo
+42021	KY	Arlington
+42022	KY	Bandana
+42023	KY	Bardwell
+42024	KY	Barlow
+42025	KY	Benton
+42027	KY	Boaz
+42028	KY	Burna
+42029	KY	Calvert City
+42031	KY	Clinton
+42032	KY	Columbus
+42033	KY	Crayne
+42035	KY	Cunningham
+42036	KY	Dexter
+42037	KY	Dycusburg
+42038	KY	Eddyville
+42039	KY	Fancy Farm
+42040	KY	Farmington
+42041	KY	Fulton
+42044	KY	Gilbertsville
+42045	KY	Grand Rivers
+42046	KY	Hamlin
+42047	KY	Hampton
+42048	KY	Hardin
+42049	KY	Hazel
+42050	KY	Hickman
+42051	KY	Hickory
+42053	KY	Kevil
+42054	KY	Kirksey
+42055	KY	Kuttawa
+42056	KY	La Center
+42058	KY	Ledbetter
+42060	KY	Lovelaceville
+42061	KY	Lowes
+42063	KY	Lynnville
+42064	KY	Marion
+42066	KY	Mayfield
+42069	KY	Melber
+42070	KY	Milburn
+42071	KY	Murray
+42076	KY	New Concord
+42078	KY	Salem
+42079	KY	Sedalia
+42081	KY	Smithland
+42082	KY	Symsonia
+42083	KY	Tiline
+42084	KY	Tolu
+42085	KY	Water Valley
+42086	KY	West Paducah
+42087	KY	Wickliffe
+42088	KY	Wingo
+42101	KY	Bowling Green
+42102	KY	Bowling Green
+42103	KY	Bowling Green
+42104	KY	Bowling Green
+42120	KY	Adolphus
+42122	KY	Alvaton
+42123	KY	Austin
+42124	KY	Beaumont
+42127	KY	Cave City
+42128	KY	Drake
+42129	KY	Edmonton
+42130	KY	Eighty Eight
+42131	KY	Etoile
+42133	KY	Fountain Run
+42134	KY	Franklin
+42135	KY	Franklin
+42140	KY	Gamaliel
+42141	KY	Glasgow
+42142	KY	Glasgow
+42150	KY	Halfway
+42151	KY	Hestand
+42152	KY	Hiseville
+42153	KY	Holland
+42154	KY	Knob Lick
+42156	KY	Lucas
+42157	KY	Mount Hermon
+42159	KY	Oakland
+42160	KY	Park City
+42163	KY	Rocky Hill
+42164	KY	Scottsville
+42166	KY	Summer Shade
+42167	KY	Tompkinsville
+42170	KY	Woodburn
+42171	KY	Smiths Grove
+42201	KY	Aberdeen
+42202	KY	Adairville
+42203	KY	Allegre
+42204	KY	Allensville
+42206	KY	Auburn
+42207	KY	Bee Spring
+42209	KY	Brooklyn
+42210	KY	Brownsville
+42211	KY	Cadiz
+42214	KY	Center
+42215	KY	Cerulean
+42216	KY	Clifty
+42217	KY	Crofton
+42219	KY	Dunbar
+42220	KY	Elkton
+42221	KY	Fairview
+42223	KY	Fort Campbell
+42232	KY	Gracey
+42234	KY	Guthrie
+42235	KY	Hadley
+42236	KY	Herndon
+42240	KY	Hopkinsville
+42241	KY	Hopkinsville
+42251	KY	Huntsville
+42252	KY	Jetson
+42254	KY	La Fayette
+42256	KY	Lewisburg
+42257	KY	Lindseyville
+42259	KY	Mammoth Cave
+42261	KY	Morgantown
+42262	KY	Oak Grove
+42265	KY	Olmstead
+42266	KY	Pembroke
+42267	KY	Provo
+42270	KY	Richardsville
+42273	KY	Rochester
+42274	KY	Rockfield
+42275	KY	Roundhill
+42276	KY	Russellville
+42280	KY	Sharon Grove
+42283	KY	South Union
+42285	KY	Sweeden
+42286	KY	Trenton
+42287	KY	Welchs Creek
+42288	KY	Woodbury
+42301	KY	Owensboro
+42302	KY	Owensboro
+42303	KY	Owensboro
+42304	KY	Owensboro
+42320	KY	Beaver Dam
+42321	KY	Beech Creek
+42322	KY	Beech Grove
+42323	KY	Beechmont
+42324	KY	Belton
+42325	KY	Bremen
+42326	KY	Browder
+42327	KY	Calhoun
+42328	KY	Centertown
+42330	KY	Central City
+42332	KY	Cleaton
+42333	KY	Cromwell
+42334	KY	Curdsville
+42337	KY	Drakesboro
+42338	KY	Dundee
+42339	KY	Dunmor
+42343	KY	Fordsville
+42344	KY	Graham
+42345	KY	Greenville
+42347	KY	Hartford
+42348	KY	Hawesville
+42349	KY	Horse Branch
+42350	KY	Island
+42351	KY	Lewisport
+42352	KY	Livermore
+42354	KY	Mc Henry
+42355	KY	Maceo
+42356	KY	Maple Mount
+42361	KY	Olaton
+42364	KY	Pellville
+42365	KY	Penrod
+42366	KY	Philpot
+42367	KY	Powderly
+42368	KY	Reynolds Station
+42369	KY	Rockport
+42370	KY	Rosine
+42371	KY	Rumsey
+42372	KY	Sacramento
+42374	KY	South Carrollton
+42375	KY	Stanley
+42376	KY	Utica
+42377	KY	West Louisville
+42378	KY	Whitesville
+42402	KY	Baskett
+42403	KY	Blackford
+42404	KY	Clay
+42406	KY	Corydon
+42408	KY	Dawson Springs
+42409	KY	Dixon
+42410	KY	Earlington
+42411	KY	Fredonia
+42413	KY	Hanson
+42419	KY	Henderson
+42420	KY	Henderson
+42431	KY	Madisonville
+42436	KY	Manitou
+42437	KY	Morganfield
+42440	KY	Mortons Gap
+42441	KY	Nebo
+42442	KY	Nortonville
+42444	KY	Poole
+42445	KY	Princeton
+42450	KY	Providence
+42451	KY	Reed
+42452	KY	Robards
+42453	KY	Saint Charles
+42455	KY	Sebree
+42456	KY	Slaughters
+42457	KY	Smith Mills
+42458	KY	Spottsville
+42459	KY	Sturgis
+42460	KY	Sullivan
+42461	KY	Uniontown
+42462	KY	Waverly
+42463	KY	Wheatcroft
+42464	KY	White Plains
+42501	KY	Somerset
+42502	KY	Somerset
+42503	KY	Somerset
+42516	KY	Bethelridge
+42518	KY	Bronston
+42519	KY	Burnside
+42528	KY	Dunnville
+42533	KY	Ferguson
+42539	KY	Liberty
+42541	KY	Middleburg
+42544	KY	Nancy
+42553	KY	Science Hill
+42558	KY	Tateville
+42564	KY	West Somerset
+42565	KY	Windsor
+42566	KY	Yosemite
+42567	KY	Eubank
+42602	KY	Albany
+42603	KY	Alpha
+42629	KY	Jamestown
+42631	KY	Marshes Siding
+42632	KY	Mill Springs
+42633	KY	Monticello
+42634	KY	Parkers Lake
+42635	KY	Pine Knot
+42638	KY	Revelo
+42642	KY	Russell Springs
+42647	KY	Stearns
+42649	KY	Strunk
+42653	KY	Whitley City
+42701	KY	Elizabethtown
+42702	KY	Elizabethtown
+42711	KY	Bakerton
+42712	KY	Big Clifty
+42713	KY	Bonnieville
+42715	KY	Breeding
+42716	KY	Buffalo
+42717	KY	Burkesville
+42718	KY	Campbellsville
+42719	KY	Campbellsville
+42720	KY	Cane Valley
+42721	KY	Caneyville
+42722	KY	Canmer
+42724	KY	Cecilia
+42726	KY	Clarkson
+42728	KY	Columbia
+42729	KY	Cub Run
+42731	KY	Dubre
+42732	KY	Eastview
+42733	KY	Elk Horn
+42735	KY	Fairplay
+42740	KY	Glendale
+42741	KY	Glens Fork
+42742	KY	Gradyville
+42743	KY	Greensburg
+42746	KY	Hardyville
+42748	KY	Hodgenville
+42749	KY	Horse Cave
+42753	KY	Knifley
+42754	KY	Leitchfield
+42755	KY	Leitchfield
+42757	KY	Magnolia
+42758	KY	Mannsville
+42759	KY	Marrowbone
+42761	KY	Milltown
+42762	KY	Millwood
+42764	KY	Mount Sherman
+42765	KY	Munfordville
+42776	KY	Sonora
+42782	KY	Summersville
+42783	KY	Summit
+42784	KY	Upton
+42786	KY	Waterview
+42788	KY	White Mills
+70001	LA	Metairie
+70002	LA	Metairie
+70003	LA	Metairie
+70004	LA	Metairie
+70005	LA	Metairie
+70006	LA	Metairie
+70009	LA	Metairie
+70010	LA	Metairie
+70011	LA	Metairie
+70030	LA	Des Allemands
+70031	LA	Ama
+70032	LA	Arabi
+70033	LA	Metairie
+70036	LA	Barataria
+70037	LA	Belle Chasse
+70038	LA	Boothville
+70039	LA	Boutte
+70040	LA	Braithwaite
+70041	LA	Buras
+70042	LA	Carlisle
+70043	LA	Chalmette
+70044	LA	Chalmette
+70046	LA	Davant
+70047	LA	Destrehan
+70049	LA	Edgard
+70050	LA	Empire
+70051	LA	Garyville
+70052	LA	Gramercy
+70053	LA	Gretna
+70054	LA	Gretna
+70055	LA	Metairie
+70056	LA	Gretna
+70057	LA	Hahnville
+70058	LA	Harvey
+70059	LA	Harvey
+70060	LA	Metairie
+70062	LA	Kenner
+70063	LA	Kenner
+70064	LA	Kenner
+70065	LA	Kenner
+70066	LA	Killona
+70067	LA	Lafitte
+70068	LA	La Place
+70069	LA	La Place
+70070	LA	Luling
+70071	LA	Lutcher
+70072	LA	Marrero
+70073	LA	Marrero
+70075	LA	Meraux
+70076	LA	Mount Airy
+70078	LA	New Sarpy
+70079	LA	Norco
+70080	LA	Paradis
+70081	LA	Pilottown
+70082	LA	Pointe A La Hache
+70083	LA	Port Sulphur
+70084	LA	Reserve
+70085	LA	Saint Bernard
+70086	LA	Saint James
+70087	LA	Saint Rose
+70090	LA	Vacherie
+70091	LA	Venice
+70092	LA	Violet
+70094	LA	Westwego
+70096	LA	Westwego
+70112	LA	New Orleans
+70113	LA	New Orleans
+70114	LA	New Orleans
+70115	LA	New Orleans
+70116	LA	New Orleans
+70117	LA	New Orleans
+70118	LA	New Orleans
+70119	LA	New Orleans
+70121	LA	New Orleans
+70122	LA	New Orleans
+70123	LA	New Orleans
+70124	LA	New Orleans
+70125	LA	New Orleans
+70126	LA	New Orleans
+70127	LA	New Orleans
+70128	LA	New Orleans
+70129	LA	New Orleans
+70130	LA	New Orleans
+70131	LA	New Orleans
+70139	LA	New Orleans
+70140	LA	New Orleans
+70141	LA	New Orleans
+70142	LA	New Orleans
+70143	LA	New Orleans
+70145	LA	New Orleans
+70146	LA	New Orleans
+70148	LA	New Orleans
+70149	LA	New Orleans
+70150	LA	New Orleans
+70151	LA	New Orleans
+70152	LA	New Orleans
+70153	LA	New Orleans
+70154	LA	New Orleans
+70156	LA	New Orleans
+70157	LA	New Orleans
+70158	LA	New Orleans
+70159	LA	New Orleans
+70160	LA	New Orleans
+70161	LA	New Orleans
+70162	LA	New Orleans
+70163	LA	New Orleans
+70164	LA	New Orleans
+70165	LA	New Orleans
+70166	LA	New Orleans
+70167	LA	New Orleans
+70170	LA	New Orleans
+70172	LA	New Orleans
+70174	LA	New Orleans
+70175	LA	New Orleans
+70176	LA	New Orleans
+70177	LA	New Orleans
+70178	LA	New Orleans
+70179	LA	New Orleans
+70181	LA	New Orleans
+70182	LA	New Orleans
+70183	LA	New Orleans
+70184	LA	New Orleans
+70185	LA	New Orleans
+70186	LA	New Orleans
+70187	LA	New Orleans
+70189	LA	New Orleans
+70190	LA	New Orleans
+70195	LA	New Orleans
+70301	LA	Thibodaux
+70302	LA	Thibodaux
+70310	LA	Thibodaux
+70339	LA	Pierre Part
+70340	LA	Amelia
+70341	LA	Belle Rose
+70342	LA	Berwick
+70343	LA	Bourg
+70344	LA	Chauvin
+70345	LA	Cut Off
+70346	LA	Donaldsonville
+70352	LA	Donner
+70353	LA	Dulac
+70354	LA	Galliano
+70355	LA	Gheens
+70356	LA	Gibson
+70357	LA	Golden Meadow
+70358	LA	Grand Isle
+70359	LA	Gray
+70360	LA	Houma
+70361	LA	Houma
+70363	LA	Houma
+70364	LA	Houma
+70371	LA	Kraemer
+70372	LA	Labadieville
+70373	LA	Larose
+70374	LA	Lockport
+70375	LA	Mathews
+70376	LA	Modeste
+70377	LA	Montegut
+70380	LA	Morgan City
+70381	LA	Morgan City
+70390	LA	Napoleonville
+70391	LA	Paincourtville
+70392	LA	Patterson
+70393	LA	Plattenville
+70394	LA	Raceland
+70395	LA	Schriever
+70397	LA	Theriot
+70401	LA	Hammond
+70402	LA	Hammond
+70403	LA	Hammond
+70404	LA	Hammond
+70420	LA	Abita Springs
+70421	LA	Akers
+70422	LA	Amite
+70426	LA	Angie
+70427	LA	Bogalusa
+70429	LA	Bogalusa
+70431	LA	Bush
+70433	LA	Covington
+70434	LA	Covington
+70435	LA	Covington
+70436	LA	Fluker
+70437	LA	Folsom
+70438	LA	Franklinton
+70441	LA	Greensburg
+70442	LA	Husser
+70443	LA	Independence
+70444	LA	Kentwood
+70445	LA	Lacombe
+70446	LA	Loranger
+70447	LA	Madisonville
+70448	LA	Mandeville
+70449	LA	Maurepas
+70450	LA	Mount Hermon
+70451	LA	Natalbany
+70452	LA	Pearl River
+70453	LA	Pine Grove
+70454	LA	Ponchatoula
+70455	LA	Robert
+70456	LA	Roseland
+70457	LA	Saint Benedict
+70458	LA	Slidell
+70459	LA	Slidell
+70460	LA	Slidell
+70461	LA	Slidell
+70462	LA	Springfield
+70463	LA	Sun
+70464	LA	Talisheek
+70465	LA	Tangipahoa
+70466	LA	Tickfaw
+70467	LA	Angie
+70469	LA	Slidell
+70470	LA	Mandeville
+70471	LA	Mandeville
+70501	LA	Lafayette
+70502	LA	Lafayette
+70503	LA	Lafayette
+70504	LA	Lafayette
+70505	LA	Lafayette
+70506	LA	Lafayette
+70507	LA	Lafayette
+70508	LA	Lafayette
+70509	LA	Lafayette
+70510	LA	Abbeville
+70511	LA	Abbeville
+70512	LA	Arnaudville
+70513	LA	Avery Island
+70514	LA	Baldwin
+70515	LA	Basile
+70516	LA	Branch
+70517	LA	Breaux Bridge
+70518	LA	Broussard
+70519	LA	Cade
+70520	LA	Carencro
+70521	LA	Cecilia
+70522	LA	Centerville
+70523	LA	Charenton
+70524	LA	Chataignier
+70525	LA	Church Point
+70526	LA	Crowley
+70527	LA	Crowley
+70528	LA	Delcambre
+70529	LA	Duson
+70531	LA	Egan
+70532	LA	Elton
+70533	LA	Erath
+70534	LA	Estherwood
+70535	LA	Eunice
+70537	LA	Evangeline
+70538	LA	Franklin
+70540	LA	Garden City
+70541	LA	Grand Coteau
+70542	LA	Gueydan
+70543	LA	Iota
+70544	LA	Jeanerette
+70546	LA	Jennings
+70548	LA	Kaplan
+70549	LA	Lake Arthur
+70550	LA	Lawtell
+70551	LA	Leonville
+70552	LA	Loreauville
+70554	LA	Mamou
+70555	LA	Maurice
+70556	LA	Mermentau
+70558	LA	Milton
+70559	LA	Morse
+70560	LA	New Iberia
+70562	LA	New Iberia
+70563	LA	New Iberia
+70569	LA	Lydia
+70570	LA	Opelousas
+70571	LA	Opelousas
+70575	LA	Perry
+70576	LA	Pine Prairie
+70577	LA	Port Barre
+70578	LA	Rayne
+70580	LA	Reddell
+70581	LA	Roanoke
+70582	LA	Saint Martinville
+70583	LA	Scott
+70584	LA	Sunset
+70585	LA	Turkey Creek
+70586	LA	Ville Platte
+70589	LA	Washington
+70591	LA	Welsh
+70592	LA	Youngsville
+70593	LA	Lafayette
+70596	LA	Lafayette
+70598	LA	Lafayette
+70601	LA	Lake Charles
+70602	LA	Lake Charles
+70605	LA	Lake Charles
+70606	LA	Lake Charles
+70607	LA	Lake Charles
+70609	LA	Lake Charles
+70611	LA	Lake Charles
+70612	LA	Lake Charles
+70615	LA	Lake Charles
+70616	LA	Lake Charles
+70629	LA	Lake Charles
+70630	LA	Bell City
+70631	LA	Cameron
+70632	LA	Creole
+70633	LA	Dequincy
+70634	LA	Deridder
+70637	LA	Dry Creek
+70638	LA	Elizabeth
+70639	LA	Evans
+70640	LA	Fenton
+70642	LA	Fullerton
+70643	LA	Grand Chenier
+70644	LA	Grant
+70645	LA	Hackberry
+70646	LA	Hayes
+70647	LA	Iowa
+70648	LA	Kinder
+70650	LA	Lacassine
+70651	LA	Leblanc
+70652	LA	Longville
+70653	LA	Merryville
+70654	LA	Mittie
+70655	LA	Oberlin
+70656	LA	Pitkin
+70657	LA	Ragley
+70658	LA	Reeves
+70659	LA	Rosepine
+70660	LA	Singer
+70661	LA	Starks
+70662	LA	Sugartown
+70663	LA	Sulphur
+70664	LA	Sulphur
+70665	LA	Sulphur
+70668	LA	Vinton
+70669	LA	Westlake
+70704	LA	Baker
+70706	LA	Denham Springs
+70707	LA	Gonzales
+70710	LA	Addis
+70711	LA	Albany
+70712	LA	Angola
+70714	LA	Baker
+70715	LA	Batchelor
+70716	LA	Bayou Goula
+70717	LA	Blanks
+70718	LA	Brittany
+70719	LA	Brusly
+70720	LA	Bueche
+70721	LA	Carville
+70722	LA	Clinton
+70723	LA	Convent
+70725	LA	Darrow
+70726	LA	Denham Springs
+70727	LA	Denham Springs
+70728	LA	Duplessis
+70729	LA	Erwinville
+70730	LA	Ethel
+70732	LA	Fordoche
+70733	LA	French Settlement
+70734	LA	Geismar
+70736	LA	Glynn
+70737	LA	Gonzales
+70738	LA	Burnside
+70739	LA	Greenwell Springs
+70740	LA	Grosse Tete
+70743	LA	Hester
+70744	LA	Holden
+70747	LA	Innis
+70748	LA	Jackson
+70749	LA	Jarreau
+70750	LA	Krotz Springs
+70751	LA	Labarre
+70752	LA	Lakeland
+70753	LA	Lettsworth
+70754	LA	Livingston
+70755	LA	Livonia
+70756	LA	Lottie
+70757	LA	Maringouin
+70759	LA	Morganza
+70760	LA	New Roads
+70761	LA	Norwood
+70762	LA	Oscar
+70763	LA	Paulina
+70764	LA	Plaquemine
+70765	LA	Plaquemine
+70767	LA	Port Allen
+70769	LA	Prairieville
+70770	LA	Pride
+70772	LA	Rosedale
+70773	LA	Rougon
+70774	LA	Saint Amant
+70775	LA	Saint Francisville
+70776	LA	Saint Gabriel
+70777	LA	Slaughter
+70778	LA	Sorrento
+70780	LA	Sunshine
+70781	LA	Torbert
+70782	LA	Tunica
+70783	LA	Ventress
+70784	LA	Wakefield
+70785	LA	Walker
+70786	LA	Watson
+70787	LA	Weyanoke
+70788	LA	White Castle
+70789	LA	Wilson
+70791	LA	Zachary
+70792	LA	Uncle Sam
+70801	LA	Baton Rouge
+70802	LA	Baton Rouge
+70803	LA	Baton Rouge
+70804	LA	Baton Rouge
+70805	LA	Baton Rouge
+70806	LA	Baton Rouge
+70807	LA	Baton Rouge
+70808	LA	Baton Rouge
+70809	LA	Baton Rouge
+70810	LA	Baton Rouge
+70811	LA	Baton Rouge
+70812	LA	Baton Rouge
+70813	LA	Baton Rouge
+70814	LA	Baton Rouge
+70815	LA	Baton Rouge
+70816	LA	Baton Rouge
+70817	LA	Baton Rouge
+70818	LA	Baton Rouge
+70819	LA	Baton Rouge
+70820	LA	Baton Rouge
+70821	LA	Baton Rouge
+70822	LA	Baton Rouge
+70823	LA	Baton Rouge
+70825	LA	Baton Rouge
+70826	LA	Baton Rouge
+70827	LA	Baton Rouge
+70831	LA	Baton Rouge
+70833	LA	Baton Rouge
+70835	LA	Baton Rouge
+70836	LA	Baton Rouge
+70837	LA	Baton Rouge
+70874	LA	Baton Rouge
+70879	LA	Baton Rouge
+70883	LA	Baton Rouge
+70884	LA	Baton Rouge
+70892	LA	Baton Rouge
+70893	LA	Baton Rouge
+70894	LA	Baton Rouge
+70895	LA	Baton Rouge
+70896	LA	Baton Rouge
+70898	LA	Baton Rouge
+71001	LA	Arcadia
+71002	LA	Ashland
+71003	LA	Athens
+71004	LA	Belcher
+71006	LA	Benton
+71007	LA	Bethany
+71008	LA	Bienville
+71009	LA	Blanchard
+71016	LA	Castor
+71018	LA	Cotton Valley
+71019	LA	Coushatta
+71021	LA	Cullen
+71023	LA	Doyline
+71024	LA	Dubberly
+71025	LA	East Point
+71027	LA	Frierson
+71028	LA	Gibsland
+71029	LA	Gilliam
+71030	LA	Gloster
+71031	LA	Goldonna
+71032	LA	Grand Cane
+71033	LA	Greenwood
+71034	LA	Hall Summit
+71036	LA	Harmon
+71037	LA	Haughton
+71038	LA	Haynesville
+71039	LA	Heflin
+71040	LA	Homer
+71043	LA	Hosston
+71044	LA	Ida
+71045	LA	Jamestown
+71046	LA	Keatchie
+71047	LA	Keithville
+71048	LA	Lisbon
+71049	LA	Logansport
+71050	LA	Longstreet
+71051	LA	Elm Grove
+71052	LA	Mansfield
+71055	LA	Minden
+71058	LA	Minden
+71060	LA	Mooringsport
+71061	LA	Oil City
+71063	LA	Pelican
+71064	LA	Plain Dealing
+71065	LA	Pleasant Hill
+71066	LA	Powhatan
+71067	LA	Princeton
+71068	LA	Ringgold
+71069	LA	Rodessa
+71070	LA	Saline
+71071	LA	Sarepta
+71072	LA	Shongaloo
+71073	LA	Sibley
+71075	LA	Springhill
+71078	LA	Stonewall
+71079	LA	Summerfield
+71080	LA	Taylor
+71082	LA	Vivian
+71101	LA	Shreveport
+71102	LA	Shreveport
+71103	LA	Shreveport
+71104	LA	Shreveport
+71105	LA	Shreveport
+71106	LA	Shreveport
+71107	LA	Shreveport
+71108	LA	Shreveport
+71109	LA	Shreveport
+71110	LA	Barksdale Afb
+71111	LA	Bossier City
+71112	LA	Bossier City
+71113	LA	Bossier City
+71115	LA	Shreveport
+71118	LA	Shreveport
+71119	LA	Shreveport
+71120	LA	Shreveport
+71129	LA	Shreveport
+71130	LA	Shreveport
+71133	LA	Shreveport
+71134	LA	Shreveport
+71135	LA	Shreveport
+71136	LA	Shreveport
+71137	LA	Shreveport
+71138	LA	Shreveport
+71148	LA	Shreveport
+71149	LA	Shreveport
+71151	LA	Shreveport
+71152	LA	Shreveport
+71153	LA	Shreveport
+71154	LA	Shreveport
+71156	LA	Shreveport
+71161	LA	Shreveport
+71162	LA	Shreveport
+71163	LA	Shreveport
+71164	LA	Shreveport
+71165	LA	Shreveport
+71166	LA	Shreveport
+71171	LA	Bossier City
+71172	LA	Bossier City
+71201	LA	Monroe
+71202	LA	Monroe
+71203	LA	Monroe
+71207	LA	Monroe
+71208	LA	Monroe
+71209	LA	Monroe
+71210	LA	Monroe
+71211	LA	Monroe
+71212	LA	Monroe
+71213	LA	Monroe
+71218	LA	Archibald
+71219	LA	Baskin
+71220	LA	Bastrop
+71221	LA	Bastrop
+71222	LA	Bernice
+71223	LA	Bonita
+71225	LA	Calhoun
+71226	LA	Chatham
+71227	LA	Choudrant
+71229	LA	Collinston
+71230	LA	Crowville
+71232	LA	Delhi
+71233	LA	Delta
+71234	LA	Downsville
+71235	LA	Dubach
+71237	LA	Epps
+71238	LA	Eros
+71240	LA	Fairbanks
+71241	LA	Farmerville
+71242	LA	Forest
+71243	LA	Fort Necessity
+71245	LA	Grambling
+71247	LA	Hodge
+71249	LA	Jigger
+71250	LA	Jones
+71251	LA	Jonesboro
+71253	LA	Kilbourne
+71254	LA	Lake Providence
+71256	LA	Lillie
+71259	LA	Mangham
+71260	LA	Marion
+71261	LA	Mer Rouge
+71263	LA	Oak Grove
+71264	LA	Oak Ridge
+71266	LA	Pioneer
+71268	LA	Quitman
+71269	LA	Rayville
+71270	LA	Ruston
+71272	LA	Ruston
+71273	LA	Ruston
+71275	LA	Simsboro
+71276	LA	Sondheimer
+71277	LA	Spearsville
+71279	LA	Start
+71280	LA	Sterlington
+71281	LA	Swartz
+71282	LA	Tallulah
+71284	LA	Tallulah
+71286	LA	Transylvania
+71291	LA	West Monroe
+71292	LA	West Monroe
+71294	LA	West Monroe
+71295	LA	Winnsboro
+71301	LA	Alexandria
+71302	LA	Alexandria
+71303	LA	Alexandria
+71306	LA	Alexandria
+71307	LA	Alexandria
+71309	LA	Alexandria
+71315	LA	Alexandria
+71316	LA	Acme
+71320	LA	Bordelonville
+71322	LA	Bunkie
+71323	LA	Center Point
+71324	LA	Chase
+71325	LA	Cheneyville
+71326	LA	Clayton
+71327	LA	Cottonport
+71328	LA	Deville
+71329	LA	Dupont
+71330	LA	Echo
+71331	LA	Effie
+71333	LA	Evergreen
+71334	LA	Ferriday
+71336	LA	Gilbert
+71339	LA	Hamburg
+71340	LA	Harrisonburg
+71341	LA	Hessmer
+71342	LA	Jena
+71343	LA	Jonesville
+71345	LA	Lebeau
+71346	LA	Lecompte
+71348	LA	Libuse
+71350	LA	Mansura
+71351	LA	Marksville
+71353	LA	Melville
+71354	LA	Monterey
+71355	LA	Moreauville
+71356	LA	Morrow
+71357	LA	Newellton
+71358	LA	Palmetto
+71359	LA	Pineville
+71360	LA	Pineville
+71361	LA	Pineville
+71362	LA	Plaucheville
+71363	LA	Rhinehart
+71365	LA	Ruby
+71366	LA	Saint Joseph
+71367	LA	Saint Landry
+71368	LA	Sicily Island
+71369	LA	Simmesport
+71371	LA	Trout
+71373	LA	Vidalia
+71375	LA	Waterproof
+71377	LA	Wildsville
+71378	LA	Wisner
+71401	LA	Aimwell
+71403	LA	Anacoco
+71404	LA	Atlanta
+71405	LA	Ball
+71406	LA	Belmont
+71407	LA	Bentley
+71409	LA	Boyce
+71410	LA	Calvin
+71411	LA	Campti
+71414	LA	Clarence
+71415	LA	Clarks
+71416	LA	Cloutierville
+71417	LA	Colfax
+71418	LA	Columbia
+71419	LA	Converse
+71422	LA	Dodson
+71423	LA	Dry Prong
+71424	LA	Elmer
+71425	LA	Enterprise
+71426	LA	Fisher
+71427	LA	Flatwoods
+71428	LA	Flora
+71429	LA	Florien
+71430	LA	Forest Hill
+71431	LA	Gardner
+71432	LA	Georgetown
+71433	LA	Glenmora
+71434	LA	Gorum
+71435	LA	Grayson
+71438	LA	Hineston
+71439	LA	Hornbeck
+71440	LA	Joyce
+71441	LA	Kelly
+71443	LA	Kurthwood
+71444	LA	Lacamp
+71446	LA	Leesville
+71447	LA	Lena
+71448	LA	Longleaf
+71449	LA	Many
+71450	LA	Marthaville
+71452	LA	Melrose
+71454	LA	Montgomery
+71455	LA	Mora
+71456	LA	Natchez
+71457	LA	Natchitoches
+71458	LA	Natchitoches
+71459	LA	Leesville
+71460	LA	Negreet
+71461	LA	Newllano
+71462	LA	Noble
+71463	LA	Oakdale
+71465	LA	Olla
+71466	LA	Otis
+71467	LA	Pollock
+71468	LA	Provencal
+71469	LA	Robeline
+71471	LA	Saint Maurice
+71472	LA	Sieper
+71473	LA	Sikes
+71474	LA	Simpson
+71475	LA	Slagle
+71477	LA	Tioga
+71479	LA	Tullos
+71480	LA	Urania
+71481	LA	Verda
+71483	LA	Winnfield
+71485	LA	Woodworth
+71486	LA	Zwolle
+71496	LA	Leesville
+71497	LA	Natchitoches
+73301	TX	Austin
+73344	TX	Austin
+75001	TX	Addison
+75002	TX	Allen
+75006	TX	Carrollton
+75007	TX	Carrollton
+75008	TX	Carrollton
+75009	TX	Celina
+75010	TX	Carrollton
+75011	TX	Carrollton
+75013	TX	Allen
+75014	TX	Irving
+75015	TX	Irving
+75016	TX	Irving
+75017	TX	Irving
+75019	TX	Coppell
+75020	TX	Denison
+75021	TX	Denison
+75022	TX	Flower Mound
+75023	TX	Plano
+75024	TX	Plano
+75025	TX	Plano
+75026	TX	Plano
+75027	TX	Flower Mound
+75028	TX	Flower Mound
+75029	TX	Lewisville
+75030	TX	Rowlett
+75032	TX	Rockwall
+75034	TX	Frisco
+75035	TX	Frisco
+75037	TX	Irving
+75038	TX	Irving
+75039	TX	Irving
+75040	TX	Garland
+75041	TX	Garland
+75042	TX	Garland
+75043	TX	Garland
+75044	TX	Garland
+75045	TX	Garland
+75046	TX	Garland
+75047	TX	Garland
+75048	TX	Sachse
+75049	TX	Garland
+75050	TX	Grand Prairie
+75051	TX	Grand Prairie
+75052	TX	Grand Prairie
+75053	TX	Grand Prairie
+75054	TX	Grand Prairie
+75056	TX	The Colony
+75057	TX	Lewisville
+75058	TX	Gunter
+75060	TX	Irving
+75061	TX	Irving
+75062	TX	Irving
+75063	TX	Irving
+75065	TX	Lake Dallas
+75067	TX	Lewisville
+75068	TX	Little Elm
+75069	TX	Mc Kinney
+75070	TX	Mc Kinney
+75071	TX	Mc Kinney
+75074	TX	Plano
+75075	TX	Plano
+75076	TX	Pottsboro
+75077	TX	Lewisville
+75078	TX	Prosper
+75080	TX	Richardson
+75081	TX	Richardson
+75082	TX	Richardson
+75083	TX	Richardson
+75085	TX	Richardson
+75086	TX	Plano
+75087	TX	Rockwall
+75088	TX	Rowlett
+75089	TX	Rowlett
+75090	TX	Sherman
+75091	TX	Sherman
+75092	TX	Sherman
+75093	TX	Plano
+75094	TX	Plano
+75097	TX	Weston
+75098	TX	Wylie
+75099	TX	Coppell
+75101	TX	Bardwell
+75102	TX	Barry
+75103	TX	Canton
+75104	TX	Cedar Hill
+75105	TX	Chatfield
+75106	TX	Cedar Hill
+75109	TX	Corsicana
+75110	TX	Corsicana
+75114	TX	Crandall
+75115	TX	Desoto
+75116	TX	Duncanville
+75117	TX	Edgewood
+75118	TX	Elmo
+75119	TX	Ennis
+75120	TX	Ennis
+75121	TX	Copeville
+75123	TX	Desoto
+75124	TX	Eustace
+75125	TX	Ferris
+75126	TX	Forney
+75127	TX	Fruitvale
+75132	TX	Fate
+75134	TX	Lancaster
+75135	TX	Caddo Mills
+75137	TX	Duncanville
+75138	TX	Duncanville
+75140	TX	Grand Saline
+75141	TX	Hutchins
+75142	TX	Kaufman
+75143	TX	Kemp
+75144	TX	Kerens
+75146	TX	Lancaster
+75147	TX	Mabank
+75148	TX	Malakoff
+75149	TX	Mesquite
+75150	TX	Mesquite
+75151	TX	Corsicana
+75152	TX	Palmer
+75153	TX	Powell
+75154	TX	Red Oak
+75155	TX	Rice
+75157	TX	Rosser
+75158	TX	Scurry
+75159	TX	Seagoville
+75160	TX	Terrell
+75161	TX	Terrell
+75163	TX	Trinidad
+75164	TX	Josephine
+75165	TX	Waxahachie
+75166	TX	Lavon
+75167	TX	Waxahachie
+75168	TX	Waxahachie
+75169	TX	Wills Point
+75172	TX	Wilmer
+75173	TX	Nevada
+75180	TX	Mesquite
+75181	TX	Mesquite
+75182	TX	Sunnyvale
+75185	TX	Mesquite
+75187	TX	Mesquite
+75189	TX	Royse City
+75201	TX	Dallas
+75202	TX	Dallas
+75203	TX	Dallas
+75204	TX	Dallas
+75205	TX	Dallas
+75206	TX	Dallas
+75207	TX	Dallas
+75208	TX	Dallas
+75209	TX	Dallas
+75210	TX	Dallas
+75211	TX	Dallas
+75212	TX	Dallas
+75214	TX	Dallas
+75215	TX	Dallas
+75216	TX	Dallas
+75217	TX	Dallas
+75218	TX	Dallas
+75219	TX	Dallas
+75220	TX	Dallas
+75221	TX	Dallas
+75222	TX	Dallas
+75223	TX	Dallas
+75224	TX	Dallas
+75225	TX	Dallas
+75226	TX	Dallas
+75227	TX	Dallas
+75228	TX	Dallas
+75229	TX	Dallas
+75230	TX	Dallas
+75231	TX	Dallas
+75232	TX	Dallas
+75233	TX	Dallas
+75234	TX	Dallas
+75235	TX	Dallas
+75236	TX	Dallas
+75237	TX	Dallas
+75238	TX	Dallas
+75239	TX	Dallas
+75240	TX	Dallas
+75241	TX	Dallas
+75242	TX	Dallas
+75243	TX	Dallas
+75244	TX	Dallas
+75245	TX	Dallas
+75246	TX	Dallas
+75247	TX	Dallas
+75248	TX	Dallas
+75249	TX	Dallas
+75250	TX	Dallas
+75251	TX	Dallas
+75252	TX	Dallas
+75253	TX	Dallas
+75254	TX	Dallas
+75258	TX	Dallas
+75260	TX	Dallas
+75261	TX	Dallas
+75262	TX	Dallas
+75263	TX	Dallas
+75264	TX	Dallas
+75265	TX	Dallas
+75266	TX	Dallas
+75267	TX	Dallas
+75270	TX	Dallas
+75275	TX	Dallas
+75277	TX	Dallas
+75283	TX	Dallas
+75284	TX	Dallas
+75285	TX	Dallas
+75286	TX	Dallas
+75287	TX	Dallas
+75295	TX	Dallas
+75301	TX	Dallas
+75303	TX	Dallas
+75310	TX	Dallas
+75312	TX	Dallas
+75313	TX	Dallas
+75315	TX	Dallas
+75320	TX	Dallas
+75323	TX	Dallas
+75326	TX	Dallas
+75336	TX	Dallas
+75339	TX	Dallas
+75342	TX	Dallas
+75346	TX	Dallas
+75353	TX	Dallas
+75354	TX	Dallas
+75355	TX	Dallas
+75356	TX	Dallas
+75357	TX	Dallas
+75359	TX	Dallas
+75360	TX	Dallas
+75363	TX	Dallas
+75364	TX	Dallas
+75367	TX	Dallas
+75368	TX	Dallas
+75370	TX	Dallas
+75371	TX	Dallas
+75372	TX	Dallas
+75373	TX	Dallas
+75374	TX	Dallas
+75376	TX	Dallas
+75378	TX	Dallas
+75379	TX	Dallas
+75380	TX	Dallas
+75381	TX	Dallas
+75382	TX	Dallas
+75386	TX	Dallas
+75387	TX	Dallas
+75388	TX	Dallas
+75389	TX	Dallas
+75390	TX	Dallas
+75391	TX	Dallas
+75392	TX	Dallas
+75393	TX	Dallas
+75394	TX	Dallas
+75395	TX	Dallas
+75396	TX	Dallas
+75397	TX	Dallas
+75398	TX	Dallas
+75401	TX	Greenville
+75402	TX	Greenville
+75403	TX	Greenville
+75404	TX	Greenville
+75407	TX	Princeton
+75409	TX	Anna
+75410	TX	Alba
+75411	TX	Arthur City
+75412	TX	Bagwell
+75413	TX	Bailey
+75414	TX	Bells
+75415	TX	Ben Franklin
+75416	TX	Blossom
+75417	TX	Bogata
+75418	TX	Bonham
+75420	TX	Brashear
+75421	TX	Brookston
+75422	TX	Campbell
+75423	TX	Celeste
+75424	TX	Blue Ridge
+75425	TX	Chicota
+75426	TX	Clarksville
+75428	TX	Commerce
+75429	TX	Commerce
+75431	TX	Como
+75432	TX	Cooper
+75433	TX	Cumby
+75434	TX	Cunningham
+75435	TX	Deport
+75436	TX	Detroit
+75437	TX	Dike
+75438	TX	Dodd City
+75439	TX	Ector
+75440	TX	Emory
+75441	TX	Enloe
+75442	TX	Farmersville
+75443	TX	Gober
+75444	TX	Golden
+75446	TX	Honey Grove
+75447	TX	Ivanhoe
+75448	TX	Klondike
+75449	TX	Ladonia
+75450	TX	Lake Creek
+75451	TX	Leesburg
+75452	TX	Leonard
+75453	TX	Lone Oak
+75454	TX	Melissa
+75455	TX	Mount Pleasant
+75456	TX	Mount Pleasant
+75457	TX	Mount Vernon
+75458	TX	Merit
+75459	TX	Howe
+75460	TX	Paris
+75461	TX	Paris
+75462	TX	Paris
+75468	TX	Pattonville
+75469	TX	Pecan Gap
+75470	TX	Petty
+75471	TX	Pickton
+75472	TX	Point
+75473	TX	Powderly
+75474	TX	Quinlan
+75475	TX	Randolph
+75476	TX	Ravenna
+75477	TX	Roxton
+75478	TX	Saltillo
+75479	TX	Savoy
+75480	TX	Scroggins
+75481	TX	Sulphur Bluff
+75482	TX	Sulphur Springs
+75483	TX	Sulphur Springs
+75485	TX	Westminster
+75486	TX	Sumner
+75487	TX	Talco
+75488	TX	Telephone
+75489	TX	Tom Bean
+75490	TX	Trenton
+75491	TX	Whitewright
+75492	TX	Windom
+75493	TX	Winfield
+75494	TX	Winnsboro
+75495	TX	Van Alstyne
+75496	TX	Wolfe City
+75497	TX	Yantis
+75501	TX	Texarkana
+75503	TX	Texarkana
+75504	TX	Texarkana
+75505	TX	Texarkana
+75507	TX	Texarkana
+75550	TX	Annona
+75551	TX	Atlanta
+75554	TX	Avery
+75555	TX	Bivins
+75556	TX	Bloomburg
+75558	TX	Cookville
+75559	TX	De Kalb
+75560	TX	Douglassville
+75561	TX	Hooks
+75562	TX	Kildare
+75563	TX	Linden
+75564	TX	Lodi
+75565	TX	Mc Leod
+75566	TX	Marietta
+75567	TX	Maud
+75568	TX	Naples
+75569	TX	Nash
+75570	TX	New Boston
+75571	TX	Omaha
+75572	TX	Queen City
+75573	TX	Redwater
+75574	TX	Simms
+75599	TX	Texarkana
+75601	TX	Longview
+75602	TX	Longview
+75603	TX	Longview
+75604	TX	Longview
+75605	TX	Longview
+75606	TX	Longview
+75607	TX	Longview
+75608	TX	Longview
+75615	TX	Longview
+75630	TX	Avinger
+75631	TX	Beckville
+75633	TX	Carthage
+75636	TX	Cason
+75637	TX	Clayton
+75638	TX	Daingerfield
+75639	TX	De Berry
+75640	TX	Diana
+75641	TX	Easton
+75642	TX	Elysian Fields
+75643	TX	Gary
+75644	TX	Gilmer
+75645	TX	Gilmer
+75647	TX	Gladewater
+75650	TX	Hallsville
+75651	TX	Harleton
+75652	TX	Henderson
+75653	TX	Henderson
+75654	TX	Henderson
+75656	TX	Hughes Springs
+75657	TX	Jefferson
+75658	TX	Joinerville
+75659	TX	Jonesville
+75660	TX	Judson
+75661	TX	Karnack
+75662	TX	Kilgore
+75663	TX	Kilgore
+75666	TX	Laird Hill
+75667	TX	Laneville
+75668	TX	Lone Star
+75669	TX	Long Branch
+75670	TX	Marshall
+75671	TX	Marshall
+75672	TX	Marshall
+75680	TX	Minden
+75681	TX	Mount Enterprise
+75682	TX	New London
+75683	TX	Ore City
+75684	TX	Overton
+75685	TX	Panola
+75686	TX	Pittsburg
+75687	TX	Price
+75688	TX	Scottsville
+75689	TX	Selman City
+75691	TX	Tatum
+75692	TX	Waskom
+75693	TX	White Oak
+75694	TX	Woodlawn
+75701	TX	Tyler
+75702	TX	Tyler
+75703	TX	Tyler
+75704	TX	Tyler
+75705	TX	Tyler
+75706	TX	Tyler
+75707	TX	Tyler
+75708	TX	Tyler
+75709	TX	Tyler
+75710	TX	Tyler
+75711	TX	Tyler
+75712	TX	Tyler
+75713	TX	Tyler
+75750	TX	Arp
+75751	TX	Athens
+75752	TX	Athens
+75754	TX	Ben Wheeler
+75755	TX	Big Sandy
+75756	TX	Brownsboro
+75757	TX	Bullard
+75758	TX	Chandler
+75759	TX	Cuney
+75760	TX	Cushing
+75762	TX	Flint
+75763	TX	Frankston
+75764	TX	Gallatin
+75765	TX	Hawkins
+75766	TX	Jacksonville
+75770	TX	Larue
+75771	TX	Lindale
+75772	TX	Maydelle
+75773	TX	Mineola
+75778	TX	Murchison
+75779	TX	Neches
+75780	TX	New Summerfield
+75782	TX	Poynor
+75783	TX	Quitman
+75784	TX	Reklaw
+75785	TX	Rusk
+75788	TX	Sacul
+75789	TX	Troup
+75790	TX	Van
+75791	TX	Whitehouse
+75792	TX	Winona
+75798	TX	Tyler
+75799	TX	Tyler
+75801	TX	Palestine
+75802	TX	Palestine
+75803	TX	Palestine
+75831	TX	Buffalo
+75832	TX	Cayuga
+75833	TX	Centerville
+75834	TX	Centralia
+75835	TX	Crockett
+75838	TX	Donie
+75839	TX	Elkhart
+75840	TX	Fairfield
+75844	TX	Grapeland
+75845	TX	Groveton
+75846	TX	Jewett
+75847	TX	Kennard
+75848	TX	Kirvin
+75849	TX	Latexo
+75850	TX	Leona
+75851	TX	Lovelady
+75852	TX	Midway
+75853	TX	Montalba
+75855	TX	Oakwood
+75856	TX	Pennington
+75858	TX	Ratcliff
+75859	TX	Streetman
+75860	TX	Teague
+75861	TX	Tennessee Colony
+75862	TX	Trinity
+75865	TX	Woodlake
+75880	TX	Tennessee Colony
+75882	TX	Palestine
+75884	TX	Tennessee Colony
+75886	TX	Tennessee Colony
+75901	TX	Lufkin
+75902	TX	Lufkin
+75903	TX	Lufkin
+75904	TX	Lufkin
+75915	TX	Lufkin
+75925	TX	Alto
+75926	TX	Apple Springs
+75928	TX	Bon Wier
+75929	TX	Broaddus
+75930	TX	Bronson
+75931	TX	Brookeland
+75932	TX	Burkeville
+75933	TX	Call
+75934	TX	Camden
+75935	TX	Center
+75936	TX	Chester
+75937	TX	Chireno
+75938	TX	Colmesneil
+75939	TX	Corrigan
+75941	TX	Diboll
+75942	TX	Doucette
+75943	TX	Douglass
+75944	TX	Etoile
+75946	TX	Garrison
+75947	TX	Geneva
+75948	TX	Hemphill
+75949	TX	Huntington
+75951	TX	Jasper
+75954	TX	Joaquin
+75956	TX	Kirbyville
+75958	TX	Martinsville
+75959	TX	Milam
+75960	TX	Moscow
+75961	TX	Nacogdoches
+75962	TX	Nacogdoches
+75963	TX	Nacogdoches
+75964	TX	Nacogdoches
+75965	TX	Nacogdoches
+75966	TX	Newton
+75968	TX	Pineland
+75969	TX	Pollok
+75972	TX	San Augustine
+75973	TX	Shelbyville
+75974	TX	Tenaha
+75975	TX	Timpson
+75976	TX	Wells
+75977	TX	Wiergate
+75978	TX	Woden
+75979	TX	Woodville
+75980	TX	Zavalla
+75990	TX	Woodville
+76001	TX	Arlington
+76002	TX	Arlington
+76003	TX	Arlington
+76004	TX	Arlington
+76005	TX	Arlington
+76006	TX	Arlington
+76007	TX	Arlington
+76008	TX	Aledo
+76009	TX	Alvarado
+76010	TX	Arlington
+76011	TX	Arlington
+76012	TX	Arlington
+76013	TX	Arlington
+76014	TX	Arlington
+76015	TX	Arlington
+76016	TX	Arlington
+76017	TX	Arlington
+76018	TX	Arlington
+76019	TX	Arlington
+76020	TX	Azle
+76021	TX	Bedford
+76022	TX	Bedford
+76023	TX	Boyd
+76028	TX	Burleson
+76031	TX	Cleburne
+76033	TX	Cleburne
+76034	TX	Colleyville
+76035	TX	Cresson
+76036	TX	Crowley
+76039	TX	Euless
+76040	TX	Euless
+76041	TX	Forreston
+76043	TX	Glen Rose
+76044	TX	Godley
+76048	TX	Granbury
+76049	TX	Granbury
+76050	TX	Grandview
+76051	TX	Grapevine
+76052	TX	Haslet
+76053	TX	Hurst
+76054	TX	Hurst
+76055	TX	Itasca
+76058	TX	Joshua
+76059	TX	Keene
+76060	TX	Kennedale
+76061	TX	Lillian
+76063	TX	Mansfield
+76064	TX	Maypearl
+76065	TX	Midlothian
+76066	TX	Millsap
+76067	TX	Mineral Wells
+76068	TX	Mineral Wells
+76070	TX	Nemo
+76071	TX	Newark
+76073	TX	Paradise
+76077	TX	Rainbow
+76078	TX	Rhome
+76082	TX	Springtown
+76084	TX	Venus
+76085	TX	Weatherford
+76086	TX	Weatherford
+76087	TX	Weatherford
+76088	TX	Weatherford
+76092	TX	Southlake
+76093	TX	Rio Vista
+76094	TX	Arlington
+76095	TX	Bedford
+76096	TX	Arlington
+76097	TX	Burleson
+76098	TX	Azle
+76099	TX	Grapevine
+76101	TX	Fort Worth
+76102	TX	Fort Worth
+76103	TX	Fort Worth
+76104	TX	Fort Worth
+76105	TX	Fort Worth
+76106	TX	Fort Worth
+76107	TX	Fort Worth
+76108	TX	Fort Worth
+76109	TX	Fort Worth
+76110	TX	Fort Worth
+76111	TX	Fort Worth
+76112	TX	Fort Worth
+76113	TX	Fort Worth
+76114	TX	Fort Worth
+76115	TX	Fort Worth
+76116	TX	Fort Worth
+76117	TX	Haltom City
+76118	TX	Fort Worth
+76119	TX	Fort Worth
+76120	TX	Fort Worth
+76121	TX	Fort Worth
+76122	TX	Fort Worth
+76123	TX	Fort Worth
+76124	TX	Fort Worth
+76126	TX	Fort Worth
+76127	TX	Naval Air Station/ Jrb
+76129	TX	Fort Worth
+76130	TX	Fort Worth
+76131	TX	Fort Worth
+76132	TX	Fort Worth
+76133	TX	Fort Worth
+76134	TX	Fort Worth
+76135	TX	Fort Worth
+76136	TX	Fort Worth
+76137	TX	Fort Worth
+76140	TX	Fort Worth
+76147	TX	Fort Worth
+76148	TX	Fort Worth
+76150	TX	Fort Worth
+76155	TX	Fort Worth
+76161	TX	Fort Worth
+76162	TX	Fort Worth
+76163	TX	Fort Worth
+76164	TX	Fort Worth
+76177	TX	Fort Worth
+76178	TX	Fort Worth
+76179	TX	Fort Worth
+76180	TX	North Richland Hills
+76181	TX	Fort Worth
+76182	TX	North Richland Hills
+76185	TX	Fort Worth
+76191	TX	Fort Worth
+76192	TX	Fort Worth
+76193	TX	Fort Worth
+76195	TX	Fort Worth
+76196	TX	Fort Worth
+76197	TX	Fort Worth
+76198	TX	Fort Worth
+76199	TX	Fort Worth
+76201	TX	Denton
+76202	TX	Denton
+76203	TX	Denton
+76204	TX	Denton
+76205	TX	Denton
+76206	TX	Denton
+76207	TX	Denton
+76208	TX	Denton
+76209	TX	Denton
+76210	TX	Denton
+76225	TX	Alvord
+76226	TX	Argyle
+76227	TX	Aubrey
+76228	TX	Bellevue
+76230	TX	Bowie
+76233	TX	Collinsville
+76234	TX	Decatur
+76238	TX	Era
+76239	TX	Forestburg
+76240	TX	Gainesville
+76241	TX	Gainesville
+76244	TX	Keller
+76245	TX	Gordonville
+76246	TX	Greenwood
+76247	TX	Justin
+76248	TX	Keller
+76249	TX	Krum
+76250	TX	Lindsay
+76251	TX	Montague
+76252	TX	Muenster
+76253	TX	Myra
+76255	TX	Nocona
+76258	TX	Pilot Point
+76259	TX	Ponder
+76261	TX	Ringgold
+76262	TX	Roanoke
+76263	TX	Rosston
+76264	TX	Sadler
+76265	TX	Saint Jo
+76266	TX	Sanger
+76267	TX	Slidell
+76268	TX	Southmayd
+76270	TX	Sunset
+76271	TX	Tioga
+76272	TX	Valley View
+76273	TX	Whitesboro
+76299	TX	Roanoke
+76301	TX	Wichita Falls
+76302	TX	Wichita Falls
+76305	TX	Wichita Falls
+76306	TX	Wichita Falls
+76307	TX	Wichita Falls
+76308	TX	Wichita Falls
+76309	TX	Wichita Falls
+76310	TX	Wichita Falls
+76311	TX	Sheppard Afb
+76351	TX	Archer City
+76352	TX	Bluegrove
+76354	TX	Burkburnett
+76357	TX	Byers
+76360	TX	Electra
+76363	TX	Goree
+76364	TX	Harrold
+76365	TX	Henrietta
+76366	TX	Holliday
+76367	TX	Iowa Park
+76369	TX	Kamay
+76370	TX	Megargel
+76371	TX	Munday
+76372	TX	Newcastle
+76373	TX	Oklaunion
+76374	TX	Olney
+76377	TX	Petrolia
+76379	TX	Scotland
+76380	TX	Seymour
+76384	TX	Vernon
+76385	TX	Vernon
+76388	TX	Weinert
+76389	TX	Windthorst
+76401	TX	Stephenville
+76402	TX	Stephenville
+76424	TX	Breckenridge
+76426	TX	Bridgeport
+76427	TX	Bryson
+76429	TX	Caddo
+76430	TX	Albany
+76431	TX	Chico
+76432	TX	Blanket
+76433	TX	Bluff Dale
+76435	TX	Carbon
+76436	TX	Carlton
+76437	TX	Cisco
+76439	TX	Dennis
+76442	TX	Comanche
+76443	TX	Cross Plains
+76444	TX	De Leon
+76445	TX	Desdemona
+76446	TX	Dublin
+76448	TX	Eastland
+76449	TX	Graford
+76450	TX	Graham
+76452	TX	Energy
+76453	TX	Gordon
+76454	TX	Gorman
+76455	TX	Gustine
+76457	TX	Hico
+76458	TX	Jacksboro
+76459	TX	Jermyn
+76460	TX	Loving
+76461	TX	Lingleville
+76462	TX	Lipan
+76463	TX	Mingus
+76464	TX	Moran
+76465	TX	Morgan Mill
+76466	TX	Olden
+76467	TX	Paluxy
+76468	TX	Proctor
+76469	TX	Putnam
+76470	TX	Ranger
+76471	TX	Rising Star
+76472	TX	Santo
+76474	TX	Sidney
+76475	TX	Strawn
+76476	TX	Tolar
+76481	TX	South Bend
+76483	TX	Throckmorton
+76484	TX	Palo Pinto
+76485	TX	Peaster
+76486	TX	Perrin
+76487	TX	Poolville
+76490	TX	Whitt
+76491	TX	Woodson
+76501	TX	Temple
+76502	TX	Temple
+76503	TX	Temple
+76504	TX	Temple
+76505	TX	Temple
+76508	TX	Temple
+76511	TX	Bartlett
+76513	TX	Belton
+76518	TX	Buckholts
+76519	TX	Burlington
+76520	TX	Cameron
+76522	TX	Copperas Cove
+76523	TX	Davilla
+76524	TX	Eddy
+76525	TX	Evant
+76526	TX	Flat
+76527	TX	Florence
+76528	TX	Gatesville
+76530	TX	Granger
+76531	TX	Hamilton
+76533	TX	Heidenheimer
+76534	TX	Holland
+76537	TX	Jarrell
+76538	TX	Jonesboro
+76539	TX	Kempner
+76540	TX	Killeen
+76541	TX	Killeen
+76542	TX	Killeen
+76543	TX	Killeen
+76544	TX	Killeen
+76545	TX	Killeen
+76546	TX	Killeen
+76547	TX	Killeen
+76548	TX	Harker Heights
+76549	TX	Killeen
+76550	TX	Lampasas
+76552	TX	Leon Junction
+76554	TX	Little River
+76555	TX	Maysfield
+76556	TX	Milano
+76557	TX	Moody
+76558	TX	Mound
+76559	TX	Nolanville
+76561	TX	Oglesby
+76564	TX	Pendleton
+76565	TX	Pottsville
+76566	TX	Purmela
+76567	TX	Rockdale
+76569	TX	Rogers
+76570	TX	Rosebud
+76571	TX	Salado
+76573	TX	Schwertner
+76574	TX	Taylor
+76577	TX	Thorndale
+76578	TX	Thrall
+76579	TX	Troy
+76596	TX	Gatesville
+76597	TX	Gatesville
+76598	TX	Gatesville
+76599	TX	Gatesville
+76621	TX	Abbott
+76622	TX	Aquilla
+76623	TX	Avalon
+76624	TX	Axtell
+76626	TX	Blooming Grove
+76627	TX	Blum
+76628	TX	Brandon
+76629	TX	Bremond
+76630	TX	Bruceville
+76631	TX	Bynum
+76632	TX	Chilton
+76633	TX	China Spring
+76634	TX	Clifton
+76635	TX	Coolidge
+76636	TX	Covington
+76637	TX	Cranfills Gap
+76638	TX	Crawford
+76639	TX	Dawson
+76640	TX	Elm Mott
+76641	TX	Frost
+76642	TX	Groesbeck
+76643	TX	Hewitt
+76644	TX	Laguna Park
+76645	TX	Hillsboro
+76648	TX	Hubbard
+76649	TX	Iredell
+76650	TX	Irene
+76651	TX	Italy
+76652	TX	Kopperl
+76653	TX	Kosse
+76654	TX	Leroy
+76655	TX	Lorena
+76656	TX	Lott
+76657	TX	Mc Gregor
+76660	TX	Malone
+76661	TX	Marlin
+76664	TX	Mart
+76665	TX	Meridian
+76666	TX	Mertens
+76667	TX	Mexia
+76670	TX	Milford
+76671	TX	Morgan
+76673	TX	Mount Calm
+76675	TX	Otto
+76676	TX	Penelope
+76677	TX	Perry
+76678	TX	Prairie Hill
+76679	TX	Purdon
+76680	TX	Reagan
+76681	TX	Richland
+76682	TX	Riesel
+76684	TX	Ross
+76685	TX	Satin
+76686	TX	Tehuacana
+76687	TX	Thornton
+76689	TX	Valley Mills
+76690	TX	Walnut Springs
+76691	TX	West
+76692	TX	Whitney
+76693	TX	Wortham
+76701	TX	Waco
+76702	TX	Waco
+76703	TX	Waco
+76704	TX	Waco
+76705	TX	Waco
+76706	TX	Waco
+76707	TX	Waco
+76708	TX	Waco
+76710	TX	Waco
+76711	TX	Waco
+76712	TX	Woodway
+76714	TX	Waco
+76715	TX	Waco
+76716	TX	Waco
+76795	TX	Waco
+76797	TX	Waco
+76798	TX	Waco
+76799	TX	Waco
+76801	TX	Brownwood
+76802	TX	Early
+76803	TX	Brownwood
+76804	TX	Brownwood
+76820	TX	Art
+76821	TX	Ballinger
+76823	TX	Bangs
+76824	TX	Bend
+76825	TX	Brady
+76827	TX	Brookesmith
+76828	TX	Burkett
+76831	TX	Castell
+76832	TX	Cherokee
+76834	TX	Coleman
+76836	TX	Doole
+76837	TX	Eden
+76841	TX	Fort Mc Kavett
+76842	TX	Fredonia
+76844	TX	Goldthwaite
+76845	TX	Gouldbusk
+76848	TX	Hext
+76849	TX	Junction
+76852	TX	Lohn
+76853	TX	Lometa
+76854	TX	London
+76855	TX	Lowake
+76856	TX	Mason
+76857	TX	May
+76858	TX	Melvin
+76859	TX	Menard
+76861	TX	Miles
+76862	TX	Millersview
+76864	TX	Mullin
+76865	TX	Norton
+76866	TX	Paint Rock
+76867	TX	Pear Valley
+76869	TX	Pontotoc
+76870	TX	Priddy
+76871	TX	Richland Springs
+76872	TX	Rochelle
+76873	TX	Rockwood
+76874	TX	Roosevelt
+76875	TX	Rowena
+76877	TX	San Saba
+76878	TX	Santa Anna
+76880	TX	Star
+76882	TX	Talpa
+76883	TX	Telegraph
+76884	TX	Valera
+76885	TX	Valley Spring
+76886	TX	Veribest
+76887	TX	Voca
+76888	TX	Voss
+76890	TX	Zephyr
+76901	TX	San Angelo
+76902	TX	San Angelo
+76903	TX	San Angelo
+76904	TX	San Angelo
+76905	TX	San Angelo
+76906	TX	San Angelo
+76908	TX	Goodfellow Afb
+76909	TX	San Angelo
+76930	TX	Barnhart
+76932	TX	Big Lake
+76933	TX	Bronte
+76934	TX	Carlsbad
+76935	TX	Christoval
+76936	TX	Eldorado
+76937	TX	Eola
+76939	TX	Knickerbocker
+76940	TX	Mereta
+76941	TX	Mertzon
+76943	TX	Ozona
+76945	TX	Robert Lee
+76949	TX	Silver
+76950	TX	Sonora
+76951	TX	Sterling City
+76953	TX	Tennyson
+76955	TX	Vancourt
+76957	TX	Wall
+76958	TX	Water Valley
+77001	TX	Houston
+77002	TX	Houston
+77003	TX	Houston
+77004	TX	Houston
+77005	TX	Houston
+77006	TX	Houston
+77007	TX	Houston
+77008	TX	Houston
+77009	TX	Houston
+77010	TX	Houston
+77011	TX	Houston
+77012	TX	Houston
+77013	TX	Houston
+77014	TX	Houston
+77015	TX	Houston
+77016	TX	Houston
+77017	TX	Houston
+77018	TX	Houston
+77019	TX	Houston
+77020	TX	Houston
+77021	TX	Houston
+77022	TX	Houston
+77023	TX	Houston
+77024	TX	Houston
+77025	TX	Houston
+77026	TX	Houston
+77027	TX	Houston
+77028	TX	Houston
+77029	TX	Houston
+77030	TX	Houston
+77031	TX	Houston
+77032	TX	Houston
+77033	TX	Houston
+77034	TX	Houston
+77035	TX	Houston
+77036	TX	Houston
+77037	TX	Houston
+77038	TX	Houston
+77039	TX	Houston
+77040	TX	Houston
+77041	TX	Houston
+77042	TX	Houston
+77043	TX	Houston
+77044	TX	Houston
+77045	TX	Houston
+77046	TX	Houston
+77047	TX	Houston
+77048	TX	Houston
+77049	TX	Houston
+77050	TX	Houston
+77051	TX	Houston
+77052	TX	Houston
+77053	TX	Houston
+77054	TX	Houston
+77055	TX	Houston
+77056	TX	Houston
+77057	TX	Houston
+77058	TX	Houston
+77059	TX	Houston
+77060	TX	Houston
+77061	TX	Houston
+77062	TX	Houston
+77063	TX	Houston
+77064	TX	Houston
+77065	TX	Houston
+77066	TX	Houston
+77067	TX	Houston
+77068	TX	Houston
+77069	TX	Houston
+77070	TX	Houston
+77071	TX	Houston
+77072	TX	Houston
+77073	TX	Houston
+77074	TX	Houston
+77075	TX	Houston
+77076	TX	Houston
+77077	TX	Houston
+77078	TX	Houston
+77079	TX	Houston
+77080	TX	Houston
+77081	TX	Houston
+77082	TX	Houston
+77083	TX	Houston
+77084	TX	Houston
+77085	TX	Houston
+77086	TX	Houston
+77087	TX	Houston
+77088	TX	Houston
+77089	TX	Houston
+77090	TX	Houston
+77091	TX	Houston
+77092	TX	Houston
+77093	TX	Houston
+77094	TX	Houston
+77095	TX	Houston
+77096	TX	Houston
+77097	TX	Houston
+77098	TX	Houston
+77099	TX	Houston
+77201	TX	Houston
+77202	TX	Houston
+77203	TX	Houston
+77204	TX	Houston
+77205	TX	Houston
+77206	TX	Houston
+77207	TX	Houston
+77208	TX	Houston
+77209	TX	Houston
+77210	TX	Houston
+77212	TX	Houston
+77213	TX	Houston
+77215	TX	Houston
+77216	TX	Houston
+77217	TX	Houston
+77218	TX	Houston
+77219	TX	Houston
+77220	TX	Houston
+77221	TX	Houston
+77222	TX	Houston
+77223	TX	Houston
+77224	TX	Houston
+77225	TX	Houston
+77226	TX	Houston
+77227	TX	Houston
+77228	TX	Houston
+77229	TX	Houston
+77230	TX	Houston
+77231	TX	Houston
+77233	TX	Houston
+77234	TX	Houston
+77235	TX	Houston
+77236	TX	Houston
+77237	TX	Houston
+77238	TX	Houston
+77240	TX	Houston
+77241	TX	Houston
+77242	TX	Houston
+77243	TX	Houston
+77244	TX	Houston
+77245	TX	Houston
+77248	TX	Houston
+77249	TX	Houston
+77251	TX	Houston
+77252	TX	Houston
+77253	TX	Houston
+77254	TX	Houston
+77255	TX	Houston
+77256	TX	Houston
+77257	TX	Houston
+77258	TX	Houston
+77259	TX	Houston
+77261	TX	Houston
+77262	TX	Houston
+77263	TX	Houston
+77265	TX	Houston
+77266	TX	Houston
+77267	TX	Houston
+77268	TX	Houston
+77269	TX	Houston
+77270	TX	Houston
+77271	TX	Houston
+77272	TX	Houston
+77273	TX	Houston
+77274	TX	Houston
+77275	TX	Houston
+77277	TX	Houston
+77279	TX	Houston
+77280	TX	Houston
+77281	TX	Houston
+77282	TX	Houston
+77284	TX	Houston
+77287	TX	Houston
+77288	TX	Houston
+77289	TX	Houston
+77290	TX	Houston
+77291	TX	Houston
+77292	TX	Houston
+77293	TX	Houston
+77297	TX	Houston
+77298	TX	Houston
+77299	TX	Houston
+77301	TX	Conroe
+77302	TX	Conroe
+77303	TX	Conroe
+77304	TX	Conroe
+77305	TX	Conroe
+77306	TX	Conroe
+77315	TX	North Houston
+77316	TX	Montgomery
+77318	TX	Willis
+77320	TX	Huntsville
+77325	TX	Humble
+77326	TX	Ace
+77327	TX	Cleveland
+77328	TX	Cleveland
+77331	TX	Coldspring
+77332	TX	Dallardsville
+77333	TX	Dobbin
+77334	TX	Dodge
+77335	TX	Goodrich
+77336	TX	Huffman
+77337	TX	Hufsmith
+77338	TX	Humble
+77339	TX	Humble
+77340	TX	Huntsville
+77341	TX	Huntsville
+77342	TX	Huntsville
+77343	TX	Huntsville
+77344	TX	Huntsville
+77345	TX	Humble
+77346	TX	Humble
+77347	TX	Humble
+77348	TX	Huntsville
+77349	TX	Huntsville
+77350	TX	Leggett
+77351	TX	Livingston
+77353	TX	Magnolia
+77354	TX	Magnolia
+77355	TX	Magnolia
+77356	TX	Montgomery
+77357	TX	New Caney
+77358	TX	New Waverly
+77359	TX	Oakhurst
+77360	TX	Onalaska
+77362	TX	Pinehurst
+77363	TX	Plantersville
+77364	TX	Pointblank
+77365	TX	Porter
+77367	TX	Riverside
+77368	TX	Romayor
+77369	TX	Rye
+77371	TX	Shepherd
+77372	TX	Splendora
+77373	TX	Spring
+77374	TX	Thicket
+77375	TX	Tomball
+77376	TX	Votaw
+77377	TX	Tomball
+77378	TX	Willis
+77379	TX	Spring
+77380	TX	Spring
+77381	TX	Spring
+77382	TX	Spring
+77383	TX	Spring
+77384	TX	Conroe
+77385	TX	Conroe
+77386	TX	Spring
+77387	TX	Spring
+77388	TX	Spring
+77389	TX	Spring
+77391	TX	Spring
+77393	TX	Spring
+77396	TX	Humble
+77399	TX	Livingston
+77401	TX	Bellaire
+77402	TX	Bellaire
+77404	TX	Bay City
+77406	TX	Richmond
+77410	TX	Cypress
+77411	TX	Alief
+77412	TX	Altair
+77413	TX	Barker
+77414	TX	Bay City
+77415	TX	Cedar Lane
+77417	TX	Beasley
+77418	TX	Bellville
+77419	TX	Blessing
+77420	TX	Boling
+77422	TX	Brazoria
+77423	TX	Brookshire
+77426	TX	Chappell Hill
+77428	TX	Collegeport
+77429	TX	Cypress
+77430	TX	Damon
+77431	TX	Danciger
+77432	TX	Danevang
+77433	TX	Cypress
+77434	TX	Eagle Lake
+77435	TX	East Bernard
+77436	TX	Egypt
+77437	TX	El Campo
+77440	TX	Elmaton
+77441	TX	Fulshear
+77442	TX	Garwood
+77443	TX	Glen Flora
+77444	TX	Guy
+77445	TX	Hempstead
+77446	TX	Prairie View
+77447	TX	Hockley
+77448	TX	Hungerford
+77449	TX	Katy
+77450	TX	Katy
+77451	TX	Kendleton
+77452	TX	Kenney
+77453	TX	Lane City
+77454	TX	Lissie
+77455	TX	Louise
+77456	TX	Markham
+77457	TX	Matagorda
+77458	TX	Midfield
+77459	TX	Missouri City
+77460	TX	Nada
+77461	TX	Needville
+77462	TX	Newgulf
+77463	TX	Old Ocean
+77464	TX	Orchard
+77465	TX	Palacios
+77466	TX	Pattison
+77467	TX	Pierce
+77468	TX	Pledger
+77469	TX	Richmond
+77470	TX	Rock Island
+77471	TX	Rosenberg
+77473	TX	San Felipe
+77474	TX	Sealy
+77475	TX	Sheridan
+77476	TX	Simonton
+77477	TX	Stafford
+77478	TX	Sugar Land
+77479	TX	Sugar Land
+77480	TX	Sweeny
+77481	TX	Thompsons
+77482	TX	Van Vleck
+77483	TX	Wadsworth
+77484	TX	Waller
+77485	TX	Wallis
+77486	TX	West Columbia
+77487	TX	Sugar Land
+77488	TX	Wharton
+77489	TX	Missouri City
+77491	TX	Katy
+77492	TX	Katy
+77493	TX	Katy
+77494	TX	Katy
+77496	TX	Sugar Land
+77497	TX	Stafford
+77501	TX	Pasadena
+77502	TX	Pasadena
+77503	TX	Pasadena
+77504	TX	Pasadena
+77505	TX	Pasadena
+77506	TX	Pasadena
+77507	TX	Pasadena
+77508	TX	Pasadena
+77510	TX	Santa Fe
+77511	TX	Alvin
+77512	TX	Alvin
+77514	TX	Anahuac
+77515	TX	Angleton
+77516	TX	Angleton
+77517	TX	Santa Fe
+77518	TX	Bacliff
+77519	TX	Batson
+77520	TX	Baytown
+77521	TX	Baytown
+77522	TX	Baytown
+77530	TX	Channelview
+77531	TX	Clute
+77532	TX	Crosby
+77533	TX	Daisetta
+77534	TX	Danbury
+77535	TX	Dayton
+77536	TX	Deer Park
+77538	TX	Devers
+77539	TX	Dickinson
+77541	TX	Freeport
+77542	TX	Freeport
+77545	TX	Fresno
+77546	TX	Friendswood
+77547	TX	Galena Park
+77549	TX	Friendswood
+77550	TX	Galveston
+77551	TX	Galveston
+77552	TX	Galveston
+77553	TX	Galveston
+77554	TX	Galveston
+77555	TX	Galveston
+77560	TX	Hankamer
+77561	TX	Hardin
+77562	TX	Highlands
+77563	TX	Hitchcock
+77564	TX	Hull
+77565	TX	Kemah
+77566	TX	Lake Jackson
+77568	TX	La Marque
+77571	TX	La Porte
+77572	TX	La Porte
+77573	TX	League City
+77574	TX	League City
+77575	TX	Liberty
+77577	TX	Liverpool
+77578	TX	Manvel
+77580	TX	Mont Belvieu
+77581	TX	Pearland
+77582	TX	Raywood
+77583	TX	Rosharon
+77584	TX	Pearland
+77585	TX	Saratoga
+77586	TX	Seabrook
+77587	TX	South Houston
+77588	TX	Pearland
+77590	TX	Texas City
+77591	TX	Texas City
+77592	TX	Texas City
+77597	TX	Wallisville
+77598	TX	Webster
+77611	TX	Bridge City
+77612	TX	Buna
+77613	TX	China
+77614	TX	Deweyville
+77615	TX	Evadale
+77616	TX	Fred
+77617	TX	Gilchrist
+77619	TX	Groves
+77622	TX	Hamshire
+77623	TX	High Island
+77624	TX	Hillister
+77625	TX	Kountze
+77626	TX	Mauriceville
+77627	TX	Nederland
+77629	TX	Nome
+77630	TX	Orange
+77631	TX	Orange
+77632	TX	Orange
+77639	TX	Orangefield
+77640	TX	Port Arthur
+77641	TX	Port Arthur
+77642	TX	Port Arthur
+77643	TX	Port Arthur
+77650	TX	Port Bolivar
+77651	TX	Port Neches
+77655	TX	Sabine Pass
+77656	TX	Silsbee
+77657	TX	Lumberton
+77659	TX	Sour Lake
+77660	TX	Spurger
+77661	TX	Stowell
+77662	TX	Vidor
+77663	TX	Village Mills
+77664	TX	Warren
+77665	TX	Winnie
+77670	TX	Vidor
+77701	TX	Beaumont
+77702	TX	Beaumont
+77703	TX	Beaumont
+77704	TX	Beaumont
+77705	TX	Beaumont
+77706	TX	Beaumont
+77707	TX	Beaumont
+77708	TX	Beaumont
+77709	TX	Voth
+77710	TX	Beaumont
+77713	TX	Beaumont
+77720	TX	Beaumont
+77725	TX	Beaumont
+77726	TX	Beaumont
+77801	TX	Bryan
+77802	TX	Bryan
+77803	TX	Bryan
+77805	TX	Bryan
+77806	TX	Bryan
+77807	TX	Bryan
+77808	TX	Bryan
+77830	TX	Anderson
+77831	TX	Bedias
+77833	TX	Brenham
+77834	TX	Brenham
+77835	TX	Burton
+77836	TX	Caldwell
+77837	TX	Calvert
+77838	TX	Chriesman
+77839	TX	Clay
+77840	TX	College Station
+77841	TX	College Station
+77842	TX	College Station
+77843	TX	College Station
+77844	TX	College Station
+77845	TX	College Station
+77850	TX	Concord
+77852	TX	Deanville
+77853	TX	Dime Box
+77855	TX	Flynn
+77856	TX	Franklin
+77857	TX	Gause
+77859	TX	Hearne
+77861	TX	Iola
+77862	TX	Kurten
+77863	TX	Lyons
+77864	TX	Madisonville
+77865	TX	Marquez
+77866	TX	Millican
+77867	TX	Mumford
+77868	TX	Navasota
+77869	TX	Navasota
+77870	TX	New Baden
+77871	TX	Normangee
+77872	TX	North Zulch
+77873	TX	Richards
+77875	TX	Roans Prairie
+77876	TX	Shiro
+77878	TX	Snook
+77879	TX	Somerville
+77880	TX	Washington
+77881	TX	Wellborn
+77882	TX	Wheelock
+77901	TX	Victoria
+77902	TX	Victoria
+77903	TX	Victoria
+77904	TX	Victoria
+77905	TX	Victoria
+77950	TX	Austwell
+77951	TX	Bloomington
+77954	TX	Cuero
+77957	TX	Edna
+77960	TX	Fannin
+77961	TX	Francitas
+77962	TX	Ganado
+77963	TX	Goliad
+77964	TX	Hallettsville
+77967	TX	Hochheim
+77968	TX	Inez
+77969	TX	La Salle
+77970	TX	La Ward
+77971	TX	Lolita
+77972	TX	Long Mott
+77973	TX	Mcfaddin
+77974	TX	Meyersville
+77975	TX	Moulton
+77976	TX	Nursery
+77977	TX	Placedo
+77978	TX	Point Comfort
+77979	TX	Port Lavaca
+77982	TX	Port O Connor
+77983	TX	Seadrift
+77984	TX	Shiner
+77985	TX	Speaks
+77986	TX	Sublime
+77987	TX	Sweet Home
+77988	TX	Telferner
+77989	TX	Thomaston
+77990	TX	Tivoli
+77991	TX	Vanderbilt
+77993	TX	Weesatche
+77994	TX	Westhoff
+77995	TX	Yoakum
+78001	TX	Artesia Wells
+78002	TX	Atascosa
+78003	TX	Bandera
+78004	TX	Bergheim
+78005	TX	Bigfoot
+78006	TX	Boerne
+78007	TX	Calliham
+78008	TX	Campbellton
+78009	TX	Castroville
+78010	TX	Center Point
+78011	TX	Charlotte
+78012	TX	Christine
+78013	TX	Comfort
+78014	TX	Cotulla
+78015	TX	Boerne
+78016	TX	Devine
+78017	TX	Dilley
+78019	TX	Encinal
+78021	TX	Fowlerton
+78022	TX	George West
+78023	TX	Helotes
+78024	TX	Hunt
+78025	TX	Ingram
+78026	TX	Jourdanton
+78027	TX	Kendalia
+78028	TX	Kerrville
+78029	TX	Kerrville
+78039	TX	La Coste
+78040	TX	Laredo
+78041	TX	Laredo
+78042	TX	Laredo
+78043	TX	Laredo
+78044	TX	Laredo
+78045	TX	Laredo
+78046	TX	Laredo
+78049	TX	Laredo
+78050	TX	Leming
+78052	TX	Lytle
+78053	TX	Mc Coy
+78054	TX	Macdona
+78055	TX	Medina
+78056	TX	Mico
+78057	TX	Moore
+78058	TX	Mountain Home
+78059	TX	Natalia
+78060	TX	Oakville
+78061	TX	Pearsall
+78062	TX	Peggy
+78063	TX	Pipe Creek
+78064	TX	Pleasanton
+78065	TX	Poteet
+78066	TX	Rio Medina
+78067	TX	San Ygnacio
+78069	TX	Somerset
+78070	TX	Spring Branch
+78071	TX	Three Rivers
+78072	TX	Tilden
+78073	TX	Von Ormy
+78074	TX	Waring
+78075	TX	Whitsett
+78076	TX	Zapata
+78101	TX	Adkins
+78102	TX	Beeville
+78104	TX	Beeville
+78107	TX	Berclair
+78108	TX	Cibolo
+78109	TX	Converse
+78111	TX	Ecleto
+78112	TX	Elmendorf
+78113	TX	Falls City
+78114	TX	Floresville
+78115	TX	Geronimo
+78116	TX	Gillett
+78117	TX	Hobson
+78118	TX	Karnes City
+78119	TX	Kenedy
+78121	TX	La Vernia
+78122	TX	Leesville
+78123	TX	Mc Queeney
+78124	TX	Marion
+78125	TX	Mineral
+78130	TX	New Braunfels
+78131	TX	New Braunfels
+78132	TX	New Braunfels
+78133	TX	Canyon Lake
+78135	TX	New Braunfels
+78140	TX	Nixon
+78141	TX	Nordheim
+78142	TX	Normanna
+78143	TX	Pandora
+78144	TX	Panna Maria
+78145	TX	Pawnee
+78146	TX	Pettus
+78147	TX	Poth
+78148	TX	Universal City
+78150	TX	Universal City
+78151	TX	Runge
+78152	TX	Saint Hedwig
+78154	TX	Schertz
+78155	TX	Seguin
+78156	TX	Seguin
+78159	TX	Smiley
+78160	TX	Stockdale
+78161	TX	Sutherland Springs
+78162	TX	Tuleta
+78163	TX	Bulverde
+78164	TX	Yorktown
+78201	TX	San Antonio
+78202	TX	San Antonio
+78203	TX	San Antonio
+78204	TX	San Antonio
+78205	TX	San Antonio
+78206	TX	San Antonio
+78207	TX	San Antonio
+78208	TX	San Antonio
+78209	TX	San Antonio
+78210	TX	San Antonio
+78211	TX	San Antonio
+78212	TX	San Antonio
+78213	TX	San Antonio
+78214	TX	San Antonio
+78215	TX	San Antonio
+78216	TX	San Antonio
+78217	TX	San Antonio
+78218	TX	San Antonio
+78219	TX	San Antonio
+78220	TX	San Antonio
+78221	TX	San Antonio
+78222	TX	San Antonio
+78223	TX	San Antonio
+78224	TX	San Antonio
+78225	TX	San Antonio
+78226	TX	San Antonio
+78227	TX	San Antonio
+78228	TX	San Antonio
+78229	TX	San Antonio
+78230	TX	San Antonio
+78231	TX	San Antonio
+78232	TX	San Antonio
+78233	TX	San Antonio
+78234	TX	San Antonio
+78235	TX	San Antonio
+78236	TX	San Antonio
+78237	TX	San Antonio
+78238	TX	San Antonio
+78239	TX	San Antonio
+78240	TX	San Antonio
+78241	TX	San Antonio
+78242	TX	San Antonio
+78243	TX	San Antonio
+78244	TX	San Antonio
+78245	TX	San Antonio
+78246	TX	San Antonio
+78247	TX	San Antonio
+78248	TX	San Antonio
+78249	TX	San Antonio
+78250	TX	San Antonio
+78251	TX	San Antonio
+78252	TX	San Antonio
+78253	TX	San Antonio
+78254	TX	San Antonio
+78255	TX	San Antonio
+78256	TX	San Antonio
+78257	TX	San Antonio
+78258	TX	San Antonio
+78259	TX	San Antonio
+78260	TX	San Antonio
+78261	TX	San Antonio
+78262	TX	San Antonio
+78263	TX	San Antonio
+78264	TX	San Antonio
+78265	TX	San Antonio
+78266	TX	San Antonio
+78268	TX	San Antonio
+78269	TX	San Antonio
+78270	TX	San Antonio
+78275	TX	San Antonio
+78278	TX	San Antonio
+78279	TX	San Antonio
+78280	TX	San Antonio
+78283	TX	San Antonio
+78284	TX	San Antonio
+78285	TX	San Antonio
+78286	TX	San Antonio
+78287	TX	San Antonio
+78288	TX	San Antonio
+78289	TX	San Antonio
+78291	TX	San Antonio
+78292	TX	San Antonio
+78293	TX	San Antonio
+78294	TX	San Antonio
+78295	TX	San Antonio
+78296	TX	San Antonio
+78297	TX	San Antonio
+78298	TX	San Antonio
+78299	TX	San Antonio
+78330	TX	Agua Dulce
+78332	TX	Alice
+78333	TX	Alice
+78335	TX	Aransas Pass
+78336	TX	Aransas Pass
+78338	TX	Armstrong
+78339	TX	Banquete
+78340	TX	Bayside
+78341	TX	Benavides
+78342	TX	Ben Bolt
+78343	TX	Bishop
+78344	TX	Bruni
+78347	TX	Chapman Ranch
+78349	TX	Concepcion
+78350	TX	Dinero
+78351	TX	Driscoll
+78352	TX	Edroy
+78353	TX	Encino
+78355	TX	Falfurrias
+78357	TX	Freer
+78358	TX	Fulton
+78359	TX	Gregory
+78360	TX	Guerra
+78361	TX	Hebbronville
+78362	TX	Ingleside
+78363	TX	Kingsville
+78364	TX	Kingsville
+78368	TX	Mathis
+78369	TX	Mirando City
+78370	TX	Odem
+78371	TX	Oilton
+78372	TX	Orange Grove
+78373	TX	Port Aransas
+78374	TX	Portland
+78375	TX	Premont
+78376	TX	Realitos
+78377	TX	Refugio
+78379	TX	Riviera
+78380	TX	Robstown
+78381	TX	Rockport
+78382	TX	Rockport
+78383	TX	Sandia
+78384	TX	San Diego
+78385	TX	Sarita
+78387	TX	Sinton
+78389	TX	Skidmore
+78390	TX	Taft
+78391	TX	Tynan
+78393	TX	Woodsboro
+78401	TX	Corpus Christi
+78402	TX	Corpus Christi
+78403	TX	Corpus Christi
+78404	TX	Corpus Christi
+78405	TX	Corpus Christi
+78406	TX	Corpus Christi
+78407	TX	Corpus Christi
+78408	TX	Corpus Christi
+78409	TX	Corpus Christi
+78410	TX	Corpus Christi
+78411	TX	Corpus Christi
+78412	TX	Corpus Christi
+78413	TX	Corpus Christi
+78414	TX	Corpus Christi
+78415	TX	Corpus Christi
+78416	TX	Corpus Christi
+78417	TX	Corpus Christi
+78418	TX	Corpus Christi
+78419	TX	Corpus Christi
+78426	TX	Corpus Christi
+78427	TX	Corpus Christi
+78460	TX	Corpus Christi
+78461	TX	Corpus Christi
+78463	TX	Corpus Christi
+78465	TX	Corpus Christi
+78466	TX	Corpus Christi
+78467	TX	Corpus Christi
+78468	TX	Corpus Christi
+78469	TX	Corpus Christi
+78470	TX	Corpus Christi
+78471	TX	Corpus Christi
+78472	TX	Corpus Christi
+78473	TX	Corpus Christi
+78474	TX	Corpus Christi
+78475	TX	Corpus Christi
+78476	TX	Corpus Christi
+78477	TX	Corpus Christi
+78478	TX	Corpus Christi
+78480	TX	Corpus Christi
+78501	TX	Mcallen
+78502	TX	Mcallen
+78503	TX	Mcallen
+78504	TX	Mcallen
+78505	TX	Mcallen
+78516	TX	Alamo
+78520	TX	Brownsville
+78521	TX	Brownsville
+78522	TX	Brownsville
+78523	TX	Brownsville
+78526	TX	Brownsville
+78535	TX	Combes
+78536	TX	Delmita
+78537	TX	Donna
+78538	TX	Edcouch
+78539	TX	Edinburg
+78540	TX	Edinburg
+78543	TX	Elsa
+78545	TX	Falcon Heights
+78547	TX	Garciasville
+78548	TX	Grulla
+78549	TX	Hargill
+78550	TX	Harlingen
+78551	TX	Harlingen
+78552	TX	Harlingen
+78553	TX	Harlingen
+78557	TX	Hidalgo
+78558	TX	La Blanca
+78559	TX	La Feria
+78560	TX	La Joya
+78561	TX	Lasara
+78562	TX	La Villa
+78563	TX	Linn
+78564	TX	Lopeno
+78565	TX	Los Ebanos
+78566	TX	Los Fresnos
+78567	TX	Los Indios
+78568	TX	Lozano
+78569	TX	Lyford
+78570	TX	Mercedes
+78572	TX	Mission
+78573	TX	Mission
+78575	TX	Olmito
+78576	TX	Penitas
+78577	TX	Pharr
+78578	TX	Port Isabel
+78579	TX	Progreso
+78580	TX	Raymondville
+78582	TX	Rio Grande City
+78583	TX	Rio Hondo
+78584	TX	Roma
+78585	TX	Salineno
+78586	TX	San Benito
+78588	TX	San Isidro
+78589	TX	San Juan
+78590	TX	San Perlita
+78591	TX	Santa Elena
+78592	TX	Santa Maria
+78593	TX	Santa Rosa
+78594	TX	Sebastian
+78595	TX	Sullivan City
+78596	TX	Weslaco
+78597	TX	South Padre Island
+78598	TX	Port Mansfield
+78599	TX	Weslaco
+78602	TX	Bastrop
+78603	TX	Bebe
+78604	TX	Belmont
+78605	TX	Bertram
+78606	TX	Blanco
+78607	TX	Bluffton
+78608	TX	Briggs
+78609	TX	Buchanan Dam
+78610	TX	Buda
+78611	TX	Burnet
+78612	TX	Cedar Creek
+78613	TX	Cedar Park
+78614	TX	Cost
+78615	TX	Coupland
+78616	TX	Dale
+78617	TX	Del Valle
+78618	TX	Doss
+78619	TX	Driftwood
+78620	TX	Dripping Springs
+78621	TX	Elgin
+78622	TX	Fentress
+78623	TX	Fischer
+78624	TX	Fredericksburg
+78626	TX	Georgetown
+78627	TX	Georgetown
+78628	TX	Georgetown
+78629	TX	Gonzales
+78630	TX	Cedar Park
+78631	TX	Harper
+78632	TX	Harwood
+78634	TX	Hutto
+78635	TX	Hye
+78636	TX	Johnson City
+78638	TX	Kingsbury
+78639	TX	Kingsland
+78640	TX	Kyle
+78641	TX	Leander
+78642	TX	Liberty Hill
+78643	TX	Llano
+78644	TX	Lockhart
+78645	TX	Leander
+78646	TX	Leander
+78648	TX	Luling
+78650	TX	Mc Dade
+78651	TX	Mc Neil
+78652	TX	Manchaca
+78653	TX	Manor
+78654	TX	Marble Falls
+78655	TX	Martindale
+78656	TX	Maxwell
+78657	TX	Marble Falls
+78658	TX	Ottine
+78659	TX	Paige
+78660	TX	Pflugerville
+78661	TX	Prairie Lea
+78662	TX	Red Rock
+78663	TX	Round Mountain
+78664	TX	Round Rock
+78665	TX	Sandy
+78666	TX	San Marcos
+78667	TX	San Marcos
+78669	TX	Spicewood
+78670	TX	Staples
+78671	TX	Stonewall
+78672	TX	Tow
+78673	TX	Walburg
+78674	TX	Weir
+78675	TX	Willow City
+78676	TX	Wimberley
+78677	TX	Wrightsboro
+78680	TX	Round Rock
+78681	TX	Round Rock
+78682	TX	Round Rock
+78683	TX	Round Rock
+78691	TX	Pflugerville
+78701	TX	Austin
+78702	TX	Austin
+78703	TX	Austin
+78704	TX	Austin
+78705	TX	Austin
+78708	TX	Austin
+78709	TX	Austin
+78710	TX	Austin
+78711	TX	Austin
+78712	TX	Austin
+78713	TX	Austin
+78714	TX	Austin
+78715	TX	Austin
+78716	TX	Austin
+78717	TX	Austin
+78718	TX	Austin
+78719	TX	Austin
+78720	TX	Austin
+78721	TX	Austin
+78722	TX	Austin
+78723	TX	Austin
+78724	TX	Austin
+78725	TX	Austin
+78726	TX	Austin
+78727	TX	Austin
+78728	TX	Austin
+78729	TX	Austin
+78730	TX	Austin
+78731	TX	Austin
+78732	TX	Austin
+78733	TX	Austin
+78734	TX	Austin
+78735	TX	Austin
+78736	TX	Austin
+78737	TX	Austin
+78738	TX	Austin
+78739	TX	Austin
+78741	TX	Austin
+78742	TX	Austin
+78744	TX	Austin
+78745	TX	Austin
+78746	TX	Austin
+78747	TX	Austin
+78748	TX	Austin
+78749	TX	Austin
+78750	TX	Austin
+78751	TX	Austin
+78752	TX	Austin
+78753	TX	Austin
+78754	TX	Austin
+78755	TX	Austin
+78756	TX	Austin
+78757	TX	Austin
+78758	TX	Austin
+78759	TX	Austin
+78760	TX	Austin
+78761	TX	Austin
+78762	TX	Austin
+78763	TX	Austin
+78764	TX	Austin
+78765	TX	Austin
+78766	TX	Austin
+78767	TX	Austin
+78768	TX	Austin
+78769	TX	Austin
+78772	TX	Austin
+78773	TX	Austin
+78774	TX	Austin
+78778	TX	Austin
+78779	TX	Austin
+78780	TX	Austin
+78781	TX	Austin
+78783	TX	Austin
+78785	TX	Austin
+78786	TX	Austin
+78788	TX	Austin
+78789	TX	Austin
+78799	TX	Austin
+78801	TX	Uvalde
+78802	TX	Uvalde
+78827	TX	Asherton
+78828	TX	Barksdale
+78829	TX	Batesville
+78830	TX	Big Wells
+78832	TX	Brackettville
+78833	TX	Camp Wood
+78834	TX	Carrizo Springs
+78836	TX	Catarina
+78837	TX	Comstock
+78838	TX	Concan
+78839	TX	Crystal City
+78840	TX	Del Rio
+78841	TX	Del Rio
+78842	TX	Del Rio
+78843	TX	Laughlin A F B
+78847	TX	Del Rio
+78850	TX	D Hanis
+78851	TX	Dryden
+78852	TX	Eagle Pass
+78853	TX	Eagle Pass
+78860	TX	El Indio
+78861	TX	Hondo
+78870	TX	Knippa
+78871	TX	Langtry
+78872	TX	La Pryor
+78873	TX	Leakey
+78877	TX	Quemado
+78879	TX	Rio Frio
+78880	TX	Rocksprings
+78881	TX	Sabinal
+78883	TX	Tarpley
+78884	TX	Utopia
+78885	TX	Vanderpool
+78886	TX	Yancey
+78931	TX	Bleiblerville
+78932	TX	Carmine
+78933	TX	Cat Spring
+78934	TX	Columbus
+78935	TX	Alleyton
+78938	TX	Ellinger
+78940	TX	Fayetteville
+78941	TX	Flatonia
+78942	TX	Giddings
+78943	TX	Glidden
+78944	TX	Industry
+78945	TX	La Grange
+78946	TX	Ledbetter
+78947	TX	Lexington
+78948	TX	Lincoln
+78949	TX	Muldoon
+78950	TX	New Ulm
+78951	TX	Oakland
+78952	TX	Plum
+78953	TX	Rosanky
+78954	TX	Round Top
+78956	TX	Schulenburg
+78957	TX	Smithville
+78959	TX	Waelder
+78960	TX	Warda
+78961	TX	Round Top
+78962	TX	Weimar
+78963	TX	West Point
+79001	TX	Adrian
+79002	TX	Alanreed
+79003	TX	Allison
+79005	TX	Booker
+79007	TX	Borger
+79008	TX	Borger
+79009	TX	Bovina
+79010	TX	Boys Ranch
+79011	TX	Briscoe
+79012	TX	Bushland
+79013	TX	Cactus
+79014	TX	Canadian
+79015	TX	Canyon
+79016	TX	Canyon
+79018	TX	Channing
+79019	TX	Claude
+79021	TX	Cotton Center
+79022	TX	Dalhart
+79024	TX	Darrouzett
+79025	TX	Dawn
+79027	TX	Dimmitt
+79029	TX	Dumas
+79031	TX	Earth
+79032	TX	Edmonson
+79033	TX	Farnsworth
+79034	TX	Follett
+79035	TX	Friona
+79036	TX	Fritch
+79039	TX	Groom
+79040	TX	Gruver
+79041	TX	Hale Center
+79042	TX	Happy
+79043	TX	Hart
+79044	TX	Hartley
+79045	TX	Hereford
+79046	TX	Higgins
+79051	TX	Kerrick
+79052	TX	Kress
+79053	TX	Lazbuddie
+79054	TX	Lefors
+79056	TX	Lipscomb
+79057	TX	Mclean
+79058	TX	Masterson
+79059	TX	Miami
+79061	TX	Mobeetie
+79062	TX	Morse
+79063	TX	Nazareth
+79064	TX	Olton
+79065	TX	Pampa
+79066	TX	Pampa
+79068	TX	Panhandle
+79070	TX	Perryton
+79072	TX	Plainview
+79073	TX	Plainview
+79077	TX	Samnorwood
+79078	TX	Sanford
+79079	TX	Shamrock
+79080	TX	Skellytown
+79081	TX	Spearman
+79082	TX	Springlake
+79083	TX	Stinnett
+79084	TX	Stratford
+79085	TX	Summerfield
+79086	TX	Sunray
+79087	TX	Texline
+79088	TX	Tulia
+79091	TX	Umbarger
+79092	TX	Vega
+79093	TX	Waka
+79094	TX	Wayside
+79095	TX	Wellington
+79096	TX	Wheeler
+79097	TX	White Deer
+79098	TX	Wildorado
+79101	TX	Amarillo
+79102	TX	Amarillo
+79103	TX	Amarillo
+79104	TX	Amarillo
+79105	TX	Amarillo
+79106	TX	Amarillo
+79107	TX	Amarillo
+79108	TX	Amarillo
+79109	TX	Amarillo
+79110	TX	Amarillo
+79111	TX	Amarillo
+79114	TX	Amarillo
+79116	TX	Amarillo
+79117	TX	Amarillo
+79118	TX	Amarillo
+79119	TX	Amarillo
+79120	TX	Amarillo
+79121	TX	Amarillo
+79123	TX	Amarillo
+79124	TX	Amarillo
+79159	TX	Amarillo
+79163	TX	Amarillo
+79164	TX	Amarillo
+79165	TX	Amarillo
+79166	TX	Amarillo
+79167	TX	Amarillo
+79168	TX	Amarillo
+79170	TX	Amarillo
+79171	TX	Amarillo
+79172	TX	Amarillo
+79174	TX	Amarillo
+79175	TX	Amarillo
+79178	TX	Amarillo
+79180	TX	Amarillo
+79181	TX	Amarillo
+79182	TX	Amarillo
+79184	TX	Amarillo
+79185	TX	Amarillo
+79186	TX	Amarillo
+79187	TX	Amarillo
+79189	TX	Amarillo
+79201	TX	Childress
+79220	TX	Afton
+79221	TX	Aiken
+79222	TX	Carey
+79223	TX	Cee Vee
+79224	TX	Chalk
+79225	TX	Chillicothe
+79226	TX	Clarendon
+79227	TX	Crowell
+79229	TX	Dickens
+79230	TX	Dodson
+79231	TX	Dougherty
+79232	TX	Dumont
+79233	TX	Estelline
+79234	TX	Flomot
+79235	TX	Floydada
+79236	TX	Guthrie
+79237	TX	Hedley
+79238	TX	Kirkland
+79239	TX	Lakeview
+79240	TX	Lelia Lake
+79241	TX	Lockney
+79243	TX	Mcadoo
+79244	TX	Matador
+79245	TX	Memphis
+79247	TX	Odell
+79248	TX	Paducah
+79250	TX	Petersburg
+79251	TX	Quail
+79252	TX	Quanah
+79255	TX	Quitaque
+79256	TX	Roaring Springs
+79257	TX	Silverton
+79258	TX	South Plains
+79259	TX	Tell
+79261	TX	Turkey
+79311	TX	Abernathy
+79312	TX	Amherst
+79313	TX	Anton
+79314	TX	Bledsoe
+79316	TX	Brownfield
+79320	TX	Bula
+79322	TX	Crosbyton
+79323	TX	Denver City
+79324	TX	Enochs
+79325	TX	Farwell
+79326	TX	Fieldton
+79329	TX	Idalou
+79330	TX	Justiceburg
+79331	TX	Lamesa
+79336	TX	Levelland
+79338	TX	Levelland
+79339	TX	Littlefield
+79342	TX	Loop
+79343	TX	Lorenzo
+79344	TX	Maple
+79345	TX	Meadow
+79346	TX	Morton
+79347	TX	Muleshoe
+79350	TX	New Deal
+79351	TX	Odonnell
+79353	TX	Pep
+79355	TX	Plains
+79356	TX	Post
+79357	TX	Ralls
+79358	TX	Ropesville
+79359	TX	Seagraves
+79360	TX	Seminole
+79363	TX	Shallowater
+79364	TX	Slaton
+79366	TX	Ransom Canyon
+79367	TX	Smyer
+79369	TX	Spade
+79370	TX	Spur
+79371	TX	Sudan
+79372	TX	Sundown
+79373	TX	Tahoka
+79376	TX	Tokio
+79377	TX	Welch
+79378	TX	Wellman
+79379	TX	Whiteface
+79380	TX	Whitharral
+79381	TX	Wilson
+79382	TX	Wolfforth
+79383	TX	New Home
+79401	TX	Lubbock
+79402	TX	Lubbock
+79403	TX	Lubbock
+79404	TX	Lubbock
+79405	TX	Lubbock
+79406	TX	Lubbock
+79407	TX	Lubbock
+79408	TX	Lubbock
+79409	TX	Lubbock
+79410	TX	Lubbock
+79411	TX	Lubbock
+79412	TX	Lubbock
+79413	TX	Lubbock
+79414	TX	Lubbock
+79415	TX	Lubbock
+79416	TX	Lubbock
+79423	TX	Lubbock
+79424	TX	Lubbock
+79430	TX	Lubbock
+79452	TX	Lubbock
+79453	TX	Lubbock
+79457	TX	Lubbock
+79464	TX	Lubbock
+79490	TX	Lubbock
+79491	TX	Lubbock
+79493	TX	Lubbock
+79499	TX	Lubbock
+79501	TX	Anson
+79502	TX	Aspermont
+79503	TX	Avoca
+79504	TX	Baird
+79505	TX	Benjamin
+79506	TX	Blackwell
+79508	TX	Buffalo Gap
+79510	TX	Clyde
+79511	TX	Coahoma
+79512	TX	Colorado City
+79516	TX	Dunn
+79517	TX	Fluvanna
+79518	TX	Girard
+79519	TX	Goldsboro
+79520	TX	Hamlin
+79521	TX	Haskell
+79525	TX	Hawley
+79526	TX	Hermleigh
+79527	TX	Ira
+79528	TX	Jayton
+79529	TX	Knox City
+79530	TX	Lawn
+79532	TX	Loraine
+79533	TX	Lueders
+79534	TX	Mc Caulley
+79535	TX	Maryneal
+79536	TX	Merkel
+79537	TX	Nolan
+79538	TX	Novice
+79539	TX	O Brien
+79540	TX	Old Glory
+79541	TX	Ovalo
+79543	TX	Roby
+79544	TX	Rochester
+79545	TX	Roscoe
+79546	TX	Rotan
+79547	TX	Rule
+79548	TX	Rule
+79549	TX	Snyder
+79550	TX	Snyder
+79553	TX	Stamford
+79556	TX	Sweetwater
+79560	TX	Sylvester
+79561	TX	Trent
+79562	TX	Tuscola
+79563	TX	Tye
+79565	TX	Westbrook
+79566	TX	Wingate
+79567	TX	Winters
+79601	TX	Abilene
+79602	TX	Abilene
+79603	TX	Abilene
+79604	TX	Abilene
+79605	TX	Abilene
+79606	TX	Abilene
+79607	TX	Dyess Afb
+79608	TX	Abilene
+79697	TX	Abilene
+79698	TX	Abilene
+79699	TX	Abilene
+79701	TX	Midland
+79702	TX	Midland
+79703	TX	Midland
+79704	TX	Midland
+79705	TX	Midland
+79706	TX	Midland
+79707	TX	Midland
+79708	TX	Midland
+79710	TX	Midland
+79711	TX	Midland
+79712	TX	Midland
+79713	TX	Ackerly
+79714	TX	Andrews
+79718	TX	Balmorhea
+79719	TX	Barstow
+79720	TX	Big Spring
+79721	TX	Big Spring
+79730	TX	Coyanosa
+79731	TX	Crane
+79733	TX	Forsan
+79734	TX	Fort Davis
+79735	TX	Fort Stockton
+79738	TX	Gail
+79739	TX	Garden City
+79740	TX	Girvin
+79741	TX	Goldsmith
+79742	TX	Grandfalls
+79743	TX	Imperial
+79744	TX	Iraan
+79745	TX	Kermit
+79748	TX	Knott
+79749	TX	Lenorah
+79752	TX	Mc Camey
+79754	TX	Mentone
+79755	TX	Midkiff
+79756	TX	Monahans
+79758	TX	Gardendale
+79759	TX	Notrees
+79760	TX	Odessa
+79761	TX	Odessa
+79762	TX	Odessa
+79763	TX	Odessa
+79764	TX	Odessa
+79765	TX	Odessa
+79766	TX	Odessa
+79768	TX	Odessa
+79769	TX	Odessa
+79770	TX	Orla
+79772	TX	Pecos
+79776	TX	Penwell
+79777	TX	Pyote
+79778	TX	Rankin
+79779	TX	Royalty
+79780	TX	Saragosa
+79781	TX	Sheffield
+79782	TX	Stanton
+79783	TX	Tarzan
+79785	TX	Toyah
+79786	TX	Toyahvale
+79788	TX	Wickett
+79789	TX	Wink
+79821	TX	Anthony
+79830	TX	Alpine
+79831	TX	Alpine
+79832	TX	Alpine
+79834	TX	Big Bend National Park
+79835	TX	Canutillo
+79836	TX	Clint
+79837	TX	Dell City
+79838	TX	Fabens
+79839	TX	Fort Hancock
+79842	TX	Marathon
+79843	TX	Marfa
+79845	TX	Presidio
+79846	TX	Redford
+79847	TX	Salt Flat
+79848	TX	Sanderson
+79849	TX	San Elizario
+79850	TX	Shafter
+79851	TX	Sierra Blanca
+79852	TX	Terlingua
+79853	TX	Tornillo
+79854	TX	Valentine
+79855	TX	Van Horn
+79901	TX	El Paso
+79902	TX	El Paso
+79903	TX	El Paso
+79904	TX	El Paso
+79905	TX	El Paso
+79906	TX	El Paso
+79907	TX	El Paso
+79908	TX	El Paso
+79910	TX	El Paso
+79911	TX	El Paso
+79912	TX	El Paso
+79913	TX	El Paso
+79914	TX	El Paso
+79915	TX	El Paso
+79916	TX	El Paso
+79917	TX	El Paso
+79918	TX	El Paso
+79920	TX	El Paso
+79922	TX	El Paso
+79923	TX	El Paso
+79924	TX	El Paso
+79925	TX	El Paso
+79926	TX	El Paso
+79927	TX	El Paso
+79928	TX	El Paso
+79929	TX	El Paso
+79930	TX	El Paso
+79931	TX	El Paso
+79932	TX	El Paso
+79934	TX	El Paso
+79935	TX	El Paso
+79936	TX	El Paso
+79937	TX	El Paso
+79938	TX	El Paso
+79940	TX	El Paso
+79941	TX	El Paso
+79942	TX	El Paso
+79943	TX	El Paso
+79944	TX	El Paso
+79945	TX	El Paso
+79946	TX	El Paso
+79947	TX	El Paso
+79948	TX	El Paso
+79949	TX	El Paso
+79950	TX	El Paso
+79951	TX	El Paso
+79952	TX	El Paso
+79953	TX	El Paso
+79954	TX	El Paso
+79955	TX	El Paso
+79958	TX	El Paso
+79960	TX	El Paso
+79961	TX	El Paso
+79966	TX	El Paso
+79968	TX	El Paso
+79973	TX	El Paso
+79974	TX	El Paso
+79975	TX	El Paso
+79976	TX	El Paso
+79977	TX	El Paso
+79978	TX	El Paso
+79980	TX	El Paso
+79982	TX	El Paso
+79983	TX	El Paso
+79984	TX	El Paso
+79985	TX	El Paso
+79986	TX	El Paso
+79987	TX	El Paso
+79988	TX	El Paso
+79989	TX	El Paso
+79990	TX	El Paso
+79991	TX	El Paso
+79992	TX	El Paso
+79993	TX	El Paso
+79994	TX	El Paso
+79995	TX	El Paso
+79996	TX	El Paso
+79997	TX	El Paso
+79998	TX	El Paso
+79999	TX	El Paso
+88510	TX	El Paso
+88511	TX	El Paso
+88512	TX	El Paso
+88513	TX	El Paso
+88514	TX	El Paso
+88515	TX	El Paso
+88516	TX	El Paso
+88517	TX	El Paso
+88518	TX	El Paso
+88519	TX	El Paso
+88520	TX	El Paso
+88521	TX	El Paso
+88523	TX	El Paso
+88524	TX	El Paso
+88525	TX	El Paso
+88526	TX	El Paso
+88527	TX	El Paso
+88528	TX	El Paso
+88529	TX	El Paso
+88530	TX	El Paso
+88531	TX	El Paso
+88532	TX	El Paso
+88533	TX	El Paso
+88534	TX	El Paso
+88535	TX	El Paso
+88536	TX	El Paso
+88538	TX	El Paso
+88539	TX	El Paso
+88540	TX	El Paso
+88541	TX	El Paso
+88542	TX	El Paso
+88543	TX	El Paso
+88544	TX	El Paso
+88545	TX	El Paso
+88546	TX	El Paso
+88547	TX	El Paso
+88548	TX	El Paso
+88549	TX	El Paso
+88550	TX	El Paso
+88553	TX	El Paso
+88554	TX	El Paso
+88555	TX	El Paso
+88556	TX	El Paso
+88557	TX	El Paso
+88558	TX	El Paso
+88559	TX	El Paso
+88560	TX	El Paso
+88561	TX	El Paso
+88562	TX	El Paso
+88563	TX	El Paso
+88565	TX	El Paso
+88566	TX	El Paso
+88567	TX	El Paso
+88568	TX	El Paso
+88569	TX	El Paso
+88570	TX	El Paso
+88571	TX	El Paso
+88572	TX	El Paso
+88573	TX	El Paso
+88574	TX	El Paso
+88575	TX	El Paso
+88576	TX	El Paso
+88577	TX	El Paso
+88578	TX	El Paso
+88579	TX	El Paso
+88580	TX	El Paso
+88581	TX	El Paso
+88582	TX	El Paso
+88583	TX	El Paso
+88584	TX	El Paso
+88585	TX	El Paso
+88586	TX	El Paso
+88587	TX	El Paso
+88588	TX	El Paso
+88589	TX	El Paso
+88590	TX	El Paso
+88595	TX	El Paso
+99501	AK	Anchorage
+99502	AK	Anchorage
+99503	AK	Anchorage
+99504	AK	Anchorage
+99505	AK	Fort Richardson
+99506	AK	Elmendorf Afb
+99507	AK	Anchorage
+99508	AK	Anchorage
+99509	AK	Anchorage
+99510	AK	Anchorage
+99511	AK	Anchorage
+99512	AK	Anchorage
+99513	AK	Anchorage
+99514	AK	Anchorage
+99515	AK	Anchorage
+99516	AK	Anchorage
+99517	AK	Anchorage
+99518	AK	Anchorage
+99519	AK	Anchorage
+99520	AK	Anchorage
+99521	AK	Anchorage
+99522	AK	Anchorage
+99523	AK	Anchorage
+99524	AK	Anchorage
+99540	AK	Indian
+99546	AK	Adak
+99547	AK	Atka
+99548	AK	Chignik Lake
+99549	AK	Port Heiden
+99550	AK	Port Lions
+99551	AK	Akiachak
+99552	AK	Akiak
+99553	AK	Akutan
+99554	AK	Alakanuk
+99555	AK	Aleknagik
+99556	AK	Anchor Point
+99557	AK	Aniak
+99558	AK	Anvik
+99559	AK	Bethel
+99561	AK	Chefornak
+99563	AK	Chevak
+99564	AK	Chignik
+99565	AK	Chignik Lagoon
+99566	AK	Chitina
+99567	AK	Chugiak
+99568	AK	Clam Gulch
+99569	AK	Clarks Point
+99571	AK	Cold Bay
+99572	AK	Cooper Landing
+99573	AK	Copper Center
+99574	AK	Cordova
+99575	AK	Crooked Creek
+99576	AK	Dillingham
+99577	AK	Eagle River
+99578	AK	Eek
+99579	AK	Egegik
+99580	AK	Ekwok
+99581	AK	Emmonak
+99583	AK	False Pass
+99584	AK	Flat
+99585	AK	Marshall
+99586	AK	Gakona
+99587	AK	Girdwood
+99588	AK	Glennallen
+99589	AK	Goodnews Bay
+99590	AK	Grayling
+99591	AK	Saint George Island
+99599	AK	Anchorage
+99602	AK	Holy Cross
+99603	AK	Homer
+99604	AK	Hooper Bay
+99605	AK	Hope
+99606	AK	Iliamna
+99607	AK	Kalskag
+99608	AK	Karluk
+99609	AK	Kasigluk
+99610	AK	Kasilof
+99611	AK	Kenai
+99612	AK	King Cove
+99613	AK	King Salmon
+99614	AK	Kipnuk
+99615	AK	Kodiak
+99619	AK	Kodiak
+99620	AK	Kotlik
+99621	AK	Kwethluk
+99622	AK	Kwigillingok
+99624	AK	Larsen Bay
+99625	AK	Levelock
+99626	AK	Lower Kalskag
+99627	AK	Mc Grath
+99628	AK	Manokotak
+99630	AK	Mekoryuk
+99631	AK	Moose Pass
+99632	AK	Mountain Village
+99633	AK	Naknek
+99634	AK	Napakiak
+99635	AK	Nikiski
+99636	AK	New Stuyahok
+99637	AK	Toksook Bay
+99638	AK	Nikolski
+99639	AK	Ninilchik
+99640	AK	Nondalton
+99641	AK	Nunapitchuk
+99643	AK	Old Harbor
+99644	AK	Ouzinkie
+99645	AK	Palmer
+99647	AK	Pedro Bay
+99648	AK	Perryville
+99649	AK	Pilot Point
+99650	AK	Pilot Station
+99651	AK	Platinum
+99652	AK	Big Lake
+99653	AK	Port Alsworth
+99654	AK	Wasilla
+99655	AK	Quinhagak
+99656	AK	Red Devil
+99657	AK	Russian Mission
+99658	AK	Saint Marys
+99659	AK	Saint Michael
+99660	AK	Saint Paul Island
+99661	AK	Sand Point
+99662	AK	Scammon Bay
+99663	AK	Seldovia
+99664	AK	Seward
+99665	AK	Shageluk
+99666	AK	Nunam Iqua
+99667	AK	Skwentna
+99668	AK	Sleetmute
+99669	AK	Soldotna
+99670	AK	South Naknek
+99671	AK	Stebbins
+99672	AK	Sterling
+99674	AK	Sutton
+99675	AK	Takotna
+99676	AK	Talkeetna
+99677	AK	Tatitlek
+99678	AK	Togiak
+99679	AK	Tuluksak
+99680	AK	Tuntutuliak
+99681	AK	Tununak
+99682	AK	Tyonek
+99683	AK	Trapper Creek
+99684	AK	Unalakleet
+99685	AK	Unalaska
+99686	AK	Valdez
+99687	AK	Wasilla
+99688	AK	Willow
+99689	AK	Yakutat
+99690	AK	Nightmute
+99691	AK	Nikolai
+99692	AK	Dutch Harbor
+99693	AK	Whittier
+99694	AK	Houston
+99695	AK	Anchorage
+99697	AK	Kodiak
+99701	AK	Fairbanks
+99702	AK	Eielson Afb
+99703	AK	Fort Wainwright
+99704	AK	Clear
+99705	AK	North Pole
+99706	AK	Fairbanks
+99707	AK	Fairbanks
+99708	AK	Fairbanks
+99709	AK	Fairbanks
+99710	AK	Fairbanks
+99711	AK	Fairbanks
+99712	AK	Fairbanks
+99714	AK	Salcha
+99716	AK	Two Rivers
+99720	AK	Allakaket
+99721	AK	Anaktuvuk Pass
+99722	AK	Arctic Village
+99723	AK	Barrow
+99724	AK	Beaver
+99725	AK	Ester
+99726	AK	Bettles Field
+99727	AK	Buckland
+99729	AK	Cantwell
+99730	AK	Central
+99732	AK	Chicken
+99733	AK	Circle
+99734	AK	Prudhoe Bay
+99736	AK	Deering
+99737	AK	Delta Junction
+99738	AK	Eagle
+99739	AK	Elim
+99740	AK	Fort Yukon
+99741	AK	Galena
+99742	AK	Gambell
+99743	AK	Healy
+99744	AK	Anderson
+99745	AK	Hughes
+99746	AK	Huslia
+99747	AK	Kaktovik
+99748	AK	Kaltag
+99749	AK	Kiana
+99750	AK	Kivalina
+99751	AK	Kobuk
+99752	AK	Kotzebue
+99753	AK	Koyuk
+99754	AK	Koyukuk
+99755	AK	Denali National Park
+99756	AK	Manley Hot Springs
+99757	AK	Lake Minchumina
+99758	AK	Minto
+99759	AK	Point Lay
+99760	AK	Nenana
+99761	AK	Noatak
+99762	AK	Nome
+99763	AK	Noorvik
+99764	AK	Northway
+99765	AK	Nulato
+99766	AK	Point Hope
+99767	AK	Rampart
+99768	AK	Ruby
+99769	AK	Savoonga
+99770	AK	Selawik
+99771	AK	Shaktoolik
+99772	AK	Shishmaref
+99773	AK	Shungnak
+99774	AK	Stevens Village
+99775	AK	Fairbanks
+99776	AK	Tanacross
+99777	AK	Tanana
+99778	AK	Teller
+99779	AK	Tetlin
+99780	AK	Tok
+99781	AK	Venetie
+99782	AK	Wainwright
+99783	AK	Wales
+99784	AK	White Mountain
+99785	AK	Brevig Mission
+99786	AK	Ambler
+99788	AK	Chalkyitsik
+99789	AK	Nuiqsut
+99790	AK	Fairbanks
+99791	AK	Atqasuk
+99801	AK	Juneau
+99802	AK	Juneau
+99803	AK	Juneau
+99811	AK	Juneau
+99820	AK	Angoon
+99821	AK	Auke Bay
+99824	AK	Douglas
+99825	AK	Elfin Cove
+99826	AK	Gustavus
+99827	AK	Haines
+99829	AK	Hoonah
+99830	AK	Kake
+99832	AK	Pelican
+99833	AK	Petersburg
+99835	AK	Sitka
+99836	AK	Port Alexander
+99840	AK	Skagway
+99841	AK	Tenakee Springs
+99850	AK	Juneau
+99901	AK	Ketchikan
+99903	AK	Meyers Chuck
+99918	AK	Coffman Cove
+99919	AK	Thorne Bay
+99921	AK	Craig
+99922	AK	Hydaburg
+99923	AK	Hyder
+99925	AK	Klawock
+99926	AK	Metlakatla
+99927	AK	Point Baker
+99928	AK	Ward Cove
+99929	AK	Wrangell
+99950	AK	Ketchikan
+\.
+
+
+-- Completed on 2014-01-22 22:52:04
+
+--
+-- PostgreSQL database dump complete
+--
+

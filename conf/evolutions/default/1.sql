@@ -1,0 +1,105 @@
+# --- Created by Ebean DDL
+# To stop Ebean DDL generation, remove this comment and start using Evolutions
+
+# --- !Ups
+
+create table buy_now_data (
+  id                        bigint not null,
+  application_date          varchar(255),
+  firstname                 varchar(255),
+  middlename                varchar(255),
+  salesman                  varchar(255),
+  lastname                  varchar(255),
+  address                   varchar(255),
+  dln                       varchar(255),
+  zipcode                   varchar(255),
+  state                     varchar(255),
+  city                      varchar(255),
+  dl_issue_dt               varchar(255),
+  dl_exp_date               varchar(255),
+  email                     varchar(255),
+  employer                  varchar(255),
+  empaddress                varchar(255),
+  supervisorname            varchar(255),
+  ssn                       varchar(255),
+  timesonjob                varchar(255),
+  dob                       varchar(255),
+  previousjob               varchar(255),
+  homephone                 varchar(255),
+  previoushomeaddress       varchar(255),
+  workphone                 varchar(255),
+  emergencycontact          varchar(255),
+  cellphone                 varchar(255),
+  highschool                varchar(255),
+  hearaboutus               varchar(255),
+  sourcedownpayment         varchar(255),
+  applicantsmotherm         varchar(255),
+  addressm                  varchar(255),
+  citystatezipm             varchar(255),
+  phonecellm                varchar(255),
+  contactednotesm           varchar(255),
+  phonehomem                varchar(255),
+  phoneworkm                varchar(255),
+  applicantsmotherf         varchar(255),
+  addressf                  varchar(255),
+  citystatezipf             varchar(255),
+  phonecellf                varchar(255),
+  contactednotesf           varchar(255),
+  phonehomef                varchar(255),
+  phoneworkf                varchar(255),
+  applicantsmother1         varchar(255),
+  address1                  varchar(255),
+  citystatezip1             varchar(255),
+  phonecell1                varchar(255),
+  contactednotes1           varchar(255),
+  phonehome1                varchar(255),
+  phonework1                varchar(255),
+  applicantsmother2         varchar(255),
+  address2                  varchar(255),
+  citystatezip2             varchar(255),
+  phonecell2                varchar(255),
+  contactednotes2           varchar(255),
+  phonehome2                varchar(255),
+  phonework2                varchar(255),
+  applicantsmother3         varchar(255),
+  address3                  varchar(255),
+  citystatezip3             varchar(255),
+  phonecell3                varchar(255),
+  contactednotes3           varchar(255),
+  phonehome3                varchar(255),
+  phonework3                varchar(255),
+  applicantsmother4         varchar(255),
+  address4                  varchar(255),
+  citystatezip4             varchar(255),
+  phonecell4                varchar(255),
+  contactednotes4           varchar(255),
+  phonehome4                varchar(255),
+  phonework4                varchar(255),
+  applicantsmother5         varchar(255),
+  address5                  varchar(255),
+  citystatezip5             varchar(255),
+  phonecell5                varchar(255),
+  contactednotes5           varchar(255),
+  phonehome5                varchar(255),
+  phonework5                varchar(255),
+  applicantsmother6         varchar(255),
+  address6                  varchar(255),
+  citystatezip6             varchar(255),
+  phonecell6                varchar(255),
+  contactednotes6           varchar(255),
+  phonehome6                varchar(255),
+  phonework6                varchar(255),
+  constraint pk_buy_now_data primary key (id))
+;
+
+create sequence buy_now_data_seq;
+
+
+
+
+# --- !Downs
+
+drop table if exists buy_now_data cascade;
+
+drop sequence if exists buy_now_data_seq;
+

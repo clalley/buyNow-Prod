@@ -1,0 +1,15 @@
+GET    	/             			            	controllers.BuyNowMain.Start()
+GET		/newBuyNowForm							controllers.BuyNowMain.newBuyNowForm()
+POST 	/insertBuyNowRef						controllers.BuyNowMain.insertBuyNowRef()
+POST 	/insertBuyNowData						controllers.BuyNowMain.insertBuyNowData()
+GET 	/GetCityState							controllers.BuyNowMain.GetCityState(Zipcode:String)
+
+GET     /getAllCustomers             controllers.BuyNowMain.convert(code:String)
+GET     /getCustomer             controllers.BuyNowMain.getiddata(id:String,code:String)
+GET     /getwsdl             	 controllers.BuyNowMain.main
+
+GET     /getTransactions             controllers.BuyNowMain.getAllTransactions(code:String)
+GET     /updateTransactions             controllers.BuyNowMain.updateTransactions(code:String, ids:String)
+
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
