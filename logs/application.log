@@ -1,0 +1,69 @@
+2014-01-22 22:03:26,255 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-01-22 22:03:36,691 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://ec2-54-221-224-138.compute-1.amazonaws.com:5432/dbkdhn44ksn3cm?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2014-01-22 22:03:37,089 - [ERROR] - from com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory in play-internal-execution-context-1 
+Was unable to use reflection to find a constructor and appropriate getters forimmutable type interface java.sql.Connection.  The errors while looking for the getter methods follow:
+
+2014-01-22 22:03:37,093 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties in play-internal-execution-context-1 
+Error with models.BuyNowData field:con
+java.lang.RuntimeException: Unable to use reflection to build ImmutableMeta for interface java.sql.Connection.  Associated Errors trying to find a constructor and getter methods have been logged
+	at com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory.createImmutableMeta(ImmutableMetaFactory.java:52) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.type.DefaultTypeManager.recursiveCreateScalarTypes(DefaultTypeManager.java:205) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProp(DeployCreateProperties.java:321) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProp(DeployCreateProperties.java:341) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProperties(DeployCreateProperties.java:128) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProperties(DeployCreateProperties.java:54) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1022) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:533) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:250) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:124) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:210) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:64) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:59) ~[avaje-ebeanorm-api-3.1.1.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) ~[play-java-ebean_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$.start(Play.scala:67) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:141) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+
+2014-01-22 22:03:37,681 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-01-24 14:49:52,525 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null
+
+2014-01-24 14:49:54,901 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null
+
+2014-01-24 14:49:57,309 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null
+
+2014-01-24 14:49:59,762 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null
+
+2014-01-24 14:50:02,076 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null
+
+2014-01-24 14:50:04,426 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null
+

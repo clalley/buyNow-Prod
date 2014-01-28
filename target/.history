@@ -1,0 +1,83 @@
+~ruhn
+~run
+h2-browser
+exit
+h2-browser
+~run
+play clean
+play clean-all
+clean
+~run
+exit
+h2-browser
+~run
+play dependencies
+exit
+~run
+exit
+~run
+run
+compile
+run
+start
+run
+exit
+run
+exit
+run
+exit
+run
+compile
+start
+compile
+run
+compile
+run
+compile
+run
+compile
+start
+run
+play clean
+clean
+compile
+run
+last
+run
+comile
+compile
+clean
+run
+compile
+run
+play
+compile
+run
+run demo1
+run Demo1
+play run demo1
+run demo1
+demo1 run
+run demo
+run demo1
+start demo1
+help play
+run demo1
+run 9000
+run demo
+run demo1
+run 9000
+run
+exit
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+debuge
+debug
+compile
+run
