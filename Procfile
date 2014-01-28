@@ -1,0 +1,1 @@
+web: target/start -Dhttp.port=${PORT} -Dconfig.file=prod.conf ${JAVA_OPTS}

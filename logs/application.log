@@ -1,13 +1,73 @@
-2014-01-22 22:03:26,255 - [INFO] - from play in main 
+2014-01-28 13:05:46,319 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-01-22 22:03:36,691 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:postgresql://ec2-54-221-224-138.compute-1.amazonaws.com:5432/dbkdhn44ksn3cm?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+2014-01-28 13:07:01,758 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in play-internal-execution-context-1 
+Failed to obtain initial connection Sleeping for 0ms and trying again. Attempts left: 0. Exception: null
 
-2014-01-22 22:03:37,089 - [ERROR] - from com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory in play-internal-execution-context-1 
+2014-01-28 13:07:01,797 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6h4gfdj9c - Internal server error, for (GET) [/] ->
+
+play.api.Configuration$$anon$1: Configuration error[Cannot connect to database [default]]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:81) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Configuration.reportError(Configuration.scala:559) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:251) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:242) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library.jar:na]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244) ~[scala-library.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105) ~[scala-library.jar:na]
+	at play.api.db.BoneCPPlugin.onStart(DB.scala:242) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$.start(Play.scala:67) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:141) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:398) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.2-1002-jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.7.0_25]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.7.0_25]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256) ~[bonecp-0.7.1.RELEASE.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305) ~[bonecp-0.7.1.RELEASE.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCPDataSource.maybeInit(BoneCPDataSource.java:150) ~[bonecp-0.7.1.RELEASE.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:112) ~[bonecp-0.7.1.RELEASE.jar:0.7.1.RELEASE]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:244) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	... 28 common frames omitted
+
+2014-01-28 13:07:55,135 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:postgresql://localhost:5432/postgres
+
+2014-01-28 13:07:58,076 - [ERROR] - from com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory in play-internal-execution-context-4 
 Was unable to use reflection to find a constructor and appropriate getters forimmutable type interface java.sql.Connection.  The errors while looking for the getter methods follow:
 
-2014-01-22 22:03:37,093 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties in play-internal-execution-context-1 
+2014-01-28 13:07:58,077 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties in play-internal-execution-context-4 
 Error with models.BuyNowData field:con
 java.lang.RuntimeException: Unable to use reflection to build ImmutableMeta for interface java.sql.Connection.  Associated Errors trying to find a constructor and getter methods have been logged
 	at com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory.createImmutableMeta(ImmutableMetaFactory.java:52) ~[avaje-ebeanorm-server-3.1.2.jar:na]
@@ -46,24 +106,148 @@ java.lang.RuntimeException: Unable to use reflection to build ImmutableMeta for 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
 	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
 
-2014-01-22 22:03:37,681 - [INFO] - from play in play-internal-execution-context-1 
+2014-01-28 13:07:58,742 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6h4gfgpg2 - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:462) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:483) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:439) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:437) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:437) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$.start(Play.scala:67) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:141) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+
+2014-01-28 13:08:04,920 - [ERROR] - from play in New I/O worker #1 
+ERROR: relation "buy_now_data" already exists [ERROR:0, SQLSTATE:42P07]
+
+2014-01-28 13:08:04,922 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6h4gfh8jk - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A9000%2F] ->
+
+play.api.db.evolutions.InconsistentDatabase: Database 'default' is in inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
+	at play.api.db.evolutions.Evolutions$.checkEvolutionsState(Evolutions.scala:177) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.evolutions.Evolutions$.applyScript(Evolutions.scala:275) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.api.db.evolutions.EvolutionsPlugin.handleWebCommand(Evolutions.scala:534) ~[play-jdbc_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$handleWebCommand$12$$anonfun$apply$11.apply(ApplicationProvider.scala:282) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$handleWebCommand$12$$anonfun$apply$11.apply(ApplicationProvider.scala:281) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:110) ~[scala-library.jar:na]
+	at scala.collection.immutable.List.foldLeft(List.scala:78) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$handleWebCommand$12.apply(ApplicationProvider.scala:281) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$handleWebCommand$12.apply(ApplicationProvider.scala:280) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.Option.flatMap(Option.scala:170) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication.handleWebCommand(ApplicationProvider.scala:280) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.server.Server$$anonfun$getHandlerFor$1.apply(Server.scala:85) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.server.Server$$anonfun$getHandlerFor$1.apply(Server.scala:85) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.control.Exception$Catch$$anonfun$either$1.apply(Exception.scala:124) ~[scala-library.jar:na]
+	at scala.util.control.Exception$Catch$$anonfun$either$1.apply(Exception.scala:124) ~[scala-library.jar:na]
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102) ~[scala-library.jar:na]
+	at scala.util.control.Exception$Catch.either(Exception.scala:124) ~[scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:85) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:35) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$7.apply(PlayDefaultUpstreamHandler.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$7.apply(PlayDefaultUpstreamHandler.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.Either.fold(Either.scala:98) ~[scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:106) ~[play_2.10-2.1.3.jar:2.1.3]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) ~[netty-3.6.3.Final.jar:na]
+	at com.typesafe.netty.http.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:64) ~[netty-http-pipelining-1.1.1.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty-3.6.3.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty-3.6.3.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+
+2014-01-28 13:08:07,104 - [INFO] - from play in play-internal-execution-context-3 
+database [default] connected at jdbc:postgresql://localhost:5432/postgres
+
+2014-01-28 13:08:07,359 - [ERROR] - from com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory in play-internal-execution-context-3 
+Was unable to use reflection to find a constructor and appropriate getters forimmutable type interface java.sql.Connection.  The errors while looking for the getter methods follow:
+
+2014-01-28 13:08:07,360 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties in play-internal-execution-context-3 
+Error with models.BuyNowData field:con
+java.lang.RuntimeException: Unable to use reflection to build ImmutableMeta for interface java.sql.Connection.  Associated Errors trying to find a constructor and getter methods have been logged
+	at com.avaje.ebeaninternal.server.type.reflect.ImmutableMetaFactory.createImmutableMeta(ImmutableMetaFactory.java:52) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.type.DefaultTypeManager.recursiveCreateScalarTypes(DefaultTypeManager.java:205) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProp(DeployCreateProperties.java:321) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProp(DeployCreateProperties.java:341) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProperties(DeployCreateProperties.java:128) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.DeployCreateProperties.createProperties(DeployCreateProperties.java:54) [avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1022) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:533) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:250) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:124) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:210) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:64) ~[avaje-ebeanorm-server-3.1.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:59) ~[avaje-ebeanorm-api-3.1.1.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) ~[play-java-ebean_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:68) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.api.Play$.start(Play.scala:67) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:141) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:114) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.1.3.jar:2.1.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.1.3.jar:2.1.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+
+2014-01-28 13:08:07,434 - [INFO] - from play in play-internal-execution-context-3 
 Application started (Dev)
-
-2014-01-24 14:49:52,525 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null
-
-2014-01-24 14:49:54,901 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null
-
-2014-01-24 14:49:57,309 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null
-
-2014-01-24 14:49:59,762 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null
-
-2014-01-24 14:50:02,076 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null
-
-2014-01-24 14:50:04,426 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
-Failed to acquire connection Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null
 
