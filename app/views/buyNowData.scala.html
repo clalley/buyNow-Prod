@@ -624,13 +624,22 @@ function validateReferencesForm()
 									</td>
 									<td width="20" ></td>
 									<td>Salesman</td>
-									<td><input autocomplete="off" type="text" id=buyNowForm("Salesman") name="Salesman" onblur="if(onlyletters(this)==false)this.value=''" tabindex=15></td>
+									<td>
+										<select id=buyNowForm("Salesman") name="Salesman" tabindex=28>
+													<option></option>
+													<option>Steve</option>
+													<option>Dustan</option>
+													<option>Richard</option>
+													<option>Cameron</option>
+										</select>
+									</td>
 								</tr>
+
 								<tr>
 									<td>Last Name</td>
 									<td><input autocomplete="off" type="text" id=buyNowForm("lastname") name="lastname" onblur="if(onlyletters(this)==false)this.value=''" tabindex=2></td>
 									<td width="20" ></td>
-									<td>DLN</td>
+									<td>DL Number</td>
 									<td><input autocomplete="off" type="text" id=buyNowForm("dln") name="dln"  onblur="onlyletters(this)" tabindex=16></td>
 								</tr>
 								<tr>
@@ -723,7 +732,7 @@ function validateReferencesForm()
 									<td><input autocomplete="off" type="text" id=buyNowForm("highschool") name="highschool"  onblur="onlyletters(this)" tabindex=27></td>
 								</tr>
 								<tr>
-									<td>How'd you hear about <br>us-choose one</td>
+									<td>How did you hear about <br>us? Choose one</td>
 									<td>
 										<select id=buyNowForm("hearaboutus") name="hearaboutus" tabindex=14>
 												<option></option>
