@@ -1,0 +1,27 @@
+@(startForm: Form[Start])
+@import helper._
+@import helper.twitterBootstrap._
+<body style="background-color:#EEAA1F;">
+
+	<div class="wrapper">
+		<div class="left"></div>
+		<div class="center"><span>
+			<center><img src="@routes.Assets.at("images/HolmesMotorsLogo.png")"/></center>
+			<h1><center>Start the Holmes Motors Buy Now Application</center></h1>
+			@helper.form(action = routes.BuyNowMain.newBuyNowForm()) {
+			<center><button type="submit" name="submitButton" class="btn btn-primary" value="StartHere">Start Here</button></center>
+			<h1><center></center></h1>
+			<h1><center></center></h1>
+			<h1><center>NO CREDIT CHECK</center></h1>
+			<h1><center>NO CONTRACT</center></h1>
+			<h1><center>2.9% FINANCING FOR ALL</center></h1>
+			<h1><center>NO REJECTIONS WITH VALID DL AND DOWN PAYMENT </center></h1>
+		</span></div>
+   		<div class="right"></div>
+	</div>
+
+
+}
+   
+   
+</body>
